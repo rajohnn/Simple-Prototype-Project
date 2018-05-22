@@ -67,6 +67,10 @@
     <Compile Include="Inventory\Part.cs" />
     <Compile Include="Inventory\ReferenceCode.cs" />
     <Compile Include="Inventory\StandardFeature.cs" />
+    <Compile Include="Migrations\201805222158500_Initial.cs" />
+    <Compile Include="Migrations\201805222158500_Initial.Designer.cs">
+      <DependentUpon>201805222158500_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -78,6 +82,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805222158500_Initial.resx">
+      <DependentUpon>201805222158500_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

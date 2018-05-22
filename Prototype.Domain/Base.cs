@@ -1,4 +1,6 @@
+using L5.DomainModel.Inventory;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -7,22 +9,7 @@ namespace L5.DomainModel {
     public abstract class Entity {
         public int Id { get; set; }
         public bool IsDeleted { get; set; }        
-    }
-
-    public class DataPartition : Entity {
-
-        [Column(TypeName = "NVARCHAR")]
-        [StringLength(100)]
-        public string Name { get; set; }
-
-        [Column(TypeName = "NVARCHAR")]
-        [StringLength(100)]
-        public string Subdomain { get; set; }
-
-        [Column(TypeName = "NVARCHAR")]
-        [StringLength(200)]
-        public string ReasonForDeletion { get; set; }
-    }
+    }    
 
     public abstract class SystemEntity : Entity {
         public DateTimeOffset? DateCreated { get; set; }
@@ -45,12 +32,38 @@ namespace L5.DomainModel {
 
         [Column(TypeName = "NVARCHAR")]
         [StringLength(100)]
-        public string ExternalMasterId { get; set; }
-        [Column(TypeName = "NVARCHAR")]
-        [StringLength(100)]
-        public string ExternalId { get; set; }
-        [Column(TypeName = "NVARCHAR")]
-        [StringLength(100)]
-        public string ExternalName { get; set; }        
+        public string ExternalMasterId { get; set; }        
     }
+
+    public class Identifiers : SystemEntity {
+        public int? ProductId { get; set; }
+        [ForeignKey("ProductId")]
+        public Product Product { get; set; }
+        [Column(TypeName = "NVARCHAR")]
+        [StringLength(100)]
+        public string Name { get; set; }
+        [Column(TypeName = "NVARCHAR")]
+        [StringLength(100)]
+        public string Description { get; set; }
+        [Column(TypeName = "NVARCHAR")]
+        [StringLength(100)]
+        public string Value { get; set; }
+    }
+
+    public class DataPartition : Entity {
+
+        [Column(TypeName = "NVARCHAR")]
+        [StringLength(100)]
+        public string Name { get; set; }
+
+        [Column(TypeName = "NVARCHAR")]
+        [StringLength(100)]
+        public string Subdomain { get; set; }
+
+        [Column(TypeName = "NVARCHAR")]
+        [StringLength(200)]
+        public string ReasonForDeletion { get; set; }
+    }
+
+    
 }

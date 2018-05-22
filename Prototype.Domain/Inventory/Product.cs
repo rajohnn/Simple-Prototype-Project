@@ -5,14 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace L5.DomainModel.Inventory {
 
     public class Product : InventoryEntity {
+        public List<Identifiers> Identifiers { get; set; }
         public int? Year { get; set; }
         public int? ProductTypeId { get; set; }
         public string Make { get; set; }
-        public string Model { get; set; }
-
-        [Column(TypeName = "NVARCHAR")]
-        [StringLength(100)]
-        public string TrimMake { get; set; }
+        public string Model { get; set; }        
 
         [Column(TypeName = "NVARCHAR")]
         [StringLength(100)]

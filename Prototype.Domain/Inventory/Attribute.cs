@@ -4,7 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace L5.DomainModel.Inventory {
 
     public class Attribute : InventoryEntity {
+        public int? FeatureId { get; set; }
 
+        [ForeignKey("FeatureId")]
+        public Feature Feature { get; set; }
         [Column(TypeName = "NVARCHAR")]
         [StringLength(100)]
         public string Name { get; set; }
