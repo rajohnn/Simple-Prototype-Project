@@ -1,6 +1,5 @@
 ﻿using L5.DomainModel;
 using L5.DomainModel.Inventory;
-using Prototype.Domain.Inventory;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
