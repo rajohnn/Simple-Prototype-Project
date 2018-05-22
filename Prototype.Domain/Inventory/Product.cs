@@ -19,7 +19,7 @@ namespace L5.DomainModel.Inventory {
         [StringLength(100)]
         public string DisplayName { get; set; }
 
-        public List<ReferenceCode> Prices = new List<ReferenceCode>();
+        public List<ReferenceCode> Prices { get; set; } = new List<ReferenceCode>();
 
         [ForeignKey("ProductTypeId")]
         public ReferenceCode ProductType { get; set; }

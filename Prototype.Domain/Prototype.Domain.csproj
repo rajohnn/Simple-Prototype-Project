@@ -81,6 +81,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="BaseEntities.cd" />
+    <None Include="Locations.cd" />
+    <None Include="Dealer.cd" />
+    <None Include="InventoryEntities.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

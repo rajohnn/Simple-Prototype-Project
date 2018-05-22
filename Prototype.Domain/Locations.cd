@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="L5.DomainModel.Location">
+    <Position X="5" Y="2.5" Width="2.75" />
+    <AssociationLine Name="Locations" Type="L5.DomainModel.Location" ManuallyRouted="true">
+      <Path>
+        <Point X="5.954" Y="3.955" />
+        <Point X="5.954" Y="4.205" />
+        <Point X="6.816" Y="4.205" />
+        <Point X="6.816" Y="3.955" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.513" Y="0.183" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAoAAAQAAAAAAAgAAAAAAAABAAA=</HashCode>
+      <FileName>Location.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DataPartition" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Locations" />
+      <Property Name="ParentLocations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="L5.DomainModel.DataPartition">
+    <Position X="9.25" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIYAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="L5.DomainModel.Entity">
+    <Position X="7" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Base.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Calibri" Size="10" />
+</ClassDiagram>
