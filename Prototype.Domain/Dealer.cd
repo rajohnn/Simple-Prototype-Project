@@ -4,7 +4,7 @@
     <Position X="0.75" Y="0.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAMAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
-      <FileName>Dealership\CustomAttributes.cs</FileName>
+      <FileName>DealerInventory\CustomAttributes.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Attriute" />
@@ -14,84 +14,84 @@
     <Position X="7" Y="5.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAACAA=</HashCode>
-      <FileName>Dealership\CustomAttributes.cs</FileName>
+      <FileName>DealerInventory\CustomAttributes.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.FeatureConfiguration">
     <Position X="0.75" Y="2.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAA=</HashCode>
-      <FileName>Dealership\CustomFeatures.cs</FileName>
+      <FileName>DealerInventory\CustomFeatures.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.CustomFeature">
     <Position X="7" Y="2.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>EACCAAAAAAAAAAAAAAAQAAQQAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Dealership\CustomFeatures.cs</FileName>
+      <FileName>DealerInventory\CustomFeatures.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.MediaAssetConfiguration">
     <Position X="0.75" Y="4.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgEAAAAQAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
-      <FileName>Dealership\CustomMediaAssets.cs</FileName>
+      <FileName>DealerInventory\CustomMediaAssets.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.CustomMediaAsset">
     <Position X="9.75" Y="0.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAACAAAACAAAAAAAAAA=</HashCode>
-      <FileName>Dealership\CustomMediaAssets.cs</FileName>
+      <FileName>DealerInventory\CustomMediaAssets.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.PackageConfiguration">
     <Position X="0.75" Y="6.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAAAAAEAAAAAwAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Dealership\CustomPackages.cs</FileName>
+      <FileName>DealerInventory\CustomPackages.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.CustomPackage">
     <Position X="7" Y="0.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>EAACAAAAAQAAAEAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Dealership\CustomPackages.cs</FileName>
+      <FileName>DealerInventory\CustomPackages.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.PartConfiguration">
     <Position X="4" Y="5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAIAIAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>Dealership\CustomParts.cs</FileName>
+      <FileName>DealerInventory\CustomParts.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.CustomPart">
     <Position X="9.75" Y="3.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>EAACAAAAAAIAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>Dealership\CustomParts.cs</FileName>
+      <FileName>DealerInventory\CustomParts.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.StandardFeatureConfiguration">
     <Position X="4" Y="3" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAhAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Dealership\StandardFeatureConfiguration.cs</FileName>
+      <FileName>DealerInventory\StandardFeatureConfiguration.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Dealership.CustomFeatureConfiguration">
     <Position X="9.75" Y="2.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Dealership\StandardFeatureConfiguration.cs</FileName>
+      <FileName>DealerInventory\StandardFeatureConfiguration.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="L5.DomainModel.Inventory.Attribute">
     <Position X="4.5" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgCAAACAA=</HashCode>
-      <FileName>Inventory\Attribute.cs</FileName>
+      <FileName>ProductCatalog\Attribute.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Calibri" Size="10" />

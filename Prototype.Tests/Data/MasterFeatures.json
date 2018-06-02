@@ -1,0 +1,1002 @@
+[
+  {
+    "CRS_MasterFeaturesId": 1379034,
+    "TrimId": 153428,
+    "PackageId": 3211482,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30040,
+    "FeatureName": "Engine",
+    "AttributeName": "Turbocharged",
+    "Value": "No"
+  },
+  {
+    "CRS_MasterFeaturesId": 12541885,
+    "TrimId": 190196,
+    "PackageId": 3636582,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 69901,
+    "FeatureName": "Other Exterior",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 15861809,
+    "TrimId": 169203,
+    "PackageId": 3406531,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 20031,
+    "FeatureName": "Price",
+    "AttributeName": "Engine Warranty (Condition)",
+    "Value": "Limited"
+  },
+  {
+    "CRS_MasterFeaturesId": 238904,
+    "TrimId": 67175,
+    "PackageId": 2308904,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 60007,
+    "FeatureName": "Construction",
+    "AttributeName": "Sidewall Construction",
+    "Value": "Fiberglass"
+  },
+  {
+    "CRS_MasterFeaturesId": 16375036,
+    "TrimId": 207921,
+    "PackageId": 3843306,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30066,
+    "FeatureName": "Engine",
+    "AttributeName": "Emergency RPM Reduction",
+    "Value": "Yes"
+  },
+  {
+    "CRS_MasterFeaturesId": 3798,
+    "TrimId": 51071,
+    "PackageId": 1920677,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 270101,
+    "FeatureName": "Oven / Stove",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 5407917,
+    "TrimId": 132508,
+    "PackageId": 3005028,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 80113,
+    "FeatureName": "Tires",
+    "AttributeName": "Rear Tire (Full Spec)",
+    "Value": "ST235/80R15E"
+  },
+  {
+    "CRS_MasterFeaturesId": 15620236,
+    "TrimId": 199236,
+    "PackageId": 3746925,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30064,
+    "FeatureName": "Engine",
+    "AttributeName": "Salt Water Capable",
+    "Value": "Yes"
+  },
+  {
+    "CRS_MasterFeaturesId": 1188532,
+    "TrimId": 125452,
+    "PackageId": 2923529,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 180803,
+    "FeatureName": "Propeller",
+    "AttributeName": "Twin Propeller",
+    "Value": "Yes"
+  },
+  {
+    "CRS_MasterFeaturesId": 11701671,
+    "TrimId": 186146,
+    "PackageId": 3596860,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 50201,
+    "FeatureName": "Capacities",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 5028371,
+    "TrimId": 160049,
+    "PackageId": 3287216,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 160201,
+    "FeatureName": "Interior Decor",
+    "AttributeName": "",
+    "Value": "Optional"
+  },
+  {
+    "CRS_MasterFeaturesId": 7979032,
+    "TrimId": 166605,
+    "PackageId": 3367018,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10007,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Trim Name",
+    "Value": "E15HTSX"
+  },
+  {
+    "CRS_MasterFeaturesId": 9149993,
+    "TrimId": 227379,
+    "PackageId": 4056566,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10004,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Year",
+    "Value": 2017
+  },
+  {
+    "CRS_MasterFeaturesId": 7066291,
+    "TrimId": 158517,
+    "PackageId": 3274267,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 20020,
+    "FeatureName": "Price",
+    "AttributeName": "Basic Warranty (Months)",
+    "Value": 12
+  },
+  {
+    "CRS_MasterFeaturesId": 16714691,
+    "TrimId": 214939,
+    "PackageId": 3903232,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 160301,
+    "FeatureName": "Curtains / Shades",
+    "AttributeName": "",
+    "Value": "Optional"
+  },
+  {
+    "CRS_MasterFeaturesId": 10061553,
+    "TrimId": 172728,
+    "PackageId": 3439227,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 352301,
+    "FeatureName": "Head",
+    "AttributeName": "",
+    "Value": "Optional"
+  },
+  {
+    "CRS_MasterFeaturesId": 4050280,
+    "TrimId": 54418,
+    "PackageId": 1964273,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 50001,
+    "FeatureName": "Dimensions",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 10259194,
+    "TrimId": 163556,
+    "PackageId": 3327752,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 271701,
+    "FeatureName": "Bathtub",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 2360253,
+    "TrimId": 220051,
+    "PackageId": 3973039,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30004,
+    "FeatureName": "Engine",
+    "AttributeName": "Cylinders",
+    "Value": 4
+  },
+  {
+    "CRS_MasterFeaturesId": 4263814,
+    "TrimId": 55522,
+    "PackageId": 1988141,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 310301,
+    "FeatureName": "Propane Alarm",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 10059974,
+    "TrimId": 150596,
+    "PackageId": 3182021,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 64503,
+    "FeatureName": "Doors",
+    "AttributeName": "Sliding Glass Door",
+    "Value": "No"
+  },
+  {
+    "CRS_MasterFeaturesId": 16972078,
+    "TrimId": 216427,
+    "PackageId": 3921833,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30053,
+    "FeatureName": "Engine",
+    "AttributeName": "Engine Manufacturer",
+    "Value": "Mercury"
+  },
+  {
+    "CRS_MasterFeaturesId": 7167855,
+    "TrimId": 146046,
+    "PackageId": 3138533,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 309901,
+    "FeatureName": "Other Cargo Area",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 2546702,
+    "TrimId": 129131,
+    "PackageId": 2975132,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 64806,
+    "FeatureName": "Awning",
+    "AttributeName": "Screened Room",
+    "Value": "No"
+  },
+  {
+    "CRS_MasterFeaturesId": 7420193,
+    "TrimId": 178522,
+    "PackageId": 3516937,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 20028,
+    "FeatureName": "Price",
+    "AttributeName": "Engine Warranty (Months)",
+    "Value": 36
+  },
+  {
+    "CRS_MasterFeaturesId": 13121802,
+    "TrimId": 154858,
+    "PackageId": 3221817,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 271501,
+    "FeatureName": "Toilet",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 15320597,
+    "TrimId": 205052,
+    "PackageId": 3807585,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10004,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Year",
+    "Value": 2016
+  },
+  {
+    "CRS_MasterFeaturesId": 11473846,
+    "TrimId": 233058,
+    "PackageId": 4123436,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 68001,
+    "FeatureName": "Exterior Patio / Deck",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 5640215,
+    "TrimId": 44703,
+    "PackageId": 1667247,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10030,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Data Provider",
+    "Value": "CRS"
+  },
+  {
+    "CRS_MasterFeaturesId": 6060523,
+    "TrimId": 116581,
+    "PackageId": 2847994,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10013,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Photo Name",
+    "Value": "2012_Palomino_Traverse.jpg"
+  },
+  {
+    "CRS_MasterFeaturesId": 11575576,
+    "TrimId": 144683,
+    "PackageId": 3121247,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 64801,
+    "FeatureName": "Awning",
+    "AttributeName": "",
+    "Value": "Optional"
+  },
+  {
+    "CRS_MasterFeaturesId": 3937224,
+    "TrimId": 83686,
+    "PackageId": 2744131,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 280201,
+    "FeatureName": "Exterior Plugs",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 2512987,
+    "TrimId": 116334,
+    "PackageId": 2844365,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10019,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Introduction Year",
+    "Value": 2012
+  },
+  {
+    "CRS_MasterFeaturesId": 8787980,
+    "TrimId": 166037,
+    "PackageId": 3355913,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 170101,
+    "FeatureName": "Speakers",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 11155388,
+    "TrimId": 168132,
+    "PackageId": 3389873,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 240011,
+    "FeatureName": "Comment",
+    "AttributeName": "Available In Various Styles",
+    "Value": "Yes"
+  },
+  {
+    "CRS_MasterFeaturesId": 9186094,
+    "TrimId": 166184,
+    "PackageId": 3360983,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30054,
+    "FeatureName": "Engine",
+    "AttributeName": "Engine Trim",
+    "Value": "175-HP L"
+  },
+  {
+    "CRS_MasterFeaturesId": 2775150,
+    "TrimId": 49201,
+    "PackageId": 1911748,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 270702,
+    "FeatureName": "Sofa",
+    "AttributeName": "Number Of Sofas",
+    "Value": 1
+  },
+  {
+    "CRS_MasterFeaturesId": 1107637,
+    "TrimId": 62965,
+    "PackageId": 2021212,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 90101,
+    "FeatureName": "Anti-Lock Brakes",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 11278312,
+    "TrimId": 175535,
+    "PackageId": 3483054,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 64502,
+    "FeatureName": "Doors",
+    "AttributeName": "Number of Doors",
+    "Value": 1
+  },
+  {
+    "CRS_MasterFeaturesId": 5304930,
+    "TrimId": 133584,
+    "PackageId": 3010804,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30079,
+    "FeatureName": "Engine",
+    "AttributeName": "Number Of Engines",
+    "Value": 2
+  },
+  {
+    "CRS_MasterFeaturesId": 1294225,
+    "TrimId": 124760,
+    "PackageId": 2911268,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30015,
+    "FeatureName": "Engine",
+    "AttributeName": "Valve Configuration",
+    "Value": "DOHC"
+  },
+  {
+    "CRS_MasterFeaturesId": 13448088,
+    "TrimId": 143909,
+    "PackageId": 3104350,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 272301,
+    "FeatureName": "Garbage Disposal",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 9117814,
+    "TrimId": 166453,
+    "PackageId": 3362958,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30005,
+    "FeatureName": "Engine",
+    "AttributeName": "Engine Stroke",
+    "Value": "4-Stroke"
+  },
+  {
+    "CRS_MasterFeaturesId": 384087,
+    "TrimId": 118553,
+    "PackageId": 2852270,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 170004,
+    "FeatureName": "Radio",
+    "AttributeName": "Number Of Radios",
+    "Value": 1
+  },
+  {
+    "CRS_MasterFeaturesId": 13963127,
+    "TrimId": 190948,
+    "PackageId": 3648767,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 160201,
+    "FeatureName": "Interior Decor",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 12313297,
+    "TrimId": 236811,
+    "PackageId": 4165146,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30012,
+    "FeatureName": "Engine",
+    "AttributeName": "Cooling",
+    "Value": "Water (Open Loop)"
+  },
+  {
+    "CRS_MasterFeaturesId": 4141391,
+    "TrimId": 132266,
+    "PackageId": 2999521,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 60001,
+    "FeatureName": "Construction",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 1709063,
+    "TrimId": 146894,
+    "PackageId": 3153672,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 90001,
+    "FeatureName": "Brakes",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 6660643,
+    "TrimId": 61603,
+    "PackageId": 2000619,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 90601,
+    "FeatureName": "Exhaust Brake",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 5286801,
+    "TrimId": 137851,
+    "PackageId": 3055192,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30055,
+    "FeatureName": "Engine",
+    "AttributeName": "Full Throttle RPM Range Low",
+    "Value": 5000
+  },
+  {
+    "CRS_MasterFeaturesId": 4132607,
+    "TrimId": 78911,
+    "PackageId": 2656158,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 152501,
+    "FeatureName": "Rear Video Backup Camera",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 7176899,
+    "TrimId": 132294,
+    "PackageId": 3000113,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 80101,
+    "FeatureName": "Tires",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 9930017,
+    "TrimId": 163506,
+    "PackageId": 3327071,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 272401,
+    "FeatureName": "Sink / Faucet",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 17110140,
+    "TrimId": 217669,
+    "PackageId": 3946193,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 171301,
+    "FeatureName": "VHF Radio",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 15538969,
+    "TrimId": 206762,
+    "PackageId": 3825247,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 290002,
+    "FeatureName": "Air Conditioning",
+    "AttributeName": "Air Conditioning Type",
+    "Value": "Automatic"
+  },
+  {
+    "CRS_MasterFeaturesId": 16775105,
+    "TrimId": 215156,
+    "PackageId": 3906904,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 270107,
+    "FeatureName": "Oven / Stove",
+    "AttributeName": "Layout",
+    "Value": "Oven / Stove"
+  },
+  {
+    "CRS_MasterFeaturesId": 14239991,
+    "TrimId": 211533,
+    "PackageId": 3866361,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 270101,
+    "FeatureName": "Oven / Stove",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 7788706,
+    "TrimId": 208280,
+    "PackageId": 3844932,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 40015,
+    "FeatureName": "Transmission",
+    "AttributeName": "Transmission Brand",
+    "Value": "TorqShift"
+  },
+  {
+    "CRS_MasterFeaturesId": 5131344,
+    "TrimId": 129198,
+    "PackageId": 2976167,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 50603,
+    "FeatureName": "Propane Tank(s)",
+    "AttributeName": "Total Propane Tank Capacity (gal)",
+    "Value": 14.2
+  },
+  {
+    "CRS_MasterFeaturesId": 12160645,
+    "TrimId": 153559,
+    "PackageId": 3213099,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 160001,
+    "FeatureName": "Paint",
+    "AttributeName": "",
+    "Value": "Optional"
+  },
+  {
+    "CRS_MasterFeaturesId": 12833137,
+    "TrimId": 190880,
+    "PackageId": 3647026,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 67101,
+    "FeatureName": "Exterior Washdown",
+    "AttributeName": "",
+    "Value": "Optional"
+  },
+  {
+    "CRS_MasterFeaturesId": 4704497,
+    "TrimId": 94513,
+    "PackageId": 2789516,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 50504,
+    "FeatureName": "Holding Tanks",
+    "AttributeName": "Total Fresh Water Tank Capacity (l)",
+    "Value": 340.7
+  },
+  {
+    "CRS_MasterFeaturesId": 4990056,
+    "TrimId": 72413,
+    "PackageId": 2602456,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 301201,
+    "FeatureName": "Diamond Plated Cargo Area Finish",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 16960955,
+    "TrimId": 217033,
+    "PackageId": 3925779,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 230001,
+    "FeatureName": "Special Package",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 3096630,
+    "TrimId": 141133,
+    "PackageId": 3086177,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 271404,
+    "FeatureName": "Bathroom",
+    "AttributeName": "Bathroom Location",
+    "Value": "Center"
+  },
+  {
+    "CRS_MasterFeaturesId": 16754310,
+    "TrimId": 211726,
+    "PackageId": 3870825,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 170202,
+    "FeatureName": "CD Player",
+    "AttributeName": "Number Of Discs",
+    "Value": 0
+  },
+  {
+    "CRS_MasterFeaturesId": 7330392,
+    "TrimId": 219339,
+    "PackageId": 3963727,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30060,
+    "FeatureName": "Engine",
+    "AttributeName": "Engine Dry Weight (Kg)",
+    "Value": 255
+  },
+  {
+    "CRS_MasterFeaturesId": 2265071,
+    "TrimId": 127879,
+    "PackageId": 2953222,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 50002,
+    "FeatureName": "Dimensions",
+    "AttributeName": "Length (in)",
+    "Value": 391
+  },
+  {
+    "CRS_MasterFeaturesId": 15360500,
+    "TrimId": 189234,
+    "PackageId": 3621917,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10030,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Data Provider",
+    "Value": "CRS"
+  },
+  {
+    "CRS_MasterFeaturesId": 12538483,
+    "TrimId": 190251,
+    "PackageId": 3637443,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10005,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Manufacturer",
+    "Value": "Winnebago"
+  },
+  {
+    "CRS_MasterFeaturesId": 12708495,
+    "TrimId": 152313,
+    "PackageId": 3204932,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 350001,
+    "FeatureName": "Helm",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 13932609,
+    "TrimId": 193590,
+    "PackageId": 3679349,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 271003,
+    "FeatureName": "Beds",
+    "AttributeName": "Number Of Bunk Beds",
+    "Value": 0
+  },
+  {
+    "CRS_MasterFeaturesId": 14944074,
+    "TrimId": 201311,
+    "PackageId": 3752630,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 170201,
+    "FeatureName": "CD Player",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 14130624,
+    "TrimId": 186395,
+    "PackageId": 3604745,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 271103,
+    "FeatureName": "Master Bedroom",
+    "AttributeName": "Master Bedroom Door Style",
+    "Value": "Conventional Door"
+  },
+  {
+    "CRS_MasterFeaturesId": 8024236,
+    "TrimId": 161413,
+    "PackageId": 3313121,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 64902,
+    "FeatureName": "Leveling Jacks",
+    "AttributeName": "Leveling Jack Type",
+    "Value": "Front Manual / Rear Manual"
+  },
+  {
+    "CRS_MasterFeaturesId": 3396230,
+    "TrimId": 71686,
+    "PackageId": 2589247,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 310001,
+    "FeatureName": "Security Alarm",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 529457,
+    "TrimId": 124637,
+    "PackageId": 2908817,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 66101,
+    "FeatureName": "Exterior Wheel Skirts",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 2436535,
+    "TrimId": 25631,
+    "PackageId": 1246245,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 40001,
+    "FeatureName": "Transmission",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 2129556,
+    "TrimId": 83828,
+    "PackageId": 2747612,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 60001,
+    "FeatureName": "Construction",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 16413814,
+    "TrimId": 213434,
+    "PackageId": 3880759,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 64803,
+    "FeatureName": "Awning",
+    "AttributeName": "Awning Length (ft)",
+    "Value": 15
+  },
+  {
+    "CRS_MasterFeaturesId": 16411005,
+    "TrimId": 213399,
+    "PackageId": 3880155,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10043,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Photo Name (Floorplan 2)",
+    "Value": "No_Floorplan_Available.jpg"
+  },
+  {
+    "CRS_MasterFeaturesId": 8140843,
+    "TrimId": 181516,
+    "PackageId": 3535934,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10024,
+    "FeatureName": "Identifiers",
+    "AttributeName": "IsWIP",
+    "Value": "No"
+  },
+  {
+    "CRS_MasterFeaturesId": 9039403,
+    "TrimId": 181126,
+    "PackageId": 3545496,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30105,
+    "FeatureName": "Carburetion",
+    "AttributeName": "Carburetor",
+    "Value": "No"
+  },
+  {
+    "CRS_MasterFeaturesId": 6773444,
+    "TrimId": 157384,
+    "PackageId": 3256191,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 90001,
+    "FeatureName": "Brakes",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 5551043,
+    "TrimId": 68448,
+    "PackageId": 2338625,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 100010,
+    "FeatureName": "Seat",
+    "AttributeName": "Reclining Seats",
+    "Value": "Yes"
+  },
+  {
+    "CRS_MasterFeaturesId": 13357225,
+    "TrimId": 140418,
+    "PackageId": 3073186,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 271801,
+    "FeatureName": "Bathroom Sink",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 5585481,
+    "TrimId": 144938,
+    "PackageId": 3127264,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 180501,
+    "FeatureName": "Trim System",
+    "AttributeName": "",
+    "Value": "Optional"
+  },
+  {
+    "CRS_MasterFeaturesId": 8670744,
+    "TrimId": 181792,
+    "PackageId": 3541597,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 301301,
+    "FeatureName": "Exterior Cargo Deck",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 7428082,
+    "TrimId": 219921,
+    "PackageId": 3970063,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30012,
+    "FeatureName": "Engine",
+    "AttributeName": "Cooling",
+    "Value": "Water (Open Loop)"
+  },
+  {
+    "CRS_MasterFeaturesId": 16894157,
+    "TrimId": 216645,
+    "PackageId": 3916717,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10001,
+    "FeatureName": "Identifiers",
+    "AttributeName": "",
+    "Value": "Optional"
+  },
+  {
+    "CRS_MasterFeaturesId": 11813165,
+    "TrimId": 235727,
+    "PackageId": 4142242,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30105,
+    "FeatureName": "Carburetion",
+    "AttributeName": "Carburetor",
+    "Value": "No"
+  },
+  {
+    "CRS_MasterFeaturesId": 10916349,
+    "TrimId": 231826,
+    "PackageId": 4106487,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 80501,
+    "FeatureName": "Spare Tire Cover",
+    "AttributeName": "",
+    "Value": "Not Available"
+  },
+  {
+    "CRS_MasterFeaturesId": 2015293,
+    "TrimId": 157889,
+    "PackageId": 3264755,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 30001,
+    "FeatureName": "Engine",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 9538012,
+    "TrimId": 228120,
+    "PackageId": 4065964,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 160201,
+    "FeatureName": "Interior Decor",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 3939683,
+    "TrimId": 125491,
+    "PackageId": 2924702,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10046,
+    "FeatureName": "Identifiers",
+    "AttributeName": "Display Name",
+    "Value": "Travel Trailer 1685"
+  },
+  {
+    "CRS_MasterFeaturesId": 10813381,
+    "TrimId": 185835,
+    "PackageId": 3588640,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 50039,
+    "FeatureName": "Dimensions",
+    "AttributeName": "Length (ft/in)",
+    "Value": 11
+  },
+  {
+    "CRS_MasterFeaturesId": 904155,
+    "TrimId": 94751,
+    "PackageId": 2794503,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 10025,
+    "FeatureName": "Identifiers",
+    "AttributeName": "IsPrelim",
+    "Value": "No"
+  },
+  {
+    "CRS_MasterFeaturesId": 3602747,
+    "TrimId": 157426,
+    "PackageId": 3257702,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 170001,
+    "FeatureName": "Radio",
+    "AttributeName": "",
+    "Value": "Standard"
+  },
+  {
+    "CRS_MasterFeaturesId": 15959258,
+    "TrimId": 205196,
+    "PackageId": 3856666,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 160202,
+    "FeatureName": "Interior Decor",
+    "AttributeName": "Wallpaper",
+    "Value": "Yes"
+  },
+  {
+    "CRS_MasterFeaturesId": 7061337,
+    "TrimId": 63267,
+    "PackageId": 2029713,
+    "CreatedDate": "2018-04-21 04:25:59.520",
+    "AttributeId": 65701,
+    "FeatureName": "Exterior Shower",
+    "AttributeName": "",
+    "Value": "Optional"
+  }
+]

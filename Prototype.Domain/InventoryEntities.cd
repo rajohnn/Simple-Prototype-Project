@@ -1,50 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="The STOCK number needs to be kept separate.&#xD;&#xA;VIN is critical.&#xD;&#xA;&#xD;&#xA;Location seems to be used in multipe ways.&#xD;&#xA;&#xD;&#xA;Need colors.&#xD;&#xA;">
+    <Position X="9.514" Y="2.345" Height="1.301" Width="3.101" />
+  </Comment>
   <Class Name="L5.DomainModel.Inventory.Attribute">
     <Position X="0.5" Y="0.5" Width="2.5" />
+    <AssociationLine Name="Feature" Type="L5.DomainModel.Inventory.Feature" FixedFromPoint="true">
+      <Path>
+        <Point X="3" Y="1.75" />
+        <Point X="4" Y="1.75" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgCAAACAA=</HashCode>
-      <FileName>Inventory\Attribute.cs</FileName>
+      <FileName>ProductCatalog\Attribute.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Feature" />
     </ShowAsAssociation>
   </Class>
   <Class Name="L5.DomainModel.Inventory.Feature">
-    <Position X="4" Y="1.5" Width="2.5" />
+    <Position X="4" Y="1" Width="2.5" />
+    <AssociationLine Name="Attributes" Type="L5.DomainModel.Inventory.Attribute" FixedFromPoint="true">
+      <Path>
+        <Point X="4" Y="1.224" />
+        <Point X="3" Y="1.224" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Product" Type="L5.DomainModel.Inventory.Product" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.406" Y="2.65" />
+        <Point X="6.406" Y="4.938" />
+        <Point X="7" Y="4.938" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.653" Y="1.408" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>EACCAAAAAAAAAAAAAAAQAAQQAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Inventory\Feature.cs</FileName>
+      <FileName>ProductCatalog\Feature.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Package" />
+      <Property Name="Product" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Attributes" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="L5.DomainModel.Inventory.MediaAsset">
-    <Position X="10.5" Y="4.75" Width="2" />
+    <Position X="10.5" Y="6.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAACAAAAAACAAAACAAAAAAAAAA=</HashCode>
-      <FileName>Inventory\MediaAsset.cs</FileName>
+      <FileName>ProductCatalog\MediaAsset.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="L5.DomainModel.Inventory.Package">
-    <Position X="4.25" Y="4.25" Width="2" />
+    <Position X="3.75" Y="4.25" Width="2" />
     <TypeIdentifier>
       <HashCode>EAACAAAAAQAAAEAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Inventory\Package.cs</FileName>
+      <FileName>ProductCatalog\Package.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Prices" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="L5.DomainModel.Inventory.Part">
     <Position X="4" Y="10" Width="2" />
     <TypeIdentifier>
       <HashCode>EAACAAAAAAIAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>Inventory\Part.cs</FileName>
+      <FileName>ProductCatalog\Part.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="L5.DomainModel.Inventory.Product">
@@ -52,59 +75,56 @@
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
-    <AssociationLine Name="Assets" Type="L5.DomainModel.Inventory.MediaAsset" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Assets" Type="L5.DomainModel.Inventory.MediaAsset" FixedToPoint="true">
       <Path>
-        <Point X="9" Y="5.749" />
-        <Point X="9.375" Y="5.749" />
-        <Point X="9.375" Y="5.613" />
-        <Point X="10.5" Y="5.613" />
+        <Point X="9" Y="6.938" />
+        <Point X="10.5" Y="6.938" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAEAAQBQAAAAAAAAAAAAQAAAAAAAAAAAggAAIAAAA=</HashCode>
-      <FileName>Inventory\Product.cs</FileName>
+      <HashCode>AAAAEAAQBQAEAAAAAAAAAAQAAAAAAAAAAAggAAIAAAA=</HashCode>
+      <FileName>ProductCatalog\Product.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Property Name="Assets" />
       <Property Name="Identifiers" />
+      <Property Name="Assets" />
+      <Property Name="Prices" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="L5.DomainModel.Inventory.ProductData">
     <Position X="4" Y="7.25" Width="2" />
     <AssociationLine Name="Product" Type="L5.DomainModel.Inventory.Product" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="6" Y="7.36" />
-        <Point X="6.375" Y="7.36" />
-        <Point X="6.375" Y="6.658" />
+        <Point X="5" Y="7.25" />
+        <Point X="5" Y="6.658" />
         <Point X="7" Y="6.658" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="StandardFeatures" Type="L5.DomainModel.Inventory.StandardFeature" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="6" Y="8.076" />
-        <Point X="7.75" Y="8.076" />
+        <Point X="6" Y="8.187" />
+        <Point X="7.75" Y="8.187" />
         <Point X="7.75" Y="8.75" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>EAACAAAAAQAAAAAAABAgAAAAAAAAACAAAAAIAAAAAAA=</HashCode>
-      <FileName>Inventory\ProductData.cs</FileName>
+      <FileName>ProductCatalog\ProductData.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Product" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Property Name="Prices" />
-      <Property Name="Parts" />
       <Property Name="StandardFeatures" />
       <Property Name="MediaAssets" />
+      <Property Name="Parts" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="L5.DomainModel.Inventory.ReferenceCode">
     <Position X="0.5" Y="5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAACAAAAAgAIAAAAA=</HashCode>
-      <FileName>Inventory\ReferenceCode.cs</FileName>
+      <FileName>ProductCatalog\ReferenceCode.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ReferenceCodeType" />
@@ -113,8 +133,8 @@
   <Class Name="L5.DomainModel.Inventory.ReferenceCodeConfiguration">
     <Position X="0.5" Y="2.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
-      <FileName>Inventory\ReferenceCode.cs</FileName>
+      <HashCode>AAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAA=</HashCode>
+      <FileName>ProductCatalog\ReferenceCode.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ReferenceCode" />
@@ -124,14 +144,14 @@
     <Position X="0.5" Y="7.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Inventory\ReferenceCode.cs</FileName>
+      <FileName>ProductCatalog\ReferenceCode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="L5.DomainModel.Inventory.ReferenceCodeTypeConfiguration">
     <Position X="0.5" Y="9.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAACAAAAAAAIAAAAA=</HashCode>
-      <FileName>Inventory\ReferenceCode.cs</FileName>
+      <FileName>ProductCatalog\ReferenceCode.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ReferenceCodeType" />
@@ -141,7 +161,7 @@
     <Position X="7" Y="8.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Inventory\StandardFeature.cs</FileName>
+      <FileName>ProductCatalog\StandardFeature.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="L5.DomainModel.Identifiers">
@@ -149,6 +169,23 @@
     <TypeIdentifier>
       <HashCode>EAACAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Base.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.ProductCatalog.Price">
+    <Position X="10.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAABAAIQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ProductCatalog\Price.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PriceType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Prototype.Domain.ProductCatalog.PriceType">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductCatalog\Price.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Calibri" Size="10" />

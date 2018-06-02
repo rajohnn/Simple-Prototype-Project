@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Claims;
@@ -23,6 +24,8 @@ namespace Prototype.Domain {
 
         [ForeignKey("DataPartitionId")]
         public virtual DataPartition DataPartition { get; set; }
+
+        public List<UserLocation> UserLocations { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager) {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType

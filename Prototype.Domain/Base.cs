@@ -27,12 +27,15 @@ namespace L5.DomainModel {
         public DateTimeOffset? DateModified { get; set; }
         public string LastModifiedBy { get; set; }
     }
-
-    public abstract class InventoryEntity : SystemEntity {
+    /// <summary>
+    /// TODO: Need to determine if inventory is set for a specific location, or a group.
+    /// </summary>
+    public abstract class ProductCatalogEntity : SystemEntity {
 
         [Column(TypeName = "NVARCHAR")]
         [StringLength(100)]
-        public string ExternalMasterId { get; set; }        
+        public string ExternalMasterId { get; set; } 
+        public bool IsFromDatabase { get; set; }
     }
 
     public class Identifiers : SystemEntity {
@@ -58,7 +61,7 @@ namespace L5.DomainModel {
 
         [Column(TypeName = "NVARCHAR")]
         [StringLength(100)]
-        public string Subdomain { get; set; }
+        public string DealershipUrl { get; set; }
 
         [Column(TypeName = "NVARCHAR")]
         [StringLength(200)]

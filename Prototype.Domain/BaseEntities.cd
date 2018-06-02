@@ -21,7 +21,7 @@
       <FileName>Base.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="L5.DomainModel.InventoryEntity">
+  <Class Name="L5.DomainModel.ProductCatalogEntity">
     <Position X="1.75" Y="4.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>

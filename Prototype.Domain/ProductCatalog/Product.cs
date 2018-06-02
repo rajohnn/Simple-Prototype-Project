@@ -1,10 +1,12 @@
+using Prototype.Domain.ProductCatalog;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace L5.DomainModel.Inventory {
 
-    public class Product : InventoryEntity {
+    public class Product : ProductCatalogEntity {
+        public string StockNumber { get; set; }
         public List<Identifiers> Identifiers { get; set; }
         public int? Year { get; set; }
         public int? ProductTypeId { get; set; }
@@ -19,7 +21,7 @@ namespace L5.DomainModel.Inventory {
         [StringLength(100)]
         public string DisplayName { get; set; }
 
-        public List<ReferenceCode> Prices { get; set; } = new List<ReferenceCode>();
+        public List<Price> Prices { get; set; } = new List<Price>();
 
         [ForeignKey("ProductTypeId")]
         public ReferenceCode ProductType { get; set; }

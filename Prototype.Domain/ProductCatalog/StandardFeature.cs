@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace L5.DomainModel.Inventory {
 
-    public class StandardFeature : InventoryEntity {
+    public class StandardFeature : ProductCatalogEntity {
 
         [Column(TypeName = "NVARCHAR")]
         [StringLength(250)]

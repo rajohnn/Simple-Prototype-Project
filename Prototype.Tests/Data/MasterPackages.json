@@ -1,0 +1,902 @@
+[
+  {
+    "CRS_MasterPackageId": 433862,
+    "PackageId": 3334789,
+    "TrimId": 164068,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-AIRBED",
+    "PackageTitle": "Hide A Bed Sofa",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 394537,
+    "PackageId": 3261769,
+    "TrimId": 157706,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#EXT-JACK",
+    "PackageTitle": "Stabilizer Jacks",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 519096,
+    "PackageId": 3522361,
+    "TrimId": 180598,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-AUBURN",
+    "PackageTitle": "Auburn Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 359283,
+    "PackageId": 3197815,
+    "TrimId": 151959,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INSTRU-FF300",
+    "PackageTitle": "Echo 300 Garmin Fish Finder/Depth Graph",
+    "MSRP": 278
+  },
+  {
+    "CRS_MasterPackageId": 401286,
+    "PackageId": 3277468,
+    "TrimId": 158362,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#ENG-YAM-150-FXA-1",
+    "PackageTitle": "Yamaha Four Stroke In-Line F150XA (150HP)",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 828196,
+    "PackageId": 4101135,
+    "TrimId": 231375,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#ENG-MER-430-B3X-HO-1",
+    "PackageTitle": "Mercury MerCruiser 8.2L MAG H.O. ECT Bravo Three X?? (430HP)",
+    "MSRP": 23430
+  },
+  {
+    "CRS_MasterPackageId": 37495,
+    "PackageId": 1676880,
+    "TrimId": 45132,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#AC15",
+    "PackageTitle": "15000 BTU Air Conditioner with Heat Pump",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 641409,
+    "PackageId": 3749756,
+    "TrimId": 201169,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#FSH-RODHOLD",
+    "PackageTitle": "Rod Holders",
+    "MSRP": 333
+  },
+  {
+    "CRS_MasterPackageId": 573564,
+    "PackageId": 3626837,
+    "TrimId": 189569,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-OVEN",
+    "PackageTitle": "17 Inch Oven",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 692131,
+    "PackageId": 3854670,
+    "TrimId": 210515,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-TAN-BRWN",
+    "PackageTitle": "Italian Cream HD-MAXƒ?› Exterior Color",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 4738,
+    "PackageId": 1252725,
+    "TrimId": 25859,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "STD",
+    "PackageTitle": "Standard Package",
+    "MSRP": 79870
+  },
+  {
+    "CRS_MasterPackageId": 192018,
+    "PackageId": 2850056,
+    "TrimId": 117217,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#EXT-AUTOJKS",
+    "PackageTitle": "6-Point Hydraulic Auto Leveling System",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 606264,
+    "PackageId": 3685414,
+    "TrimId": 194927,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-BLU-SIL",
+    "PackageTitle": "Harbor Full-Body Exterior",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 41070,
+    "PackageId": 1915550,
+    "TrimId": 50862,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#LIGHTS-FLOOD",
+    "PackageTitle": "Spotlight with Remote Control",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 317437,
+    "PackageId": 3127430,
+    "TrimId": 144955,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TOP-PUMPHEAD",
+    "PackageTitle": "Pump Out Fittings For Chemical Head",
+    "MSRP": 177
+  },
+  {
+    "CRS_MasterPackageId": 17520,
+    "PackageId": 1488235,
+    "TrimId": 31686,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#REFRIGE",
+    "PackageTitle": "2-Door Refrigerator",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 783401,
+    "PackageId": 4022092,
+    "TrimId": 224612,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#AUD-BEDTV",
+    "PackageTitle": "24 Inch Bedroom TV",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 634421,
+    "PackageId": 3737180,
+    "TrimId": 199234,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-BLUFL",
+    "PackageTitle": "Blue Flame Exterior Color",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 435654,
+    "PackageId": 3338929,
+    "TrimId": 164308,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-CENVAC",
+    "PackageTitle": "Central Vac",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 55755,
+    "PackageId": 1978474,
+    "TrimId": 54940,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#GOLDVISTA",
+    "PackageTitle": "Golden Vista Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 369949,
+    "PackageId": 3213362,
+    "TrimId": 153573,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-SAHARA",
+    "PackageTitle": "Sahara Interior Decor",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 242271,
+    "PackageId": 2976846,
+    "TrimId": 129275,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#EXT-SCRNRM",
+    "PackageTitle": "Screen Room",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 102619,
+    "PackageId": 2570358,
+    "TrimId": 70697,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-ADOB",
+    "PackageTitle": "Adobe Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 695677,
+    "PackageId": 3861512,
+    "TrimId": 211184,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#HVAC-15K",
+    "PackageTitle": "15000 BTU Air Conditioner",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 838041,
+    "PackageId": 4115164,
+    "TrimId": 232781,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TOP-CAPCHAIR",
+    "PackageTitle": "High Back Captain's Chair",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 582036,
+    "PackageId": 3643087,
+    "TrimId": 190540,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#AUD-DISH",
+    "PackageTitle": "Winegard Travler Satellite Antenna - Direct TV",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 574973,
+    "PackageId": 3632464,
+    "TrimId": 189976,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "R747-###",
+    "PackageTitle": "Full Transom Seat with Protective Cover Folding",
+    "MSRP": 1523
+  },
+  {
+    "CRS_MasterPackageId": 109723,
+    "PackageId": 2586017,
+    "TrimId": 71419,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#SPK-PRESTIGE",
+    "PackageTitle": "Prestige Package",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 754450,
+    "PackageId": 3962966,
+    "TrimId": 219289,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-CHAMBRAY",
+    "PackageTitle": "Chambray Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 563889,
+    "PackageId": 3609891,
+    "TrimId": 186822,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#ELE-GEN",
+    "PackageTitle": "5.5 Kw Generator",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 125901,
+    "PackageId": 2623258,
+    "TrimId": 73509,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#AUD-19LCDTV",
+    "PackageTitle": "LCD TV (19-Inch)",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 45810,
+    "PackageId": 1924718,
+    "TrimId": 51242,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#VACUUM",
+    "PackageTitle": "Central Vacuum System",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 851766,
+    "PackageId": 4133761,
+    "TrimId": 233509,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TOW-TRLUPGRD",
+    "PackageTitle": "Trailer Upgrade",
+    "MSRP": 1630
+  },
+  {
+    "CRS_MasterPackageId": 434483,
+    "PackageId": 3336077,
+    "TrimId": 164149,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-BLK-TAN",
+    "PackageTitle": "Vineyard Full-Body Exterior",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 492077,
+    "PackageId": 3454429,
+    "TrimId": 174365,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#EXT-SKYLGHT",
+    "PackageTitle": "Skylight in Kitchen/Living Room",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 64795,
+    "PackageId": 2006628,
+    "TrimId": 62172,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-2LEATHERREC",
+    "PackageTitle": "Two Leather Recliners ILO of Fabric Recliners",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 858481,
+    "PackageId": 4147467,
+    "TrimId": 235837,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-CBBLUE",
+    "PackageTitle": "Blue Color Band",
+    "MSRP": 621
+  },
+  {
+    "CRS_MasterPackageId": 273881,
+    "PackageId": 3044273,
+    "TrimId": 137333,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#EXT-KITCH",
+    "PackageTitle": "Exterior Camp Kitchen",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 254747,
+    "PackageId": 3002528,
+    "TrimId": 132382,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-SOFAHIDE",
+    "PackageTitle": "Hide-A-Bed Sofa",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 120055,
+    "PackageId": 2610681,
+    "TrimId": 72846,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-NTAN",
+    "PackageTitle": "Nutmeg Tan Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 314511,
+    "PackageId": 3120348,
+    "TrimId": 144640,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-WHITE",
+    "PackageTitle": "White Exterior Color",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 359684,
+    "PackageId": 3198818,
+    "TrimId": 151974,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-LAZY",
+    "PackageTitle": "La-Z-Boy Recliner IPO Swivel Rocker Chair",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 161252,
+    "PackageId": 2748725,
+    "TrimId": 83916,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-MIDNIGHT",
+    "PackageTitle": "Midnight Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 779175,
+    "PackageId": 4014306,
+    "TrimId": 224117,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TOP-SIDESEAT",
+    "PackageTitle": "30-In. Bow Gate Seat",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 776170,
+    "PackageId": 4007966,
+    "TrimId": 223823,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-SLV-BLUE",
+    "PackageTitle": "Silver Metallic / Storm Blue Metallic",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 555317,
+    "PackageId": 3592077,
+    "TrimId": 185957,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-POWFAN",
+    "PackageTitle": "MaxxAir Vent?? Fan System",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 769884,
+    "PackageId": 3997115,
+    "TrimId": 222380,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#SPE-PERFPKG",
+    "PackageTitle": "Performance Package Third Tube",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 228281,
+    "PackageId": 2947982,
+    "TrimId": 127632,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#EXT-SHOWER",
+    "PackageTitle": "Exterior Wash Unit",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 802035,
+    "PackageId": 4060515,
+    "TrimId": 227531,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-CENTVAC",
+    "PackageTitle": "Central Vac System",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 706253,
+    "PackageId": 3878492,
+    "TrimId": 213299,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-EXTCM",
+    "PackageTitle": "Caramel Mocha Upgrade Exterior Color",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 743312,
+    "PackageId": 3942450,
+    "TrimId": 217482,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#ENG-EVN-250-XH-1",
+    "PackageTitle": "Evinrude 250HP HO G2 - V6 E250XH (250HP)",
+    "MSRP": 5800
+  },
+  {
+    "CRS_MasterPackageId": 319056,
+    "PackageId": 3131907,
+    "TrimId": 145561,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "STD",
+    "PackageTitle": "Standard Package",
+    "MSRP": 146300
+  },
+  {
+    "CRS_MasterPackageId": 366016,
+    "PackageId": 3206617,
+    "TrimId": 152387,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TECH-PROPANE",
+    "PackageTitle": "30-lb. Propane Tanks",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 729974,
+    "PackageId": 3913739,
+    "TrimId": 216531,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INS-FSHFND-SIM",
+    "PackageTitle": "Simrad GO 5 GPS Chartplotter with Sonar",
+    "MSRP": 630
+  },
+  {
+    "CRS_MasterPackageId": 93487,
+    "PackageId": 2657642,
+    "TrimId": 67998,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-CHESTNUT",
+    "PackageTitle": "Chestnut Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 566462,
+    "PackageId": 3614341,
+    "TrimId": 187040,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#AUD-DISHCA",
+    "PackageTitle": "Canadian Shaw Travler Satellite Dish - Direct TV",
+    "MSRP": 1757
+  },
+  {
+    "CRS_MasterPackageId": 456062,
+    "PackageId": 3384394,
+    "TrimId": 167317,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-MICROWAVE",
+    "PackageTitle": "Microwave",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 89004,
+    "PackageId": 2319136,
+    "TrimId": 67588,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#HVAC-WATER10",
+    "PackageTitle": "10 Gallon Gas/Electric Water Heater with DSI",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 626333,
+    "PackageId": 3720572,
+    "TrimId": 198250,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#ELE-DOCKPWR220V",
+    "PackageTitle": "220V Dockside Power And Battery Charger",
+    "MSRP": 2010
+  },
+  {
+    "CRS_MasterPackageId": 375059,
+    "PackageId": 3223147,
+    "TrimId": 154940,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#ENG-MER-250XL-V",
+    "PackageTitle": "Mercury?? 250XL L6 DTS Verado (250HP)",
+    "MSRP": 1351
+  },
+  {
+    "CRS_MasterPackageId": 692994,
+    "PackageId": 3857378,
+    "TrimId": 210689,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#GRILL",
+    "PackageTitle": "Outside Gas Grill and Work Table",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 253653,
+    "PackageId": 2999567,
+    "TrimId": 132274,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-HAZELNUT",
+    "PackageTitle": "Hazelnut Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 842161,
+    "PackageId": 4120623,
+    "TrimId": 232975,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INS-GPS",
+    "PackageTitle": "Humminbird?? Fish Finder - Various Styles",
+    "MSRP": 528
+  },
+  {
+    "CRS_MasterPackageId": 501636,
+    "PackageId": 3478861,
+    "TrimId": 175311,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT SEAGL",
+    "PackageTitle": "Sea Glass",
+    "MSRP": 4575
+  },
+  {
+    "CRS_MasterPackageId": 552990,
+    "PackageId": 3583754,
+    "TrimId": 184715,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-EARLYAUT",
+    "PackageTitle": "Early Autumn Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 746197,
+    "PackageId": 3948993,
+    "TrimId": 217754,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TECH-PROPANE",
+    "PackageTitle": "Dual Propane Tank",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 771142,
+    "PackageId": 4000060,
+    "TrimId": 223058,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#HVAC-AC-BED",
+    "PackageTitle": "13500 BTU A/C Bedroom",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 388293,
+    "PackageId": 3251065,
+    "TrimId": 157154,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-INTCAFE",
+    "PackageTitle": "Cafe Au Lait Interior Decor",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 58037,
+    "PackageId": 1984818,
+    "TrimId": 55319,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-WHT",
+    "PackageTitle": "White Exterior Color",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 551951,
+    "PackageId": 3580161,
+    "TrimId": 184574,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-TFEDELGT",
+    "PackageTitle": "Toffee Delight Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 80910,
+    "PackageId": 2297934,
+    "TrimId": 66845,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#AUD-19LCDTV",
+    "PackageTitle": "LCD/HD TV (19-Inch)",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 290764,
+    "PackageId": 3077292,
+    "TrimId": 140636,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-DINETT",
+    "PackageTitle": "Free Standing Dinette",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 381840,
+    "PackageId": 3238647,
+    "TrimId": 156773,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TOP-FLSEAWEAVE",
+    "PackageTitle": "Sea Weave Floor",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 422755,
+    "PackageId": 3310519,
+    "TrimId": 161327,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#FISH-LIVE",
+    "PackageTitle": "Recirculating Livewell",
+    "MSRP": 50
+  },
+  {
+    "CRS_MasterPackageId": 530762,
+    "PackageId": 3541568,
+    "TrimId": 181788,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-DINETTE",
+    "PackageTitle": "Free Standing Dinette with 4 Chairs",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 222655,
+    "PackageId": 2933810,
+    "TrimId": 125787,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-GUNFLAKE-CUSTOM",
+    "PackageTitle": "Gunmetal Flake / Custom Combination",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 281352,
+    "PackageId": 3059582,
+    "TrimId": 138058,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#INT-VINYL",
+    "PackageTitle": "Beau Floor Vinyl Flooring",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 90147,
+    "PackageId": 2323612,
+    "TrimId": 67692,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-ESPRESS",
+    "PackageTitle": "Espresso Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 622043,
+    "PackageId": 3713277,
+    "TrimId": 197942,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TOP-BIMINI2",
+    "PackageTitle": "Double Top (Second Bimini Top)",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 558511,
+    "PackageId": 3600848,
+    "TrimId": 186254,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#ENG-MER-200-VDP-L",
+    "PackageTitle": "Mercury Verado 200HP Pro 200 L (200HP)",
+    "MSRP": 19160
+  },
+  {
+    "CRS_MasterPackageId": 864910,
+    "PackageId": 4163841,
+    "TrimId": 236775,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-LBRICK",
+    "PackageTitle": "Light Brick Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 205177,
+    "PackageId": 2889519,
+    "TrimId": 122329,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#HVAC-AC",
+    "PackageTitle": "15,000 BTU Air Conditioner",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 837581,
+    "PackageId": 4117454,
+    "TrimId": 232758,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#EXT-SHWR-BW",
+    "PackageTitle": "Fresh Water Washdown (Bow)",
+    "MSRP": 382
+  },
+  {
+    "CRS_MasterPackageId": 814763,
+    "PackageId": 4080629,
+    "TrimId": 229436,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "STD",
+    "PackageTitle": "Standard Package",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 190393,
+    "PackageId": 2845439,
+    "TrimId": 116416,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-CARAMEL",
+    "PackageTitle": "Caramel Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 238501,
+    "PackageId": 2977957,
+    "TrimId": 128842,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#HVAC-15AC",
+    "PackageTitle": "15000 BTU Ducted Roof Air Conditioner",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 428381,
+    "PackageId": 3323198,
+    "TrimId": 162939,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-CANYON",
+    "PackageTitle": "Canyon Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 551423,
+    "PackageId": 3578378,
+    "TrimId": 184503,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#EXT-LADDER",
+    "PackageTitle": "Roof Ladder",
+    "MSRP": 97
+  },
+  {
+    "CRS_MasterPackageId": 668545,
+    "PackageId": 3808762,
+    "TrimId": 205102,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TOP-FLVIN",
+    "PackageTitle": "Vinyl Floor Upgrade - Various Styles",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 204759,
+    "PackageId": 2888305,
+    "TrimId": 122289,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "STD",
+    "PackageTitle": "Standard Package",
+    "MSRP": 19020
+  },
+  {
+    "CRS_MasterPackageId": 358211,
+    "PackageId": 3196571,
+    "TrimId": 151915,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#TPS-BOWCUSH",
+    "PackageTitle": "Bow Filler Cushion",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 455450,
+    "PackageId": 3384423,
+    "TrimId": 167281,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#905694",
+    "PackageTitle": "Blackout Edition",
+    "MSRP": 2465
+  },
+  {
+    "CRS_MasterPackageId": 826297,
+    "PackageId": 4098126,
+    "TrimId": 231233,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-SHIMMER(1)",
+    "PackageTitle": "Solitaire Azul Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 534669,
+    "PackageId": 3550150,
+    "TrimId": 183250,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#901014",
+    "PackageTitle": "Echo 300 Garmin Fish Finder/Depth Graph",
+    "MSRP": 531
+  },
+  {
+    "CRS_MasterPackageId": 245214,
+    "PackageId": 2986696,
+    "TrimId": 129652,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#DEC-SILVER",
+    "PackageTitle": "Silver Birch Interior Decor",
+    "MSRP": 0
+  },
+  {
+    "CRS_MasterPackageId": 509674,
+    "PackageId": 3500750,
+    "TrimId": 178497,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#SKI-TOW",
+    "PackageTitle": "Custom Aluminum Ski Pylon",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 357358,
+    "PackageId": 3195538,
+    "TrimId": 151855,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-BLACK",
+    "PackageTitle": "Deepwater Black",
+    "MSRP": 788
+  },
+  {
+    "CRS_MasterPackageId": 436688,
+    "PackageId": 3341373,
+    "TrimId": 164388,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-DUNE",
+    "PackageTitle": "Dune",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 777399,
+    "PackageId": 4010009,
+    "TrimId": 223902,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#PNT-TAN-WHT",
+    "PackageTitle": "High Roller HD-MAXƒ?› Partial-Paint Exterior Color",
+    "MSRP": "TBA"
+  },
+  {
+    "CRS_MasterPackageId": 700517,
+    "PackageId": 3868580,
+    "TrimId": 211617,
+    "CreatedDate": "2018-04-21 04:26:38.090",
+    "PackageCode": "#SPG-CLIMATEF",
+    "PackageTitle": "Climate Package with Full Foil Wrap",
+    "MSRP": 742
+  }
+]

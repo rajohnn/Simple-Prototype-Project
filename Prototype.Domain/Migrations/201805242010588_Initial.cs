@@ -39,6 +39,7 @@ namespace Prototype.Domain.Migrations
                         Value = c.String(maxLength: 100),
                         DisplayValue = c.String(maxLength: 100),
                         ExternalMasterId = c.String(maxLength: 100),
+                        IsFromDatabase = c.Boolean(nullable: false),
                         DateCreated = c.DateTimeOffset(precision: 7),
                         DateModified = c.DateTimeOffset(precision: 7),
                         LastModifiedBy = c.String(),
@@ -57,6 +58,7 @@ namespace Prototype.Domain.Migrations
                         PackageId = c.Int(),
                         Name = c.String(maxLength: 100),
                         ExternalMasterId = c.String(maxLength: 100),
+                        IsFromDatabase = c.Boolean(nullable: false),
                         DateCreated = c.DateTimeOffset(precision: 7),
                         DateModified = c.DateTimeOffset(precision: 7),
                         LastModifiedBy = c.String(),
@@ -77,6 +79,7 @@ namespace Prototype.Domain.Migrations
                         Code = c.String(maxLength: 100),
                         Title = c.String(maxLength: 100),
                         ExternalMasterId = c.String(maxLength: 100),
+                        IsFromDatabase = c.Boolean(nullable: false),
                         DateCreated = c.DateTimeOffset(precision: 7),
                         DateModified = c.DateTimeOffset(precision: 7),
                         LastModifiedBy = c.String(),
@@ -87,38 +90,46 @@ namespace Prototype.Domain.Migrations
                 .Index(t => t.ProductId);
             
             CreateTable(
-                "dbo.ReferenceCode",
+                "dbo.Price",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Value = c.String(maxLength: 100),
-                        Description = c.String(maxLength: 500),
-                        ReferenceCodeTypeId = c.Int(nullable: false),
+                        PriceTypeId = c.Int(),
+                        Name = c.String(),
+                        Value = c.Decimal(precision: 18, scale: 2),
+                        SuggestedValue = c.Decimal(precision: 18, scale: 2),
+                        ExternalMasterId = c.String(maxLength: 100),
+                        IsFromDatabase = c.Boolean(nullable: false),
                         DateCreated = c.DateTimeOffset(precision: 7),
                         DateModified = c.DateTimeOffset(precision: 7),
                         LastModifiedBy = c.String(),
                         IsDeleted = c.Boolean(nullable: false),
                         Package_Id = c.Int(),
-                        CustomPackage_Id = c.Int(),
+                        Product_Id = c.Int(),
                         ProductData_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.ReferenceCodeType", t => t.ReferenceCodeTypeId)
+                .ForeignKey("dbo.PriceType", t => t.PriceTypeId)
                 .ForeignKey("dbo.Package", t => t.Package_Id)
-                .ForeignKey("dbo.CustomPackage", t => t.CustomPackage_Id)
+                .ForeignKey("dbo.Product", t => t.Product_Id)
                 .ForeignKey("dbo.ProductData", t => t.ProductData_Id)
-                .Index(t => t.ReferenceCodeTypeId)
+                .Index(t => t.PriceTypeId)
                 .Index(t => t.Package_Id)
-                .Index(t => t.CustomPackage_Id)
+                .Index(t => t.Product_Id)
                 .Index(t => t.ProductData_Id);
             
             CreateTable(
-                "dbo.ReferenceCodeType",
+                "dbo.PriceType",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(maxLength: 50),
+                        Name = c.String(),
                         Description = c.String(),
+                        ExternalMasterId = c.String(maxLength: 100),
+                        IsFromDatabase = c.Boolean(nullable: false),
+                        DateCreated = c.DateTimeOffset(precision: 7),
+                        DateModified = c.DateTimeOffset(precision: 7),
+                        LastModifiedBy = c.String(),
                         IsDeleted = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
@@ -128,6 +139,7 @@ namespace Prototype.Domain.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        StockNumber = c.String(),
                         Year = c.Int(),
                         ProductTypeId = c.Int(),
                         Make = c.String(),
@@ -135,6 +147,7 @@ namespace Prototype.Domain.Migrations
                         Name = c.String(maxLength: 100),
                         DisplayName = c.String(maxLength: 100),
                         ExternalMasterId = c.String(maxLength: 100),
+                        IsFromDatabase = c.Boolean(nullable: false),
                         DateCreated = c.DateTimeOffset(precision: 7),
                         DateModified = c.DateTimeOffset(precision: 7),
                         LastModifiedBy = c.String(),
@@ -166,6 +179,37 @@ namespace Prototype.Domain.Migrations
                 .Index(t => t.MediaAssetTypeId)
                 .Index(t => t.Product_Id)
                 .Index(t => t.ProductData_Id);
+            
+            CreateTable(
+                "dbo.ReferenceCode",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Value = c.String(maxLength: 100),
+                        Description = c.String(maxLength: 500),
+                        ReferenceCodeTypeId = c.Int(nullable: false),
+                        DateCreated = c.DateTimeOffset(precision: 7),
+                        DateModified = c.DateTimeOffset(precision: 7),
+                        LastModifiedBy = c.String(),
+                        IsDeleted = c.Boolean(nullable: false),
+                        CustomPackage_Id = c.Int(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.ReferenceCodeType", t => t.ReferenceCodeTypeId)
+                .ForeignKey("dbo.CustomPackage", t => t.CustomPackage_Id)
+                .Index(t => t.ReferenceCodeTypeId)
+                .Index(t => t.CustomPackage_Id);
+            
+            CreateTable(
+                "dbo.ReferenceCodeType",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(maxLength: 50),
+                        Description = c.String(),
+                        IsDeleted = c.Boolean(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.Identifiers",
@@ -347,6 +391,7 @@ namespace Prototype.Domain.Migrations
                         ProductId = c.Int(),
                         SalesStatus = c.String(maxLength: 100),
                         ExternalMasterId = c.String(maxLength: 100),
+                        IsFromDatabase = c.Boolean(nullable: false),
                         DateCreated = c.DateTimeOffset(precision: 7),
                         DateModified = c.DateTimeOffset(precision: 7),
                         LastModifiedBy = c.String(),
@@ -366,6 +411,7 @@ namespace Prototype.Domain.Migrations
                         Name = c.String(maxLength: 100),
                         Value = c.String(maxLength: 100),
                         ExternalMasterId = c.String(maxLength: 100),
+                        IsFromDatabase = c.Boolean(nullable: false),
                         DateCreated = c.DateTimeOffset(precision: 7),
                         DateModified = c.DateTimeOffset(precision: 7),
                         LastModifiedBy = c.String(),
@@ -385,6 +431,7 @@ namespace Prototype.Domain.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Description = c.String(maxLength: 250),
                         ExternalMasterId = c.String(maxLength: 100),
+                        IsFromDatabase = c.Boolean(nullable: false),
                         DateCreated = c.DateTimeOffset(precision: 7),
                         DateModified = c.DateTimeOffset(precision: 7),
                         LastModifiedBy = c.String(),
@@ -422,12 +469,37 @@ namespace Prototype.Domain.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(maxLength: 100),
+                        DisplayName = c.String(maxLength: 100),
                         DataPartitionId = c.Int(),
+                        AllowsInventory = c.Boolean(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
+                        Location_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Location", t => t.Location_Id)
                 .ForeignKey("dbo.DataPartition", t => t.DataPartitionId)
-                .Index(t => t.DataPartitionId);
+                .Index(t => t.DataPartitionId)
+                .Index(t => t.Location_Id);
+            
+            CreateTable(
+                "dbo.Address",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        AddressTypeId = c.Int(),
+                        Address1 = c.String(),
+                        Address2 = c.String(),
+                        City = c.String(),
+                        State = c.String(),
+                        PostalCode = c.String(),
+                        IsDeleted = c.Boolean(nullable: false),
+                        Location_Id = c.Int(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.ReferenceCode", t => t.AddressTypeId)
+                .ForeignKey("dbo.Location", t => t.Location_Id)
+                .Index(t => t.AddressTypeId)
+                .Index(t => t.Location_Id);
             
             CreateTable(
                 "dbo.DataPartition",
@@ -603,20 +675,7 @@ namespace Prototype.Domain.Migrations
                 .PrimaryKey(t => new { t.LoginProvider, t.ProviderKey, t.UserId })
                 .ForeignKey("dbo.AspNetUsers", t => t.UserId)
                 .Index(t => t.UserId);
-
-            CreateTable(
-                "dbo.LocationGraph",
-                c => new
-                {
-                    Parent = c.Int(nullable: false),
-                    Child = c.Int(nullable: false),
-                })
-                .PrimaryKey(t => new { t.Parent, t.Child })
-                .ForeignKey("dbo.Location", t => t.Parent)
-                .ForeignKey("dbo.Location", t => t.Child)
-                .Index(t => t.Parent)
-                .Index(t => t.Child);
-
+            
         }
         
         public override void Down()
@@ -630,13 +689,14 @@ namespace Prototype.Domain.Migrations
             DropForeignKey("dbo.PartConfiguration", "PartId", "dbo.Part");
             DropForeignKey("dbo.PackageConfiguration", "PackageId", "dbo.Package");
             DropForeignKey("dbo.MediaAssetConfiguration", "MediaAssetId", "dbo.MediaAsset");
-            DropForeignKey("dbo.LocationLocation", "Location_Id1", "dbo.Location");
-            DropForeignKey("dbo.LocationLocation", "Location_Id", "dbo.Location");
             DropForeignKey("dbo.Location", "DataPartitionId", "dbo.DataPartition");
+            DropForeignKey("dbo.Location", "Location_Id", "dbo.Location");
+            DropForeignKey("dbo.Address", "Location_Id", "dbo.Location");
+            DropForeignKey("dbo.Address", "AddressTypeId", "dbo.ReferenceCode");
             DropForeignKey("dbo.FeatureConfiguration", "FeatureId", "dbo.Feature");
             DropForeignKey("dbo.StandardFeature", "ProductData_Id", "dbo.ProductData");
             DropForeignKey("dbo.ProductData", "ProductId", "dbo.Product");
-            DropForeignKey("dbo.ReferenceCode", "ProductData_Id", "dbo.ProductData");
+            DropForeignKey("dbo.Price", "ProductData_Id", "dbo.ProductData");
             DropForeignKey("dbo.Part", "ProductData_Id", "dbo.ProductData");
             DropForeignKey("dbo.Part", "ProductId", "dbo.Product");
             DropForeignKey("dbo.MediaAsset", "ProductData_Id", "dbo.ProductData");
@@ -653,14 +713,14 @@ namespace Prototype.Domain.Migrations
             DropForeignKey("dbo.Feature", "PackageId", "dbo.Package");
             DropForeignKey("dbo.Package", "ProductId", "dbo.Product");
             DropForeignKey("dbo.Product", "ProductTypeId", "dbo.ReferenceCode");
+            DropForeignKey("dbo.Price", "Product_Id", "dbo.Product");
             DropForeignKey("dbo.Identifiers", "ProductId", "dbo.Product");
             DropForeignKey("dbo.MediaAsset", "Product_Id", "dbo.Product");
             DropForeignKey("dbo.MediaAsset", "MediaAssetTypeId", "dbo.ReferenceCode");
-            DropForeignKey("dbo.ReferenceCode", "Package_Id", "dbo.Package");
             DropForeignKey("dbo.ReferenceCode", "ReferenceCodeTypeId", "dbo.ReferenceCodeType");
+            DropForeignKey("dbo.Price", "Package_Id", "dbo.Package");
+            DropForeignKey("dbo.Price", "PriceTypeId", "dbo.PriceType");
             DropForeignKey("dbo.Attribute", "FeatureId", "dbo.Feature");
-            DropIndex("dbo.LocationLocation", new[] { "Location_Id1" });
-            DropIndex("dbo.LocationLocation", new[] { "Location_Id" });
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
@@ -672,6 +732,9 @@ namespace Prototype.Domain.Migrations
             DropIndex("dbo.PartConfiguration", new[] { "PartId" });
             DropIndex("dbo.PackageConfiguration", new[] { "PackageId" });
             DropIndex("dbo.MediaAssetConfiguration", new[] { "MediaAssetId" });
+            DropIndex("dbo.Address", new[] { "Location_Id" });
+            DropIndex("dbo.Address", new[] { "AddressTypeId" });
+            DropIndex("dbo.Location", new[] { "Location_Id" });
             DropIndex("dbo.Location", new[] { "DataPartitionId" });
             DropIndex("dbo.FeatureConfiguration", new[] { "FeatureId" });
             DropIndex("dbo.StandardFeature", new[] { "ProductData_Id" });
@@ -686,20 +749,21 @@ namespace Prototype.Domain.Migrations
             DropIndex("dbo.CustomFeature", new[] { "ProductId" });
             DropIndex("dbo.CustomAttribute", new[] { "CustomFeature_Id" });
             DropIndex("dbo.Identifiers", new[] { "ProductId" });
+            DropIndex("dbo.ReferenceCode", new[] { "CustomPackage_Id" });
+            DropIndex("dbo.ReferenceCode", new[] { "ReferenceCodeTypeId" });
             DropIndex("dbo.MediaAsset", new[] { "ProductData_Id" });
             DropIndex("dbo.MediaAsset", new[] { "Product_Id" });
             DropIndex("dbo.MediaAsset", new[] { "MediaAssetTypeId" });
             DropIndex("dbo.Product", new[] { "ProductTypeId" });
-            DropIndex("dbo.ReferenceCode", new[] { "ProductData_Id" });
-            DropIndex("dbo.ReferenceCode", new[] { "CustomPackage_Id" });
-            DropIndex("dbo.ReferenceCode", new[] { "Package_Id" });
-            DropIndex("dbo.ReferenceCode", new[] { "ReferenceCodeTypeId" });
+            DropIndex("dbo.Price", new[] { "ProductData_Id" });
+            DropIndex("dbo.Price", new[] { "Product_Id" });
+            DropIndex("dbo.Price", new[] { "Package_Id" });
+            DropIndex("dbo.Price", new[] { "PriceTypeId" });
             DropIndex("dbo.Package", new[] { "ProductId" });
             DropIndex("dbo.Feature", new[] { "PackageId" });
             DropIndex("dbo.Feature", new[] { "ProductId" });
             DropIndex("dbo.Attribute", new[] { "FeatureId" });
             DropIndex("dbo.AttributeConfiguration", new[] { "AttributeId" });
-            DropTable("dbo.LocationLocation");
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");
@@ -710,6 +774,7 @@ namespace Prototype.Domain.Migrations
             DropTable("dbo.PackageConfiguration");
             DropTable("dbo.MediaAssetConfiguration");
             DropTable("dbo.DataPartition");
+            DropTable("dbo.Address");
             DropTable("dbo.Location");
             DropTable("dbo.FeatureConfiguration");
             DropTable("dbo.StandardFeature");
@@ -723,10 +788,12 @@ namespace Prototype.Domain.Migrations
             DropTable("dbo.CustomFeatureConfiguration");
             DropTable("dbo.CustomAttribute");
             DropTable("dbo.Identifiers");
-            DropTable("dbo.MediaAsset");
-            DropTable("dbo.Product");
             DropTable("dbo.ReferenceCodeType");
             DropTable("dbo.ReferenceCode");
+            DropTable("dbo.MediaAsset");
+            DropTable("dbo.Product");
+            DropTable("dbo.PriceType");
+            DropTable("dbo.Price");
             DropTable("dbo.Package");
             DropTable("dbo.Feature");
             DropTable("dbo.Attribute");

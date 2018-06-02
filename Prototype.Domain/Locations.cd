@@ -1,42 +1,92 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="L5.DomainModel.Location">
-    <Position X="5" Y="2.5" Width="2.75" />
-    <AssociationLine Name="Locations" Type="L5.DomainModel.Location" ManuallyRouted="true">
+    <Position X="5.25" Y="2.25" Width="2.75" />
+    <AssociationLine Name="ChildLocations" Type="L5.DomainModel.Location" ManuallyRouted="true">
       <Path>
-        <Point X="5.954" Y="3.955" />
-        <Point X="5.954" Y="4.205" />
-        <Point X="6.816" Y="4.205" />
-        <Point X="6.816" Y="3.955" />
+        <Point X="6.204" Y="4.096" />
+        <Point X="6.204" Y="4.552" />
+        <Point X="7.066" Y="4.552" />
+        <Point X="7.066" Y="4.096" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.513" Y="0.183" />
+        <Position X="-0.681" Y="0.586" />
       </MemberNameLabel>
     </AssociationLine>
+    <AssociationLine Name="Addresses" Type="L5.DomainModel.Address" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.062" Y="4.096" />
+        <Point X="6.062" Y="4.346" />
+        <Point X="2.875" Y="4.346" />
+        <Point X="2.875" Y="4.5" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAoAAAQAAAAAAAgAAAAAAAABAAA=</HashCode>
+      <HashCode>AABAEAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAEACBAAA=</HashCode>
       <FileName>Location.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="DataPartition" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Property Name="Locations" />
-      <Property Name="ParentLocations" />
+      <Property Name="ChildLocations" />
+      <Property Name="Addresses" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="L5.DomainModel.DataPartition">
     <Position X="9.25" Y="2.5" Width="2.25" />
+    <InheritanceLine Type="L5.DomainModel.Entity" FixedToPoint="true">
+      <Path>
+        <Point X="6.375" Y="1.813" />
+        <Point X="6.375" Y="2.01" />
+        <Point X="10.562" Y="2.01" />
+        <Point X="10.562" Y="2.5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAIYAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAIQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Base.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="L5.DomainModel.Entity">
-    <Position X="7" Y="0.5" Width="2.5" />
+    <Position X="5" Y="0.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>Base.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="L5.DomainModel.UserLocation">
+    <Position X="1.75" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="L5.DomainModel.Address" HideInheritanceLine="true">
+    <Position X="1.5" Y="4.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAIIAAEAAAAAAQAAAAAAAAABAQAAAA=</HashCode>
+      <FileName>Location.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AddressType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="L5.DomainModel.Inventory.ReferenceCode">
+    <Position X="5.75" Y="5.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAACAAAAAgAIAAAAA=</HashCode>
+      <FileName>ProductCatalog\ReferenceCode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ReferenceCodeType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="L5.DomainModel.Inventory.ReferenceCodeType" HideInheritanceLine="true">
+    <Position X="10.5" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductCatalog\ReferenceCode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Calibri" Size="10" />

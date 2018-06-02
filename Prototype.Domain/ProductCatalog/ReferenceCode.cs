@@ -21,12 +21,17 @@ namespace L5.DomainModel.Inventory {
         public virtual ReferenceCodeType ReferenceCodeType { get; set; }
     }
 
+    /// <summary>
+    /// TODO: Allow user to choose between pushing the reference code changes
+    /// either up or down.
+    /// </summary>
     public class ReferenceCodeConfiguration : DealerEntity {
         public int? ReferenceCodeId { get; set; }
 
         [ForeignKey("ReferenceCodeId")]
         public ReferenceCode ReferenceCode { get; set; }
         public string Description { get; set; }
+        public string Value { get; set; }
     }
 
     public class CustomReferenceCode : DealerEntity {

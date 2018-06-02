@@ -1,22 +1,24 @@
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace L5.DomainModel.Inventory {
 
-    public class Package : InventoryEntity {
+    public class Part : ProductCatalogEntity {
         public int? ProductId { get; set; }
 
         [ForeignKey("ProductId")]
         public Product Product { get; set; }
 
         [Column(TypeName = "NVARCHAR")]
-        [StringLength(100)]
-        public string Code { get; set; }
+        [StringLength(30)]
+        public string DataType { get; set; }
+
         [Column(TypeName = "NVARCHAR")]
         [StringLength(100)]
-        public string Title { get; set; }
+        public string Name { get; set; }
 
-        public List<ReferenceCode> Prices { get; set; } = new List<ReferenceCode>();
+        [Column(TypeName = "NVARCHAR")]
+        [StringLength(100)]
+        public string Value { get; set; }
     }
 }

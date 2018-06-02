@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace L5.DomainModel.Inventory {
 
-    public class Feature : InventoryEntity {
+    public class Feature : ProductCatalogEntity {
         public int? ProductId { get; set; }
         public int? PackageId { get; set; }
 

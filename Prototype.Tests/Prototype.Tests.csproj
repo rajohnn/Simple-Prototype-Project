@@ -91,14 +91,25 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="TestModel.cs" />
+    <Compile Include="WebHookModelTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\FeatureData.json" />
+    <None Include="Data\MasterFeatures.json" />
+    <None Include="Data\MasterMakes.json" />
+    <None Include="Data\MasterPackages.json" />
+    <None Include="Data\MasterTrims.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Prototype.Domain\Prototype.Domain.csproj">
+      <Project>{27c82a50-20c9-4161-a7eb-09fde5c5f341}</Project>
+      <Name>Prototype.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Prototype\Prototype.csproj">
       <Project>{F96E37F3-37E7-437C-8FD5-B6714D366D54}</Project>
       <Name>Prototype</Name>

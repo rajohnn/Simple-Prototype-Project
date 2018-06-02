@@ -1,0 +1,702 @@
+[
+  {
+    "CRS_MasterMakeId": 1,
+    "Makeid": 412,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Airstream"
+  },
+  {
+    "CRS_MasterMakeId": 2,
+    "Makeid": 1377,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Aliner"
+  },
+  {
+    "CRS_MasterMakeId": 3,
+    "Makeid": 1443,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "American Coach"
+  },
+  {
+    "CRS_MasterMakeId": 4,
+    "Makeid": 1336,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Baja"
+  },
+  {
+    "CRS_MasterMakeId": 6,
+    "Makeid": 1455,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Bennington"
+  },
+  {
+    "CRS_MasterMakeId": 7,
+    "Makeid": 920,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Berkshire Pontoons"
+  },
+  {
+    "CRS_MasterMakeId": 98,
+    "Makeid": 26,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Bombardier%u0192?%u203A"
+  },
+  {
+    "CRS_MasterMakeId": 8,
+    "Makeid": 918,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Boston Whaler??"
+  },
+  {
+    "CRS_MasterMakeId": 99,
+    "Makeid": 1619,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Carado"
+  },
+  {
+    "CRS_MasterMakeId": 100,
+    "Makeid": 862,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Carriage"
+  },
+  {
+    "CRS_MasterMakeId": 10,
+    "Makeid": 926,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Chaparral"
+  },
+  {
+    "CRS_MasterMakeId": 11,
+    "Makeid": 1458,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Cobalt"
+  },
+  {
+    "CRS_MasterMakeId": 101,
+    "Makeid": 793,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Coleman??"
+  },
+  {
+    "CRS_MasterMakeId": 102,
+    "Makeid": 422,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Country Coach"
+  },
+  {
+    "CRS_MasterMakeId": 12,
+    "Makeid": 1454,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Crestliner"
+  },
+  {
+    "CRS_MasterMakeId": 14,
+    "Makeid": 947,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Crownline"
+  },
+  {
+    "CRS_MasterMakeId": 15,
+    "Makeid": 1339,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Cummins"
+  },
+  {
+    "CRS_MasterMakeId": 19,
+    "Makeid": 1418,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "DRV"
+  },
+  {
+    "CRS_MasterMakeId": 20,
+    "Makeid": 421,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Dutchmen"
+  },
+  {
+    "CRS_MasterMakeId": 105,
+    "Makeid": 1444,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Eclipse"
+  },
+  {
+    "CRS_MasterMakeId": 21,
+    "Makeid": 1476,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "EdgeWater"
+  },
+  {
+    "CRS_MasterMakeId": 23,
+    "Makeid": 1441,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Entegra Coach"
+  },
+  {
+    "CRS_MasterMakeId": 106,
+    "Makeid": 861,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "EverGreen"
+  },
+  {
+    "CRS_MasterMakeId": 22,
+    "Makeid": 930,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Evinrude"
+  },
+  {
+    "CRS_MasterMakeId": 24,
+    "Makeid": 403,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Fleetwood"
+  },
+  {
+    "CRS_MasterMakeId": 26,
+    "Makeid": 407,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Forest River"
+  },
+  {
+    "CRS_MasterMakeId": 25,
+    "Makeid": 1472,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Formula"
+  },
+  {
+    "CRS_MasterMakeId": 107,
+    "Makeid": 419,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Four Winds"
+  },
+  {
+    "CRS_MasterMakeId": 28,
+    "Makeid": 1337,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Glastron??"
+  },
+  {
+    "CRS_MasterMakeId": 52,
+    "Makeid": 1499,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Grady-White"
+  },
+  {
+    "CRS_MasterMakeId": 29,
+    "Makeid": 1479,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Grand Design"
+  },
+  {
+    "CRS_MasterMakeId": 30,
+    "Makeid": 404,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Gulf Stream"
+  },
+  {
+    "CRS_MasterMakeId": 108,
+    "Makeid": 1470,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Harris FloteBote"
+  },
+  {
+    "CRS_MasterMakeId": 32,
+    "Makeid": 860,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Heartland"
+  },
+  {
+    "CRS_MasterMakeId": 33,
+    "Makeid": 1497,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Highland Ridge"
+  },
+  {
+    "CRS_MasterMakeId": 34,
+    "Makeid": 415,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Holiday Rambler??"
+  },
+  {
+    "CRS_MasterMakeId": 35,
+    "Makeid": 1467,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Hurricane"
+  },
+  {
+    "CRS_MasterMakeId": 109,
+    "Makeid": 1610,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Hymer"
+  },
+  {
+    "CRS_MasterMakeId": 37,
+    "Makeid": 1338,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Ilmor"
+  },
+  {
+    "CRS_MasterMakeId": 38,
+    "Makeid": 1382,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Indmar"
+  },
+  {
+    "CRS_MasterMakeId": 36,
+    "Makeid": 413,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Itasca"
+  },
+  {
+    "CRS_MasterMakeId": 39,
+    "Makeid": 400,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Jayco"
+  },
+  {
+    "CRS_MasterMakeId": 40,
+    "Makeid": 401,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Keystone"
+  },
+  {
+    "CRS_MasterMakeId": 41,
+    "Makeid": 411,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "KZ"
+  },
+  {
+    "CRS_MasterMakeId": 42,
+    "Makeid": 1367,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Lance"
+  },
+  {
+    "CRS_MasterMakeId": 43,
+    "Makeid": 1343,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Larson"
+  },
+  {
+    "CRS_MasterMakeId": 111,
+    "Makeid": 1378,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Lifestyle"
+  },
+  {
+    "CRS_MasterMakeId": 112,
+    "Makeid": 1422,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Little Guy"
+  },
+  {
+    "CRS_MasterMakeId": 46,
+    "Makeid": 1462,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Livin Lite"
+  },
+  {
+    "CRS_MasterMakeId": 44,
+    "Makeid": 1333,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Lowe"
+  },
+  {
+    "CRS_MasterMakeId": 45,
+    "Makeid": 1359,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Lund"
+  },
+  {
+    "CRS_MasterMakeId": 47,
+    "Makeid": 1383,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Malibu Boats"
+  },
+  {
+    "CRS_MasterMakeId": 50,
+    "Makeid": 1345,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "MasterCraft"
+  },
+  {
+    "CRS_MasterMakeId": 49,
+    "Makeid": 907,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Mercury"
+  },
+  {
+    "CRS_MasterMakeId": 48,
+    "Makeid": 416,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Monaco??"
+  },
+  {
+    "CRS_MasterMakeId": 53,
+    "Makeid": 1465,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Moomba"
+  },
+  {
+    "CRS_MasterMakeId": 113,
+    "Makeid": 863,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "MVP"
+  },
+  {
+    "CRS_MasterMakeId": 54,
+    "Makeid": 1381,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Nautique"
+  },
+  {
+    "CRS_MasterMakeId": 55,
+    "Makeid": 1372,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Newmar"
+  },
+  {
+    "CRS_MasterMakeId": 56,
+    "Makeid": 1357,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Nissan"
+  },
+  {
+    "CRS_MasterMakeId": 114,
+    "Makeid": 1448,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Northwood"
+  },
+  {
+    "CRS_MasterMakeId": 57,
+    "Makeid": 881,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Open Range"
+  },
+  {
+    "CRS_MasterMakeId": 59,
+    "Makeid": 1380,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Premier Pontoons"
+  },
+  {
+    "CRS_MasterMakeId": 61,
+    "Makeid": 868,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Prime Time Manufacturing"
+  },
+  {
+    "CRS_MasterMakeId": 62,
+    "Makeid": 1453,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Pursuit"
+  },
+  {
+    "CRS_MasterMakeId": 63,
+    "Makeid": 1332,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Ranger??"
+  },
+  {
+    "CRS_MasterMakeId": 64,
+    "Makeid": 1451,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Redwood"
+  },
+  {
+    "CRS_MasterMakeId": 66,
+    "Makeid": 1365,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Rinker"
+  },
+  {
+    "CRS_MasterMakeId": 68,
+    "Makeid": 1463,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Robalo"
+  },
+  {
+    "CRS_MasterMakeId": 117,
+    "Makeid": 420,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "R-Vision"
+  },
+  {
+    "CRS_MasterMakeId": 69,
+    "Makeid": 1483,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Sanpan"
+  },
+  {
+    "CRS_MasterMakeId": 70,
+    "Makeid": 1482,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Sea Hunt"
+  },
+  {
+    "CRS_MasterMakeId": 73,
+    "Makeid": 923,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Sea Ray"
+  },
+  {
+    "CRS_MasterMakeId": 72,
+    "Makeid": 28,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Sea-Doo"
+  },
+  {
+    "CRS_MasterMakeId": 71,
+    "Makeid": 1428,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Shasta"
+  },
+  {
+    "CRS_MasterMakeId": 118,
+    "Makeid": 1608,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Silver Wave"
+  },
+  {
+    "CRS_MasterMakeId": 74,
+    "Makeid": 1459,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Skeeter"
+  },
+  {
+    "CRS_MasterMakeId": 75,
+    "Makeid": 1469,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Southwind"
+  },
+  {
+    "CRS_MasterMakeId": 76,
+    "Makeid": 410,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Starcraft"
+  },
+  {
+    "CRS_MasterMakeId": 78,
+    "Makeid": 1358,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Starcraft"
+  },
+  {
+    "CRS_MasterMakeId": 79,
+    "Makeid": 1487,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Stingray??"
+  },
+  {
+    "CRS_MasterMakeId": 80,
+    "Makeid": 1335,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Stratos"
+  },
+  {
+    "CRS_MasterMakeId": 120,
+    "Makeid": 866,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "SunnyBrook"
+  },
+  {
+    "CRS_MasterMakeId": 81,
+    "Makeid": 1461,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Supra"
+  },
+  {
+    "CRS_MasterMakeId": 77,
+    "Makeid": 4,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Suzuki"
+  },
+  {
+    "CRS_MasterMakeId": 82,
+    "Makeid": 1471,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Sweetwater"
+  },
+  {
+    "CRS_MasterMakeId": 83,
+    "Makeid": 1481,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Sylvan"
+  },
+  {
+    "CRS_MasterMakeId": 84,
+    "Makeid": 859,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Thor Motor Coach"
+  },
+  {
+    "CRS_MasterMakeId": 85,
+    "Makeid": 417,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Tiffin Motorhomes"
+  },
+  {
+    "CRS_MasterMakeId": 87,
+    "Makeid": 927,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Tohatsu"
+  },
+  {
+    "CRS_MasterMakeId": 86,
+    "Makeid": 921,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "TRACKER??"
+  },
+  {
+    "CRS_MasterMakeId": 89,
+    "Makeid": 864,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "TrailManor"
+  },
+  {
+    "CRS_MasterMakeId": 121,
+    "Makeid": 1597,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Trifecta"
+  },
+  {
+    "CRS_MasterMakeId": 122,
+    "Makeid": 1612,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Vanleigh"
+  },
+  {
+    "CRS_MasterMakeId": 90,
+    "Makeid": 1449,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Venture"
+  },
+  {
+    "CRS_MasterMakeId": 92,
+    "Makeid": 929,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Volvo"
+  },
+  {
+    "CRS_MasterMakeId": 123,
+    "Makeid": 409,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "RV",
+    "MakeName": "Winnebago"
+  },
+  {
+    "CRS_MasterMakeId": 94,
+    "Makeid": 1480,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Xcursion"
+  },
+  {
+    "CRS_MasterMakeId": 95,
+    "Makeid": 1,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "BOATS",
+    "MakeName": "Yamaha"
+  },
+  {
+    "CRS_MasterMakeId": 97,
+    "Makeid": 925,
+    "CreatedDate": "2018-04-21 04:26:40.433",
+    "ProdType": "MENG",
+    "MakeName": "Yanmar"
+  }
+]

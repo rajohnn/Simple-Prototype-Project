@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace L5.DomainModel.Inventory {
 
-    public class Attribute : InventoryEntity {
+    public class Attribute : ProductCatalogEntity {
         public int? FeatureId { get; set; }
 
         [ForeignKey("FeatureId")]
