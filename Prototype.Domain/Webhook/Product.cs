@@ -47,6 +47,7 @@ namespace Prototype.Domain.Webhook {
         /// Could be moved to identifer
         /// </summary>
         public string Condition { get; set; }
+        public string Category { get; set; }
         public string Description { get; set; }
         public string Status { get; set; }
         public Class Class { get; set; }
@@ -67,7 +68,8 @@ namespace Prototype.Domain.Webhook {
 
     public class Equipment : Product {
         public bool IsInstalled { get; set; } = true;
-        public bool IsOptional { get; set; } = false;    
+        public bool IsOptional { get; set; } = false;
+        public int Count { get; set; } = 1;
     }
 
     public enum ProductType {
@@ -84,7 +86,7 @@ namespace Prototype.Domain.Webhook {
     public class Model {
         public string Name { get; set; }
         public int Year { get; set; }
-        public string Series { get; set; }        
+        public List<Model> Models { get; set; } = new List<Model>();
     }
 
     public class Identifier {
@@ -94,8 +96,10 @@ namespace Prototype.Domain.Webhook {
     }
 
     public class Color {
+        public string Category { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
+        
     }
 
     public class Price {
