@@ -71,7 +71,8 @@ namespace Prototype.Tests {
                 Id = "123454321",
                 Identifiers = new List<Identifier> {
                     new Identifier { Name = "ExternalID", Value = "1" },
-                    new Identifier { Name = "CMF", Description = "", Value = "76175138" }
+                    new Identifier { Name = "CMF", Description = "", Value = "76175138" },
+                    new Identifier { Name = "StockNumber", Description="", Value="SW2152" },
                 },
                 Location = new Location {
                     Addresses = new List<Address> {
@@ -84,13 +85,13 @@ namespace Prototype.Tests {
                     }},
                     Code = "12312"
                 },
-                Make = "Coachmen",
+                Manufacturer = new Manufacturer { Make = "Coachmen" },
                 Model = new Model {
                     Name = "Freedom Express 260BL - SW2152",
                     Year = 2011
                 },              
                 Status = "Pending Sale",
-                StockNumber = "SW2152",
+               
                 Specifications = new List<Specification> {
                     new Specification{ CategoryName = "Body", Name = "Body Style", Value = "Travel Trailer" },
                     new Specification{ Name = "Hours", Value = "0" },
@@ -99,26 +100,26 @@ namespace Prototype.Tests {
                 Colors = new List<Color> {
                     new Color { Name = "Exterior Color", Value = "White"}
                 },
-                Engines = new List<Engine> {
-                    new Engine { DriveType = "Outboard", FuelType = "Gas", Horsepower = 115, ModelName = "115 ELPT 4S EFI CT", Make = "Mercury", ModelYear = 1999}
-                },
-                Features = new List<Feature> {
-                    new Feature { CategoryName = "Air Conditioning", Name = "Air Conditioning Type", Value = "Automatic" },
-                    new Feature { CategoryName = "Air Conditioning", Name = "Air Conditioning (BTUS)", Value = "13,500" },
-                    new Feature { CategoryName = "Bathroom", Name = "Number of bathrooms", Value = "1" },
-                    new Feature { CategoryName = "Bathroom", Name = "Bathroom Flooring Type", Value = "Vinyl" },
-                    new Feature { CategoryName = "Bathroom", Name = "Bathroom Location", Value = "Center" },
-                    new Feature { CategoryName = "Battery", Name = "Battery Powered Converter", Value = "True" },
-                    new Feature { CategoryName = "Battery", Name = "Battery Converter Amps", Value = "55" },
-                    new Feature { CategoryName = "Beds", Name = "Max Sleeping Count", Value = "6" },
-                    new Feature { CategoryName = "Beds", Name = "Number of Queen Size Beds", Value = "2" },
-                    new Feature { CategoryName = "Beds", Name = "Number of convertible/sofa beds", Value = "2" },
-                    new Feature { CategoryName = "Brakes", Name = "Front Brake Type", Value = "Not applicable" },
-                    new Feature { CategoryName = "Brakes", Name = "Rear Brake Type", Value = "Electric Drum" },
-                    new Feature { CategoryName = "Construction", Name = "Body Material", Value = "Aluminum" },
-                    new Feature { CategoryName = "Construction", Name = "Sidewall Construction", Value = "Fiberglass" },
-                    new Feature { CategoryName = "Doors", Name = "Number of Doors", Value = "1" },
-                },
+                //Engines = new List<Engine> {
+                //    new Engine { DriveType = "Outboard", FuelType = "Gas", Horsepower = 115, ModelName = "115 ELPT 4S EFI CT", Make = "Mercury", ModelYear = 1999}
+                //},
+                //Features = new List<Feature> {
+                //    new Feature { CategoryName = "Air Conditioning", Name = "Air Conditioning Type", Value = "Automatic" },
+                //    new Feature { CategoryName = "Air Conditioning", Name = "Air Conditioning (BTUS)", Value = "13,500" },
+                //    new Feature { CategoryName = "Bathroom", Name = "Number of bathrooms", Value = "1" },
+                //    new Feature { CategoryName = "Bathroom", Name = "Bathroom Flooring Type", Value = "Vinyl" },
+                //    new Feature { CategoryName = "Bathroom", Name = "Bathroom Location", Value = "Center" },
+                //    new Feature { CategoryName = "Battery", Name = "Battery Powered Converter", Value = "True" },
+                //    new Feature { CategoryName = "Battery", Name = "Battery Converter Amps", Value = "55" },
+                //    new Feature { CategoryName = "Beds", Name = "Max Sleeping Count", Value = "6" },
+                //    new Feature { CategoryName = "Beds", Name = "Number of Queen Size Beds", Value = "2" },
+                //    new Feature { CategoryName = "Beds", Name = "Number of convertible/sofa beds", Value = "2" },
+                //    new Feature { CategoryName = "Brakes", Name = "Front Brake Type", Value = "Not applicable" },
+                //    new Feature { CategoryName = "Brakes", Name = "Rear Brake Type", Value = "Electric Drum" },
+                //    new Feature { CategoryName = "Construction", Name = "Body Material", Value = "Aluminum" },
+                //    new Feature { CategoryName = "Construction", Name = "Sidewall Construction", Value = "Fiberglass" },
+                //    new Feature { CategoryName = "Doors", Name = "Number of Doors", Value = "1" },
+                //},
                 Measurements = new List<Measurement> {
                     new Measurement { CategoryName = "", Name = "Length", NumericValue = 29.17m, Type = "Feet", Value = "29.17ft"}
                 },
@@ -152,43 +153,45 @@ namespace Prototype.Tests {
                 },
                 Condition = "New",
                 Description = "At just under 23 feet, this unique configuration delivers more room and more comfort.Its side console gives way to a roomy L - lounge in the bow, and additional seating for a total of up to 12 people.The aft section features Heyday's unique 'Hot Tub' seats-equally comfortable for aft viewing or forward cruising. It's the perfect combination of attitude and practicality.You're welcome!",
-                Engines = new List<Engine> {
-                    new Engine {
-                        DriveType = "",
-                        FuelType = "",
-                        Horsepower = 350,
-                        Make = "",
-                        ModelName = "Crusader Marine 5.7L",
-                        ModelYear = 2017
-                    }
-                },
-                Features = new List<Feature> {
-                    new Feature {
-                        CategoryName = "Description",
-                        Name = "",
-                        Value = ""
-                    },
-                    new Feature {
-                        CategoryName = "Standard Feature",
-                        Name = "",
-                        Value = "Billet Toggle Switches"
-                    },
-                    new Feature {
-                        CategoryName = "Standard Feature",
-                        Name = "",
-                        Value = "Non-Skid Flooring"
-                    },
-                    new Feature {
-                        CategoryName = "Standard Feature",
-                        Name = "",
-                        Value = "Pop-Up Cleats"
-                    },
-                    new Feature {
-                        CategoryName = "Standard Feature",
-                        Name = "",
-                        Value = "Standard Trailer"
-                    },
-                },
+                //Engines = new List<Engine> {
+                //    new Engine {
+                //        DriveType = "",
+                //        FuelType = "",
+                //        Horsepower = 350,
+                //        Make = "",
+                //        Model = new Model {
+                //            Name = "",
+                //            Year = 2017
+                //        }                        
+                //    }
+                //},
+                //Features = new List<Feature> {
+                //    new Feature {
+                //        CategoryName = "Description",
+                //        Name = "",
+                //        Value = ""
+                //    },
+                //    new Feature {
+                //        CategoryName = "Standard Feature",
+                //        Name = "",
+                //        Value = "Billet Toggle Switches"
+                //    },
+                //    new Feature {
+                //        CategoryName = "Standard Feature",
+                //        Name = "",
+                //        Value = "Non-Skid Flooring"
+                //    },
+                //    new Feature {
+                //        CategoryName = "Standard Feature",
+                //        Name = "",
+                //        Value = "Pop-Up Cleats"
+                //    },
+                //    new Feature {
+                //        CategoryName = "Standard Feature",
+                //        Name = "",
+                //        Value = "Standard Trailer"
+                //    },
+                //},
                 Id = "SkipperBud ID",
                 Identifiers = new List<Identifier> {
                 },
@@ -214,7 +217,7 @@ namespace Prototype.Tests {
                         }
                     }
                 },
-                Make = "Wake Boat WT-2",
+                Manufacturer = new Manufacturer { Make = "Wake Boat WT-2" },
                 Measurements = new List<Measurement> {
                     new Measurement {
                         CategoryName = "Beam",
@@ -416,7 +419,7 @@ namespace Prototype.Tests {
                     }
                 },
                 Status = "In Stock",
-                StockNumber = "HD0047",
+                //StockNumber = "HD0047",
                 Weights = new List<Weight> {
                     new Weight {
                         CategoryName = "",
