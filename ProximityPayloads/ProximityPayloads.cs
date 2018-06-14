@@ -1,108 +1,94 @@
 ﻿using System.Collections.Generic;
 
-namespace Prototype.Domain.Webhook {
-
-    public abstract class BaseModel {
-        public string Source { get; set; }
-    }
+namespace Proximity {
 
     public abstract class Secret {
-        public string CustomerKey { get; set; }
-        public string CustomerSecret { get; set; }
+        public string DealerKey { get; set; }
+        public string DealerSecret { get; set; }
         public string Industry { get; set; }
     }
 
     public class DealerMessage : Secret {
-        public Product Product { get; set; }
+        public Product Product { get; set; } = new Product();
+
     }
 
     public class DealerBatchMessage : Secret {
         public List<Product> Products = new List<Product>();
-    }
 
+    }
     /// <summary>
-    ///
+    /// 
     /// </summary>
     /// <example>
     /// Model should have a body style property
     /// </example>
-    public class Product : BaseModel {
-
-        /// <summary>
-        /// If there is no external ID supplied by client use stock number.
-        /// </summary>
+    public class Product {
         public string Id { get; set; }
 
         // TODO: Stock Number moves to identifier.  If stock number is null, or it is a general product catalog in here
         // SET LOCATION to Proxmity
         // Next serialize has the product has a location of Clearwater
         // Maybe a type of product:
-        // Catalog, Inventory, and Configurator,
+        // Catalog, Inventory, and Configurator, 
         /// <summary>
         /// /
         /// </summary>
         //public string StockNumber { get; set; }
-        public DataType DataType { get; set; } = DataType.Catalog;
-
-        public Model Model { get; set; }
+        public ProductType ProductType { get; set; } = ProductType.Catalog;
+        public Model Model { get; set; } = new Model();
 
         public Manufacturer Manufacturer { get; set; } = new Manufacturer();
-
         /// <summary>
         /// Maps to condition in most dealerships.
         /// Maps to identifer
         /// </summary>
         public string Designation { get; set; }
-        public string Configuration { get; set; }
-
-        public List<Activity> Activities { get; set; } = new List<Activity>();
 
         // TODO: Consider moving into specification.
         /// <summary>
         /// Could be moved to identifer
         /// </summary>
         public string Condition { get; set; }
-
-        public string ProductType { get; set; }
+        public string Category { get; set; }
         public string Description { get; set; }
         public string Status { get; set; }
-        public Class Class { get; set; }
-        public Location Location { get; set; }
+        public Class Class { get; set; } = new Class();
+        public Location Location { get; set; } = new Location();
         public List<Identifier> Identifiers { get; set; } = new List<Identifier>();
+        public List<Equipment> EquipmentList { get; set; } = new List<Equipment>();
         public List<Feature> Features { get; set; } = new List<Feature>();
-        public List<MarketingDescription> MarketingDescriptions { get; set; } = new List<MarketingDescription>();
-
+        public List<Option> Options { get; set; } = new List<Option>();
         public List<Specification> Specifications { get; set; } = new List<Specification>();
-
+        public List<Measurement> Measurements { get; set; } = new List<Measurement>();
         public List<Color> Colors { get; set; } = new List<Color>();
-
         //public List<Engine> Engines { get; set; } = new List<Engine>();
         public List<Price> Prices { get; set; } = new List<Price>();
-
+        public List<Weight> Weights { get; set; } = new List<Weight>();
         public List<Media> MediaContent = new List<Media>();
+
     }
 
-    public class Feature : Product {
+    public class Equipment : Product {
         public bool IsInstalled { get; set; } = true;
         public bool IsOptional { get; set; } = false;
         public int Count { get; set; } = 1;
-        public bool IsEquipment { get; set; } = false;
     }
 
-    public enum DataType {
+    public enum ProductType {
         Catalog,
-        Inventory
+        Inventory,
+        Configurator
     }
 
     public class Manufacturer {
-        public string Code { get; set; }
         public string Make { get; set; }
         public Location Location { get; set; } = new Location();
     }
 
     public class Model {
-        public string Code { get; set; }
         public string Name { get; set; }
+        public int Year { get; set; }
         public List<Model> Models { get; set; } = new List<Model>();
     }
 
@@ -116,25 +102,13 @@ namespace Prototype.Domain.Webhook {
         public string Category { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
-    }
 
-    public class Activity : Attribute {
     }
 
     public class Price {
-        public string Category { get; set; }
-        public string DisplayValue { get; set; }
+        public string Type { get; set; }
         public decimal? Value { get; set; }
-    }
-
-    //public class Engine {
-    //    public string Make { get; set; }
-    //    public Model Model { get; set; }
-    //    public string DriveType { get; set; }
-    //    public string FuelType { get; set; }
-    //    public int Horsepower { get; set; }
-    //    public int EngineCount { get; set; } = 1;
-    //}
+    }    
 
     public class Location {
         public string Code { get; set; }
@@ -145,15 +119,15 @@ namespace Prototype.Domain.Webhook {
     /// <summary>
     /// TODO: Come back and think this through.  Might need generic names fro the attribute descriptor.
     /// </summary>
-    public abstract class Attribute : BaseModel {
-
+    public abstract class Attribute {
         /// <summary>
         /// Contains a list of descriptions for different industries and or customers.
         /// </summary>
         /// <remarks>
         /// Example: Measure could be called "Specification" by the dealer.  The descriptor type of "Marine", "PowerSports"
         /// </remarks>
-        // public string Descriptors { get; set; } 
+        public List<Descriptor> Descriptors { get; set; } = new List<Descriptor>();
+
         public string CategoryName { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
@@ -168,12 +142,27 @@ namespace Prototype.Domain.Webhook {
         public List<Class> SubClasses = new List<Class>();
     }
 
-    public class MarketingDescription : Attribute {
+    public class Feature : Attribute {
+    }
+
+    public class Option : Attribute {
     }
 
     public class Specification : Attribute {
-        public string UnitType { get; set; }
+    }
+
+    public class Weight : Attribute {
+        public string Type { get; set; }
         public decimal? NumericValue { get; set; }
+    }
+
+    public class Measurement : Attribute {
+        public string Type { get; set; }
+
+        public string Descriptor { get; set; }
+        public decimal? NumericValue { get; set; }
+
+        // TODO: All models need categories and sub-categories
     }
 
     public class Media {

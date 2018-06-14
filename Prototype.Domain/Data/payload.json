@@ -1,0 +1,2893 @@
+﻿{
+  "Product": {
+    "MediaContent": [],
+    "Id": "External SkipperBud ID",
+    "DataType": 1,
+    "Model": {
+      "Code": null,
+      "Name": "Bowrider",
+      "Models": [
+        {
+          "Code": null,
+          "Name": "VR6",
+          "Models": []
+        }
+      ]
+    },
+    "Manufacturer": {
+      "Make": "Bayliner",
+      "Location": {
+        "Phones": [],
+        "Code": null,
+        "Addresses": []
+      }
+    },
+    "Designation": "New",
+    "Configuration": "",
+    "Activities": [],
+    "Condition": "",
+    "ProductType": "Boat",
+    "Description": "A larger version of our new VR5, the VR6 is also all about space and unparalleled roominess. It combines Bayliner's category-leading BeamForward™ design and new AftAdvantage™ concept-which increases the self-draining cockpit's seating area by adding the swim platform at the end of the running surface. This boat maximizes space and value like never before-regardless of whether you choose outboard or sterndrive power. You'll also find pleasant surprises like a lockable enclosed changing room (head optional), and aft-facing companion/observer seat that's ideal for water sports and-with the addition of a filler cushion-creates a comfortable U-lounge that turns the whole aft section into an inviting gathering area.",
+    "Status": "In Stock",
+    "Class": {
+      "SubClasses": [],      
+      "CategoryName": "",
+      "Name": "Bowrider",
+      "Value": null,
+      "Source": null
+    },
+    "Location": {
+      "Phones": [
+        {
+          "Description": "SkipperBud's - Grand Haven",
+          "CountryCode": null,
+          "AreaCode": "888",
+          "Prefix": "334",
+          "LineNumber": "6739",
+          "Extension": null
+        }
+      ],
+      "Code": "Grand Haven",
+      "Addresses": [
+        {
+          "Description": "Actual Location",
+          "Street1": "11 Harbor Island Drive",
+          "Street2": "",
+          "City": "Grand Haven",
+          "State": "MI",
+          "PostalCode": "49417",
+          "Country": "USA"
+        }
+      ]
+    },
+    "Identifiers": [
+      {
+        "Name": "Stock Number",
+        "Description": null,
+        "Value": "BL0168"
+      }
+    ],
+    "Features": [
+      {
+        "MediaContent": [],
+        "IsInstalled": true,
+        "IsOptional": false,
+        "Count": 1,
+        "IsEquipment": false,
+        "Id": null,
+        "DataType": 0,
+        "Model": {
+          "Code": null,
+          "Name": null,
+          "Models": []
+        },
+        "Manufacturer": {
+          "Make": null,
+          "Location": {
+            "Phones": [],
+            "Code": null,
+            "Addresses": []
+          }
+        },
+        "Designation": "",
+        "Configuration": "",
+        "Activities": [],
+        "Condition": "",
+        "ProductType": "",
+        "Description": "Cockpit",
+        "Status": "",
+        "Class": {
+          "SubClasses": [],
+          
+          "CategoryName": null,
+          "Name": null,
+          "Value": null,
+          "Source": null
+        },
+        "Location": {
+          "Phones": [],
+          "Code": null,
+          "Addresses": []
+        },
+        "Identifiers": [],
+        "Features": [
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": true,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Cover",
+            "Description": "Bimini Top w/ Boot",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": true,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Covering",
+            "Description": "Bow Well & Cockpit Cover",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": true,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Fabric",
+            "Description": "Desert Sand Interior Exchange",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": true,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Lighting",
+            "Description": "Interior Lighting Package",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": true,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Accents",
+            "Description": "Stainless Steel Upgrade Package",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": false,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "",
+            "Description": "Bow",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Seating",
+                "Description": "Seating",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              }
+            ],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": false,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "",
+            "Description": "Helm",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Seating",
+                "Description": "Bucket Seat",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [
+                  {
+                    "CategoryName": null,
+                    "Name": null,
+                    "Value": "Swivels 180 Degrees"
+                  }
+                ],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Electrical",
+                "Description": "12V Accessory Outlet",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [
+                  {
+                    "UnitType": "Volts",
+                    "NumericValue": 12.0,
+                    "CategoryName": "Electric",
+                    "Name": null,
+                    "Value": "12V"
+                  }
+                ],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Horn",
+                "Description": "12V Horn",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [
+                  {
+                    "UnitType": "Volts",
+                    "NumericValue": 12.0,
+                    "CategoryName": "Electric",
+                    "Name": null,
+                    "Value": "12V"
+                  }
+                ],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Instrumentation",
+                "Description": "Speedometer",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Instrumentation",
+                "Description": "Volt",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Instrumentation",
+                "Description": "Fuel",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Instrumentation",
+                "Description": "Tachometer",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Instrumentation",
+                "Description": "Trim Gauge",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Steering Wheel",
+                "Description": "Padded Steering Wheel",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Steering",
+                "Description": "Rack & Pinion Power Steering",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Engine Controls",
+                "Description": "Side-Mounted Engine Controls w/ Trim & Tilt Swith in Handle",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Steering",
+                "Description": "Tilt Steering",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Instrumentation",
+                "Description": "Digital Depth Indicator",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              }
+            ],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": false,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "",
+            "Description": "Starboard",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Seating",
+                "Description": "Rear Facing Companion Seat",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              }
+            ],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": false,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "",
+            "Description": "Deck",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Storage",
+                "Description": "In-Floor Ski/Wakeboard Storage",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Flooring",
+                "Description": "Non-Skid Fiberglass Floor",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": true,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Floor Covering",
+                "Description": "Seagrass - Snap In Floor Covering",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": true,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Matting",
+                "Description": "Swim Platform Teak Mat",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              }
+            ],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": false,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "",
+            "Description": "Port",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Storage",
+                "Description": "Large Lockable Port-Side Changing Room and Storage Compartment",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              },
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Storage",
+                "Description": "Lockable Glove Box",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              }
+            ],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 6,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Cup Holder",
+            "Description": "Beverage Holders",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Fuel Fill",
+            "Description": "Fuel Fill w/ Integrated Vent",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Railings",
+            "Description": "Grab Handles",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Stereo",
+            "Description": "Waterproof 120-Watt AM/FM Stereo/Controller w/ Inputs for iPod & mp3",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [
+              {
+                "UnitType": "Watts",
+                "NumericValue": 120.0,
+                "CategoryName": "Electric",
+                "Name": "Stereo Power",
+                "Value": "120 Watts"
+              }
+            ],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          }
+        ],
+        "MarketingDescriptions": [
+          {
+            "CategoryName": null,
+            "Name": null,
+            "Value": "Self-Bailing"
+          }
+        ],
+        "Specifications": [],
+        "Colors": [],
+        "Prices": [],
+        "Source": ""
+      },
+      {
+        "MediaContent": [],
+        "IsInstalled": true,
+        "IsOptional": false,
+        "Count": 1,
+        "IsEquipment": false,
+        "Id": null,
+        "DataType": 0,
+        "Model": {
+          "Code": null,
+          "Name": null,
+          "Models": []
+        },
+        "Manufacturer": {
+          "Make": null,
+          "Location": {
+            "Phones": [],
+            "Code": null,
+            "Addresses": []
+          }
+        },
+        "Designation": "",
+        "Configuration": "",
+        "Activities": [],
+        "Condition": "",
+        "ProductType": "",
+        "Description": "Hull",
+        "Status": "",
+        "Class": {
+          "SubClasses": [],
+          
+          "CategoryName": null,
+          "Name": null,
+          "Value": null,
+          "Source": null
+        },
+        "Location": {
+          "Phones": [],
+          "Code": null,
+          "Addresses": []
+        },
+        "Identifiers": [],
+        "Features": [
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Navigation Lights",
+            "Description": "12V Navigation Lights",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [
+              {
+                "UnitType": "Volts",
+                "NumericValue": 12.0,
+                "CategoryName": "Electric",
+                "Name": null,
+                "Value": "12V"
+              }
+            ],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 3,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Eyes",
+            "Description": "Bow and Transom Eyes",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Platform",
+            "Description": "Integral Transom Platform w/ Ladder",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 6,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Mooring Cleats",
+            "Description": "Mooring Cleats",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Railings",
+            "Description": "Safety Handholds",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Tow Ring",
+            "Description": "Stainless Steel Tow Ring",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Gunwale Molding",
+            "Description": "Vinyl Gunwale Molding",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Windshield",
+            "Description": "Windshield w/ Opening Center Panel & Side Wings",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          }
+        ],
+        "MarketingDescriptions": [],
+        "Specifications": [],
+        "Colors": [],
+        "Prices": [],
+        "Source": ""
+      },
+      {
+        "MediaContent": [],
+        "IsInstalled": true,
+        "IsOptional": false,
+        "Count": 1,
+        "IsEquipment": false,
+        "Id": null,
+        "DataType": 0,
+        "Model": {
+          "Code": null,
+          "Name": null,
+          "Models": []
+        },
+        "Manufacturer": {
+          "Make": null,
+          "Location": {
+            "Phones": [],
+            "Code": null,
+            "Addresses": []
+          }
+        },
+        "Designation": "",
+        "Configuration": "",
+        "Activities": [],
+        "Condition": "",
+        "ProductType": "",
+        "Description": "Engine Compartment",
+        "Status": "",
+        "Class": {
+          "SubClasses": [],
+          
+          "CategoryName": null,
+          "Name": null,
+          "Value": null,
+          "Source": null
+        },
+        "Location": {
+          "Phones": [],
+          "Code": null,
+          "Addresses": []
+        },
+        "Identifiers": [],
+        "Features": [
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": true,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": "4-Stroke",
+              "Models": [
+                {
+                  "Code": null,
+                  "Name": "150",
+                  "Models": []
+                }
+              ]
+            },
+            "Manufacturer": {
+              "Make": "Mercury",
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "Outboard",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Engine",
+            "Description": "Engine",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [
+              {
+                "UnitType": "Horsepower",
+                "NumericValue": 150.0,
+                "CategoryName": "Performance",
+                "Name": "Horsepower",
+                "Value": "150 HP"
+              }
+            ],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Blower",
+            "Description": "12V Blower",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [
+              {
+                "UnitType": "Voltage",
+                "NumericValue": 12.0,
+                "CategoryName": "Electric",
+                "Name": null,
+                "Value": "12V"
+              }
+            ],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          },
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Bilge Pump",
+            "Description": "Bilge Pump",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          }
+        ],
+        "MarketingDescriptions": [],
+        "Specifications": [],
+        "Colors": [],
+        "Prices": [],
+        "Source": ""
+      },
+      {
+        "MediaContent": [],
+        "IsInstalled": true,
+        "IsOptional": false,
+        "Count": 1,
+        "IsEquipment": false,
+        "Id": null,
+        "DataType": 0,
+        "Model": {
+          "Code": null,
+          "Name": null,
+          "Models": []
+        },
+        "Manufacturer": {
+          "Make": null,
+          "Location": {
+            "Phones": [],
+            "Code": null,
+            "Addresses": []
+          }
+        },
+        "Designation": "",
+        "Configuration": "",
+        "Activities": [],
+        "Condition": "",
+        "ProductType": "",
+        "Description": "Trailer",
+        "Status": "",
+        "Class": {
+          "SubClasses": [],
+          
+          "CategoryName": null,
+          "Name": null,
+          "Value": null,
+          "Source": null
+        },
+        "Location": {
+          "Phones": [],
+          "Code": null,
+          "Addresses": []
+        },
+        "Identifiers": [],
+        "Features": [
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": true,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Trailer",
+            "Description": "Painted Swing Toungue Trailer",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [
+              {
+                "MediaContent": [],
+                "IsInstalled": true,
+                "IsOptional": false,
+                "Count": 1,
+                "IsEquipment": true,
+                "Id": null,
+                "DataType": 0,
+                "Model": {
+                  "Code": null,
+                  "Name": null,
+                  "Models": []
+                },
+                "Manufacturer": {
+                  "Make": null,
+                  "Location": {
+                    "Phones": [],
+                    "Code": null,
+                    "Addresses": []
+                  }
+                },
+                "Designation": "",
+                "Configuration": "",
+                "Activities": [],
+                "Condition": "",
+                "ProductType": "Brakes",
+                "Description": "Brakes",
+                "Status": "",
+                "Class": {
+                  "SubClasses": [],
+                  
+                  "CategoryName": null,
+                  "Name": null,
+                  "Value": null,
+                  "Source": null
+                },
+                "Location": {
+                  "Phones": [],
+                  "Code": null,
+                  "Addresses": []
+                },
+                "Identifiers": [],
+                "Features": [],
+                "MarketingDescriptions": [],
+                "Specifications": [],
+                "Colors": [],
+                "Prices": [],
+                "Source": ""
+              }
+            ],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          }
+        ],
+        "MarketingDescriptions": [],
+        "Specifications": [],
+        "Colors": [],
+        "Prices": [],
+        "Source": ""
+      },
+      {
+        "MediaContent": [],
+        "IsInstalled": true,
+        "IsOptional": false,
+        "Count": 1,
+        "IsEquipment": false,
+        "Id": null,
+        "DataType": 0,
+        "Model": {
+          "Code": null,
+          "Name": null,
+          "Models": []
+        },
+        "Manufacturer": {
+          "Make": null,
+          "Location": {
+            "Phones": [],
+            "Code": null,
+            "Addresses": []
+          }
+        },
+        "Designation": "",
+        "Configuration": "",
+        "Activities": [],
+        "Condition": "",
+        "ProductType": "",
+        "Description": "Electrical Systems",
+        "Status": "",
+        "Class": {
+          "SubClasses": [],
+          
+          "CategoryName": null,
+          "Name": null,
+          "Value": null,
+          "Source": null
+        },
+        "Location": {
+          "Phones": [],
+          "Code": null,
+          "Addresses": []
+        },
+        "Identifiers": [],
+        "Features": [
+          {
+            "MediaContent": [],
+            "IsInstalled": true,
+            "IsOptional": false,
+            "Count": 1,
+            "IsEquipment": true,
+            "Id": null,
+            "DataType": 0,
+            "Model": {
+              "Code": null,
+              "Name": null,
+              "Models": []
+            },
+            "Manufacturer": {
+              "Make": null,
+              "Location": {
+                "Phones": [],
+                "Code": null,
+                "Addresses": []
+              }
+            },
+            "Designation": "",
+            "Configuration": "",
+            "Activities": [],
+            "Condition": "",
+            "ProductType": "Battery Switch",
+            "Description": "Battery Switch",
+            "Status": "",
+            "Class": {
+              "SubClasses": [],
+              
+              "CategoryName": null,
+              "Name": null,
+              "Value": null,
+              "Source": null
+            },
+            "Location": {
+              "Phones": [],
+              "Code": null,
+              "Addresses": []
+            },
+            "Identifiers": [],
+            "Features": [],
+            "MarketingDescriptions": [],
+            "Specifications": [],
+            "Colors": [],
+            "Prices": [],
+            "Source": ""
+          }
+        ],
+        "MarketingDescriptions": [],
+        "Specifications": [],
+        "Colors": [],
+        "Prices": [],
+        "Source": ""
+      }
+    ],
+    "MarketingDescriptions": [],
+    "Specifications": [
+      {
+        "UnitType": "Feet",
+        "NumericValue": 8.0,
+        "CategoryName": "Dimension",
+        "Name": "Beam",
+        "Value": "8'0\""
+      },
+      {
+        "UnitType": "Meters",
+        "NumericValue": 2.44,
+        "CategoryName": "Dimension",
+        "Name": "Beam",
+        "Value": "2.44m"
+      },
+      {
+        "UnitType": "Degrees",
+        "NumericValue": 20.0,
+        "CategoryName": "Angle",
+        "Name": "Deadrise",
+        "Value": "20 Degrees"
+      },
+      {
+        "UnitType": "Gallons",
+        "NumericValue": 33.0,
+        "CategoryName": "Capacity",
+        "Name": "Fuel Capacity",
+        "Value": "33 gal"
+      },
+      {
+        "UnitType": "Liters",
+        "NumericValue": 132.0,
+        "CategoryName": "Capacity",
+        "Name": "Fuel Capacity",
+        "Value": "132 l"
+      },
+      {
+        "UnitType": "Persons",
+        "NumericValue": 10.0,
+        "CategoryName": "Capacity",
+        "Name": "Maximum Person Capacity",
+        "Value": "10"
+      },
+      {
+        "UnitType": "Feet",
+        "NumericValue": 22.334,
+        "CategoryName": "Dimension",
+        "Name": "Length",
+        "Value": "22'4\""
+      },
+      {
+        "UnitType": "Meters",
+        "NumericValue": 6.81,
+        "CategoryName": "Dimension",
+        "Name": "Length",
+        "Value": "6.81m"
+      },
+      {
+        "UnitType": "Feet",
+        "NumericValue": 2.8334,
+        "CategoryName": "Dimension",
+        "Name": "Draft",
+        "Value": "2'10\""
+      },
+      {
+        "UnitType": "Meters",
+        "NumericValue": 0.86,
+        "CategoryName": "Dimension",
+        "Name": "Draft",
+        "Value": "0.86 m"
+      },
+      {
+        "UnitType": "Hours",
+        "NumericValue": 0.0,
+        "CategoryName": "Usage",
+        "Name": "Hours",
+        "Value": "0"
+      }
+    ],
+    "Colors": [
+      {
+        "CategoryName": "Exterior Color",
+        "Name": "Blue",
+        "Value": null
+      },
+      {
+        "CategoryName": "Interior Color",
+        "Name": "White",
+        "Value": null
+      }
+    ],
+    "Prices": [],
+    "Source": "Source"
+  },
+  "CustomerKey": "TestKey",
+  "CustomerSecret": "v0VRCRMDohbRpTxyAeVYw40zlewnPem5s",
+  "Industry": "Marine"
+}

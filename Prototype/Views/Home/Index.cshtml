@@ -1,6 +1,385 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Inventory Items Details";
 }
+
 <div class="row">
-    <div class="col-"
+    <div class="col-lg-10">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">Product Details</div>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="stock-number">Display Name</label>
+                                <input type="text" class="form-control" id="display-name" placeholder="Custom Display Name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="stock-number">Stock Number</label>
+                                <input type="text" class="form-control" id="stock-number" placeholder="Stock #" />
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <input type="text" class="form-control" id="category" placeholder="Product Category Goes Here" />
+                            </div>
+                            <div class="form-group">
+                                <label for="manufacturer-code">Manufacturer Code</label>
+                                <input type="text" class="form-control" id="manufacturer-code" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="manufacturer-make">Manufacturer Make</label>
+                                <input type="text" class="form-control" id="manufacturer-make" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="model-code">Model Code</label>
+                                <input type="text" class="form-control" id="manufacturer-code" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="model-make">Model Name</label>
+                                <input type="text" class="form-control" id="manufacturer-make" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="sub-model-name">Sub-Model Name</label>
+                                <input type="text" class="form-control" id="sub-model-name" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="model-make">Model Year</label>
+                                <input type="text" class="form-control" id="manufacturer-year" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="designation">Designation</label>
+                                <select class="form-control" id="designation" placeholder="Test">
+                                    <option>New</option>
+                                    <option>Used</option>
+                                    <option>Consignment</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="condition">Condition</label>
+                                <input type="text" class="form-control" id="condition" value="*Brand New!" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="status">Status</label>
+                                <input type="text" class="form-control" id="status" placeholder="Test" value="At Location" />
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Features</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        <form></form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="list-group">
+                        </div>
+                        <button class="btn btn-sm btn-primary">Add Feature</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+                        <h3 class="panel-title">Specifications</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="spec-category">Category</label>
+                                <input type="text" class="form-control" id="spec-category" placeholder="Angle" />
+                            </div>
+                            <div class="form-group">
+                                <label for="spec-unit-type">Unit Type</label>
+                                <select class="form-control" id="spec-unit-type">
+                                    <option>Capacity</option>
+                                    <option>Feet</option>
+                                    <option>Gallons</option>
+                                    <option>Hours</option>
+                                    <option>Liters</option>
+                                    <option>Meters</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="spec-name">Name</label>
+                                <input type="text" class="form-control" id="spec-name" placeholder="" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="spac-amount">Amount</label>
+                                <input type="text" class="form-control" id="spec-amount" placeholder="" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="color-value">Value</label>
+                                <input type="text" class="form-control" id="price-display" placeholder="" value="" />
+                            </div>
+                            <button class="btn btn-sm btn-primary">Save Specification</button>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="list-group small">
+                            <button type="button" class="list-group-item">
+                                <h4 class="list-group-item-heading">
+                                    <span class="pull-right">Dimension</span>
+                                    Beam
+                                </h4>
+                                <div class="list-group-item-text">
+                                    8'0" feet
+                                </div>
+                            </button>
+                            <button type="button" class="list-group-item">
+                                <h4 class="list-group-item-heading">
+                                    <span class="pull-right">Dimension</span>
+                                    Beam
+                                </h4>
+                                <div class="list-group-item-text">
+                                    2.44 Meters
+                                </div>
+                            </button>
+                            <button type="button" class="list-group-item">
+                                <h4 class="list-group-item-heading">
+                                    <span class="pull-right">Angle</span>
+                                    Deadrise
+                                </h4>
+                                <div class="list-group-item-text">
+                                    20 Degrees
+                                </div>
+                            </button>
+                            <button type="button" class="list-group-item">
+                                <h4 class="list-group-item-heading">
+                                    <span class="pull-right">Capacity</span>
+                                    Fuel Capacity
+                                </h4>
+                                <div class="list-group-item-text">
+                                    33 gallons
+                                </div>
+                            </button>
+                            <button type="button" class="list-group-item">
+                                <h4 class="list-group-item-heading">
+                                    <span class="pull-right">Capacity</span>
+                                    Fuel Capacity
+                                </h4>
+                                <div class="list-group-item-text">
+                                    132 liters
+                                </div>
+                            </button>
+                            <button type="button" class="list-group-item">
+                                <h4 class="list-group-item-heading">
+                                    <span class="pull-right">Persons</span>
+                                    Maximum Person Capacity
+                                </h4>
+                                <div class="list-group-item-text">
+                                    10 persons
+                                </div>
+                            </button>
+                            <button type="button" class="list-group-item">
+                                <h4 class="list-group-item-heading">
+                                    <span class="pull-right">Usage</span>
+                                    Hours
+                                </h4>
+                                <div class="list-group-item-text">
+                                    0 Hours
+                                </div>
+                            </button>
+                        </div>
+                        <button class="btn btn-sm btn-primary">Add Specification</button>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Activities</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="marketing-category">Category</label>
+                                <input type="text" class="form-control" id="marketing-category" placeholder="Category for activity" />
+                            </div>
+                            <div class="form-group">
+                                <label for="marketing-name">Name</label>
+                                <input type="text" class="form-control" id="marketing-name" placeholder="" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="color-value">Value</label>
+                                <input type="text" class="form-control" id="marketing-value" placeholder="" value="" />
+                            </div>
+                            <button class="btn btn-sm btn-primary">Save Activity</button>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="list-group">
+                        </div>
+                        <button class="btn btn-sm btn-primary">Add Activity</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+                        <h3 class="panel-title">Prices</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="price-category">Category</label>
+                                <input type="text" class="form-control" id="price-category" placeholder="MSRP" />
+                            </div>
+                            <div class="form-group">
+                                <label for="color-name">Value</label>
+                                <input type="text" class="form-control" id="price-value" placeholder="" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="color-value">Display Value</label>
+                                <input type="text" class="form-control" id="price-display" placeholder="Suggested MSRP" value="" />
+                            </div>
+                            <button class="btn btn-sm btn-primary">Save Price</button>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="list-group small">
+                            <button type="button" class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h4>MSRP</h4>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        Manufacturer Retail Price<br/>
+                                        $75,232.12
+                                    </div>
+                                </div>
+                            </button>
+                            <button type="button" class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <h4>Internet Price</h4>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        Manufacturer Retail Price<br />
+                                        $72,999.00
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <button class="btn btn-sm btn-primary">Add Price</button>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+                        <h3 class="panel-title">Colors</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="color-category">Category</label>
+                                <select class="form-control" id="color-category">
+                                    <option>Exterior</option>
+                                    <option>Exterior - Secondary</option>
+                                    <option>Interior</option>
+                                    <option>Interior - Secondary</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="color-name">color-name</label>
+                                <input type="text" class="form-control" id="color-name" placeholder="Zeus Black" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="color-value">color-value</label>
+                                <input type="text" class="form-control" id="color-value" placeholder="#000" value="" />
+                            </div>
+                            <button class="btn btn-sm btn-primary">Save Color</button>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="list-group small">
+                            <button type="button" class="list-group-item">
+                                <span class="badge pull-left" style="background-color:midnightblue;height:25px;width:25px">  </span>
+                                <span style="margin-left:10px;margin-top:39px">Exterior - Midnight Blue</span>
+                            </button>
+                            <button type="button" class="list-group-item">
+                                <span class="badge pull-left" style="background-color:slategrey;height:25px;width:25px">  </span>
+                                <span style="margin-left:10px;margin-top:39px">Interior - Slate Grey</span>
+                            </button>
+                            <button type="button" class="list-group-item">
+                                <span class="badge pull-left" style="background-color:lightblue;height:25px;width:25px">  </span>
+                                <span style="margin-left:10px;margin-top:39px">Exterior Seconary - Light Blue</span>
+                            </button>
+                        </div>
+                        <button class="btn btn-sm btn-primary">Add Color</button>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+                        <h3 class="panel-title">Marketing Details</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="marketing-category">Category</label>
+                                <input type="text" class="form-control" id="marketing-category" placeholder="Category for detail" />
+                            </div>
+                            <div class="form-group">
+                                <label for="marketing-name">Marketing Name</label>
+                                <input type="text" class="form-control" id="marketing-name" placeholder="" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="color-value">Value</label>
+                                <input type="text" class="form-control" id="marketing-value" placeholder="" value="" />
+                            </div>
+                            <button class="btn btn-sm btn-primary">Save Detail</button>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="list-group">
+                        </div>
+                        <button class="btn btn-sm btn-primary">Add Marketing Detail</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2">
+
+    </div>  
 </div>
+
+@section scripts {
+    <script>
+        $(function () {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+        });
+        $(document).on('click', '.panel-heading span.clickable', function (e) {
+            var $this = $(this);
+            if (!$this.hasClass('panel-collapsed')) {
+                $this.parents('.panel').find('.panel-body').slideUp();
+                $this.addClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+            } else {
+                $this.parents('.panel').find('.panel-body').slideDown();
+                $this.removeClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+            }
+        })
+    </script>
+}

@@ -42,6 +42,9 @@
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -72,6 +75,7 @@
     <Compile Include="ProductCatalog\Part.cs" />
     <Compile Include="ProductCatalog\ReferenceCode.cs" />
     <Compile Include="ProductCatalog\StandardFeature.cs" />
+    <Compile Include="Repository\PayloadTestRepository.cs" />
     <Compile Include="SB\SBBSI.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Location.cs" />
@@ -80,11 +84,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PrototypeContext.cs" />
     <Compile Include="ProductCatalog\Product.cs" />
+    <Compile Include="Webhook\InventoryItemViewModel.cs" />
     <Compile Include="Webhook\Product.cs" />
+    <Compile Include="Webhook\SampleAPI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="BaseEntities.cd" />
+    <None Include="Data\payload.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Locations.cd" />
     <None Include="Dealer.cd" />
     <None Include="InventoryEntities.cd" />
