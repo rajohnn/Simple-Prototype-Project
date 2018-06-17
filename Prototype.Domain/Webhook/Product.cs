@@ -45,6 +45,7 @@ namespace Prototype.Domain.Webhook {
         public DataType DataType { get; set; } = DataType.Catalog;
 
         public Model Model { get; set; }
+        public string CatalogId { get; set; }
 
         public Manufacturer Manufacturer { get; set; } = new Manufacturer();
 
@@ -64,7 +65,7 @@ namespace Prototype.Domain.Webhook {
         public string Condition { get; set; }
 
         public string ProductType { get; set; }
-        public string Description { get; set; }
+        //public string Description { get; set; }
         public string Status { get; set; }
         public Class Class { get; set; }
         public Location Location { get; set; }
@@ -153,7 +154,7 @@ namespace Prototype.Domain.Webhook {
         /// <remarks>
         /// Example: Measure could be called "Specification" by the dealer.  The descriptor type of "Marine", "PowerSports"
         /// </remarks>
-        // public string Descriptors { get; set; } 
+        public string Descriptors { get; set; } 
         public string CategoryName { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
@@ -164,7 +165,7 @@ namespace Prototype.Domain.Webhook {
         public string Value { get; set; }
     }
 
-    public class Class : Attribute {
+    public class Class : Attribute {        
         public List<Class> SubClasses = new List<Class>();
     }
 

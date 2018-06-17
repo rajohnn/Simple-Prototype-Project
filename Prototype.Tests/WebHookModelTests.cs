@@ -4,12 +4,18 @@ using Prototype.Domain.Repository;
 using Prototype.Domain.Webhook;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Prototype.Tests {
 
     [TestClass]
     public class WebHookModelTests {
+        string connectionString = string.Empty;
+        public WebHookModelTests() {
+            connectionString = ConfigurationManager.ConnectionStrings["PrototypeContext"].ConnectionString;
+        }
 
         [TestMethod]
         public void WebHook_TestProductGeneration() {
@@ -89,8 +95,7 @@ namespace Prototype.Tests {
                     Colors = new List<Color>(),
                     Condition = "Super Duper",
                     Configuration = "",
-                    DataType = DataType.Catalog,
-                    Description = "Description",
+                    DataType = DataType.Catalog,                  
                     Designation = "Designation",
                     Features = new List<Feature> {
                         new Feature {
@@ -103,8 +108,7 @@ namespace Prototype.Tests {
                             Colors = new List<Color>(),
                             Condition = "Super Duper",
                             Configuration = "",
-                            DataType = DataType.Catalog,
-                            Description = "Description",
+                            DataType = DataType.Catalog,                           
                             Designation = "Designation",
                             Identifiers = new List<Identifier>(),
                             Location = new Location(),
@@ -161,20 +165,11 @@ namespace Prototype.Tests {
                 modelYear = product.Identifiers.SingleOrDefault(i => i.Name == "Year").Value
             };
 
-        }
-
-        [TestMethod]
-        public void GetTestPayloadFromFile() {
-            var repo = new PayloadTestRepository();
-            var payload = repo.GetTestPayload();
-            var json = JsonConvert.SerializeObject(payload);
-            Console.WriteLine(json);
-        }
+        }       
 
         private Product GetTestProduct() {
             var product = new Product {
-                Condition = "Used",
-                Description = "2011 Coachmen Freedom Express 260BL - SW2152",
+                Condition = "Used",                
                 Id = "123454321",
 
                 Identifiers = new List<Identifier> {
@@ -211,20 +206,11 @@ namespace Prototype.Tests {
                 Features = new List<Feature> {
                     new Feature{
                         ProductType = "Air Conditioning",
-                        Count = 1,
-                        Description = "Air Conditioning Type",
+                        Count = 1,                        
                         Class = new Class {
                             CategoryName = "Foobar",
                             Name = ""
-                        },
-                        //Measurements = new List<Measurement> {
-                        //    new Measurement {
-                        //        Name = "BTUS",
-                        //        Value = "13,500",
-                        //        NumericValue = 13500.00m,
-                        //        Type = "BTUS"
-                        //    }
-                        //}
+                        },                        
                     },
                     new Feature {
                         ProductType = "Engine",
@@ -235,10 +221,7 @@ namespace Prototype.Tests {
                             }
                         }
                     }
-                },
-                //Engines = new List<Engine> {
-                //    new Engine { DriveType = "Outboard", FuelType = "Gas", Horsepower = 115, ModelName = "115 ELPT 4S EFI CT", Make = "Mercury", ModelYear = 1999}
-                //},
+                },                
                 MarketingDescriptions = new List<MarketingDescription> {
                     new MarketingDescription { CategoryName = "Air Conditioning", Name = "Air Conditioning Type", Value = "Automatic" },
                     new MarketingDescription { CategoryName = "Air Conditioning", Name = "Air Conditioning (BTUS)", Value = "13,500" },
@@ -255,24 +238,8 @@ namespace Prototype.Tests {
                     new MarketingDescription { CategoryName = "Construction", Name = "Body Material", Value = "Aluminum" },
                     new MarketingDescription { CategoryName = "Construction", Name = "Sidewall Construction", Value = "Fiberglass" },
                     new MarketingDescription { CategoryName = "Doors", Name = "Number of Doors", Value = "1" },
-                },
-                //Measurements = new List<Measurement> {
-                //    new Measurement { CategoryName = "", Name = "Length", NumericValue = 29.17m, Type = "Feet", Value = "29.17ft"}
-                //},
-                //Options = new List<Option> {
-                //    new Option { CategoryName = "Cockpit", Name = "Drink Holders", Value = "Stainless Steel drink holders" },
-                //     new Option { CategoryName = "Cockpit", Name = "Lounge Seating", Value = "Forward lounge seating with electric hi-low table (converts to sun lounge)" }
-                //},
-                //Prices = new List<Price> {
-                //    new Price { Type = "MSRP", Value = 18398.00m },
-                //    new Price { Type = "Internet Price", Value = 17800.00m },
-                //    new Price { Type = "Sales Price", Value = 17655.34m }
-                //},
-                //Weights = new List<Weight> {
-                //    new Weight { CategoryName = "", Name = "Dry Weight", NumericValue=4850.00m, Type = "Pounds", Value = "4,850 lbs." },
-                //}
+                }                
             };
-
             return product;
         }       
 
@@ -291,56 +258,29 @@ namespace Prototype.Tests {
                 },
                 ProductType = "Watersport",
                 Condition = "Fresh from the factory",
-                Description = "At just under 23 feet, this unique configuration delivers more room and more comfort.Its side console gives way to a roomy L - lounge in the bow, and additional seating for a total of up to 12 people.The aft section features Heyday's unique 'Hot Tub' seats-equally comfortable for aft viewing or forward cruising. It's the perfect combination of attitude and practicality.You're welcome!",
+                // Description = "At just under 23 feet, this unique configuration delivers more room and more comfort.Its side console gives way to a roomy L - lounge in the bow, and additional seating for a total of up to 12 people.The aft section features Heyday's unique 'Hot Tub' seats-equally comfortable for aft viewing or forward cruising. It's the perfect combination of attitude and practicality.You're welcome!",
                 Features = new List<Feature> {
                     new Feature {
-                        ProductType = "Engine",
-                        //Measurements = new List<Measurement> {
-                        //    new Measurement {
-                        //        CategoryName = "Performance",
-                        //        Name = "",
-                        //        Type = "Horsepower",
-                        //        NumericValue = 350,
-                        //        Descriptor = "350 HP"
-                        //    }
-                        //},
-                        //Manufacturer = new Manufacturer {
-                        //    Make = ""
-                        //},
-                        //Features = new List<Feature> {
-                        //},
-                        //Model = new Model {
-                        //    Name = "",
-                        //    Year = 2017
-                        //},
+                        ProductType = "Engine"
                     },
                     new Feature {
                         ProductType = "Controls",
-                        Description = "Billet Toggle Switches",
+                        //Description = "Billet Toggle Switches",
                     },
                     new Feature {
                         ProductType = "Interior",
-                        Description = "Non-Skid Flooring"
+                        //Description = "Non-Skid Flooring"
                     },
                     new Feature {
                         ProductType = "Interior",
-                        Description = "Pop-up Cleats"
+                        //Description = "Pop-up Cleats"
                     },
                     new Feature {
-                        ProductType = "Trailer",
-                        Description = "Standard Trailer",
-                        //IsOptional = true,
-                        //Options = new List<Option> {
-                        //    new Option {
-                        //        CategoryName = "General Options",
-                        //        Name = "",
-                        //        Value = "Tandem Axle Trailer w/Brakes"
-                        //    },
-                        //}
+                        ProductType = "Trailer"
                     },
                     new Feature {
                         ProductType = "Exterior",
-                        Description = "Deck",
+                        //Description = "Deck",
                         Colors = new List<Color> {
                             new Color {
                                 Category = "",
@@ -357,15 +297,15 @@ namespace Prototype.Tests {
                     },
                     new Feature {
                         ProductType = "Exterior",
-                        Description = "Deluxe Travel Cover"
+                        //Description = "Deluxe Travel Cover"
                     },
                     new Feature {
                         ProductType = "Exterior",
-                        Description = "Elevator Plate"
+                        //Description = "Elevator Plate"
                     },
                     new Feature {
                         ProductType = "Exterior",
-                        Description = "Hull",
+                        //Description = "Hull",
                         Colors = new List<Color> {
                             new Color {
                                 Name = "Exterior Color",
@@ -403,43 +343,7 @@ namespace Prototype.Tests {
                         }
                     }
                 },
-                Manufacturer = new Manufacturer { Make = "Wake Boat WT-2" },
-                //Measurements = new List<Measurement> {
-                //    new Measurement {
-                //        CategoryName = "Dimension",
-                //        Name = "Beam Width",
-                //        NumericValue = 8,
-                //        Type = "Feet",
-                //        Value = "8'0\""
-                //    },
-                //    new Measurement {
-                //        CategoryName = "Dimension",
-                //        Name = "Draft Depth",
-                //        NumericValue = 31,
-                //        Type = "Feet",
-                //        Value = "31\""
-                //    },
-                //    new Measurement {
-                //        CategoryName = "Dimension",
-                //        Name = "Overall Length",
-                //        NumericValue = 6.71m,
-                //        Type = "Meters",
-                //        Value = "22'0\"/6.71m"
-                //    },
-                //    new Measurement {
-                //        CategoryName = "Capacity",
-                //        Name = "Seating",
-                //        Value = "12 Persons",
-                //        NumericValue = 12
-                //    },
-                //    new Measurement {
-                //        CategoryName = "Capacity",
-                //        Name = "Fuel",
-                //        Type = "Gallons",
-                //        Value = "35 Gallons",
-                //        NumericValue = 35
-                //    },
-                //},
+                Manufacturer = new Manufacturer { Make = "Wake Boat WT-2" },                
                 MediaContent = new List<Media> {
                     new Media {
                         SortOrder = 1,
@@ -539,59 +443,29 @@ namespace Prototype.Tests {
                     },
                 },
                 Model = new Model {
-                    Name = "Heyday ",
-                    // Year = 2018
-                },
-                //Options = new List<Option> {
-                //    new Option {
-                //        CategoryName = "General Options",
-                //        Name = "",
-                //        Value = "5.7 Crusader (350php)"
-                //    },
-                //    new Option {
-                //        CategoryName = "General Options",
-                //        Name = "",
-                //        Value = "Accent Package"
-                //    },
-                //    new Option {
-                //        CategoryName = "General Options",
-                //        Name = "",
-                //        Value = "Battery On/Off Disconnect Switch"
-                //    }
-                //},
-                //Prices = new List<Price> {
-                //    new Price {
-                //        Type = "Contact Dealer",
-                //        Value = 0.00m
-                //    }
-                //},
-                //Specifications = new List<Specification> {
-                //    new Specification {
-                //        CategoryName = "",
-                //        Name = "Hours",
-                //        Value = "0"
-                //    }
-                //},
-                //Status = "In Stock",               
-                //Weights = new List<Weight> {
-                //    new Weight {
-                //        CategoryName = "Capacity",
-                //        Name = "Ballast",
-                //        NumericValue = 1800,
-                //        Type = "Pounds",
-                //        Value = "1,800 Pounds"
-                //    },
-                //    new Weight {
-                //        CategoryName = "Dry Weight",
-                //        Name = "Dry Weight",
-                //        NumericValue = 3550,
-                //        Type = "Pounds",
-                //        Value = "3,550 Pounds"
-                //    }
-                //}
+                    Name = "Heyday "
+                },                
             };
-
             return product;
         }
+
+        private void ShowProductModelInAction() {
+            
+        }
+
+        [TestMethod]
+        public void GenerateCRSMergePayload() {
+
+        }
+
+        [TestMethod]
+        public void TestPayloadViewModelMappings() {
+            var repo = new PayloadTestRepository();
+            // var vm = repo.GetProductViewModel("foo");
+            //var json = JsonConvert.SerializeObject(vm);
+            //Console.WriteLine(json);
+        }
+
+       
     }
 }

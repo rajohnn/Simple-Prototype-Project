@@ -65,6 +65,11 @@
         "Name": "Stock Number",
         "Description": null,
         "Value": "BL0168"
+      },
+      {
+        "Name": "Year",
+        "Description": null,
+        "Value":  2018
       }
     ],
     "Features": [

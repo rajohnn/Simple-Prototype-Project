@@ -63,6 +63,9 @@
     <Compile Include="DealerInventory\CustomPackages.cs" />
     <Compile Include="DealerInventory\CustomParts.cs" />
     <Compile Include="DealerInventory\StandardFeatureConfiguration.cs" />
+    <Compile Include="Ext\StringExtensions.cs" />
+    <Compile Include="Inventory\Feature.cs" />
+    <Compile Include="Inventory\Product.cs" />
     <Compile Include="Migrations\201805242010588_Initial.cs" />
     <Compile Include="Migrations\201805242010588_Initial.Designer.cs">
       <DependentUpon>201805242010588_Initial.cs</DependentUpon>
@@ -75,6 +78,8 @@
     <Compile Include="ProductCatalog\Part.cs" />
     <Compile Include="ProductCatalog\ReferenceCode.cs" />
     <Compile Include="ProductCatalog\StandardFeature.cs" />
+    <Compile Include="Repository\BaseRepository.cs" />
+    <Compile Include="Repository\InventoryRepository.cs" />
     <Compile Include="Repository\PayloadTestRepository.cs" />
     <Compile Include="SB\SBBSI.cs" />
     <Compile Include="User.cs" />
@@ -84,6 +89,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PrototypeContext.cs" />
     <Compile Include="ProductCatalog\Product.cs" />
+    <Compile Include="Webhook\FeatureEngineMapper.cs" />
+    <Compile Include="Webhook\FeatureIdentifiersMapper.cs" />
     <Compile Include="Webhook\InventoryItemViewModel.cs" />
     <Compile Include="Webhook\Product.cs" />
     <Compile Include="Webhook\SampleAPI.cs" />

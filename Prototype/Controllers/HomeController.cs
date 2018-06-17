@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Prototype.Domain.Repository;
 using System.Web.Mvc;
 
 namespace Prototype.Controllers {
+
     public class HomeController : Controller {
+
         public ActionResult Index() {
+            var repo = new PayloadTestRepository();
+            //var vm = repo.GetProductViewModel("foobar");
             return View();
         }
 
