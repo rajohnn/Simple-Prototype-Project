@@ -60,6 +60,7 @@ namespace Prototype.Domain.Webhook {
     public class PriceModel {
         public string Category { get; set; }
         public decimal? Amount { get; set; }
+        public string FormattedAmount { get; set; }
         public string DisplayValue { get; set; }
     }
 

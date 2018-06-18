@@ -35,16 +35,24 @@ namespace Prototype.Domain.Repository {
                 ProductType = product.ProductType,
                 Condition = product.Condition,
                 Designation = product.Designation,
-                Status = product.Status,
-                DisplayName = "",
+                DisplayName = GetIdentifierValue(product, "Display Name"),
+                Status = product.Status,                
                 ManufacturerCode = product.Manufacturer.Code,
                 ManufacturerMake = product.Manufacturer.Make,
                 ModelCode = product.Model.Code,
                 SubModelName = product.Model.Models.Count > 0 ? product.Model.Models[0].Name : "",
                 ModelName = product.Model.Name,
                 ModelYear = GetYear(product),
-                StockNumber = GetStockNumber(product)
-            };           
+                StockNumber = GetIdentifierValue(product, "Stock Number")
+            };       
+            
+            if (product.Description.Length > 0) {
+                pdm.MarketingDetails.Add(new MarketingDetailModel {
+                    Category = "Product Description",
+                    Name ="",
+                    Value = product.Description
+                });
+            }
 
             foreach (var activity in product.Activities.OrderBy(a=>a.Name)) {
                 pdm.Activities.Add(new ActivityModel {
@@ -74,6 +82,7 @@ namespace Prototype.Domain.Repository {
                 pdm.Prices.Add(new PriceModel {
                     Amount = c.Value,
                     Category = c.Category,
+                    FormattedAmount = String.Format("{0:C}", c.Value.Value),
                     DisplayValue = c.DisplayValue
                 });
             }
@@ -96,19 +105,23 @@ namespace Prototype.Domain.Repository {
         }
 
         public FeatureModel MapFeature(Feature product) {
+            var displayName = GetIdentifierValue(product, "Display Name");
+            if (String.IsNullOrWhiteSpace(displayName)) {
+                displayName = product.Description;
+            }
             var fm = new FeatureModel {
                 ProductType = product.ProductType,
                 Condition = product.Condition,
                 Designation = product.Designation,
                 Status = product.Status,
-                DisplayName = product.Description,
+                DisplayName = displayName,
                 ManufacturerCode = product.Manufacturer.Code,
                 ManufacturerMake = product.Manufacturer.Make,
                 ModelCode = product.Model.Code,
                 SubModelName = product.Model.Models.Count > 0 ? product.Model.Models[0].Name : "",
                 ModelName = product.Model.Name,
                 ModelYear = GetYear(product),
-                StockNumber = GetStockNumber(product)
+                StockNumber = GetIdentifierValue(product, "Stock Number")
             };
 
             foreach (var activity in product.Activities) {
@@ -139,6 +152,7 @@ namespace Prototype.Domain.Repository {
                 fm.Prices.Add(new PriceModel {
                     Amount = c.Value,
                     Category = c.Category,
+                    FormattedAmount = String.Format("{0:C}", c.Value.Value),
                     DisplayValue = c.DisplayValue
                 });
             }
@@ -165,8 +179,8 @@ namespace Prototype.Domain.Repository {
             return 0;
         }
 
-        private string GetStockNumber(Product product) {
-            var stockId = product.Identifiers.SingleOrDefault(i => i.Name == "Stock Number");
+        private string GetIdentifierValue(Product product, string name) {
+            var stockId = product.Identifiers.SingleOrDefault(i => i.Name.ToLower() == name.ToLower());
             if (stockId != null)
                 return stockId.Value;
             return string.Empty;

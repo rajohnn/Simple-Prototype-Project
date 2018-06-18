@@ -24,9 +24,15 @@
     },
     "Designation": "New",
     "Configuration": "Single Hull",
-    "Activities": [],
-    "Condition": "",
-    "ProductType": null,
+    "Activities": [
+      {
+        "CategoryName": "Relaxation",
+        "Name": "Sunbathing",
+        "Value": "Relax on your deck"
+      }
+    ],
+    "Condition": "Brand New",
+    "ProductType": "Yacht",
     "Description": "When you step aboard the 60 Cantius, the possibilities are endless. Luxurious and comfortable, powerful and elegant, the 60 Cantius is versatile at every turn. With spacious quarters above and below deck, you can spend more time on the water than ever before. Along with the standard amenities, the 60 Cantius boasts a style and charm that cannot be matched.",
     "Status": "In Stock",
     "Class": {
@@ -6768,7 +6774,13 @@
         "Value": "#c8c5b6"
       }
     ],
-    "Prices": [],
+    "Prices": [
+      {
+        "Category": "MSRP",
+        "DisplayValue": "Manufacturer Suggested Retail Price",
+        "Value" : 2562024.00
+      }
+    ],
     "Source": "Source"
   },
   "CustomerKey": "TestKey",
