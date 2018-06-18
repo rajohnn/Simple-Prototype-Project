@@ -7,8 +7,9 @@ namespace Prototype.Controllers {
 
         public ActionResult Index() {
             var repo = new PayloadTestRepository();
-            //var vm = repo.GetProductViewModel("foobar");
-            return View();
+            var path = Server.MapPath("/");
+            var vm = repo.GetProductViewModel(path, "foobar");
+            return View(vm);
         }
 
         public ActionResult About() {

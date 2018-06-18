@@ -46,15 +46,16 @@ namespace Prototype.Domain.Webhook {
 
         public Model Model { get; set; }
         public string CatalogId { get; set; }
-
+        public string Description { get; set; }
         public Manufacturer Manufacturer { get; set; } = new Manufacturer();
-
+       
         /// <summary>
         /// Maps to condition in most dealerships.
         /// Maps to identifer
         /// </summary>
         public string Designation { get; set; }
         public string Configuration { get; set; }
+        //public string DisplayName { get; set; }
 
         public List<Activity> Activities { get; set; } = new List<Activity>();
 

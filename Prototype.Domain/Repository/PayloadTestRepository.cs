@@ -12,10 +12,10 @@ namespace Prototype.Domain.Repository {
             string file = string.Empty;
             if (String.IsNullOrWhiteSpace(overridenPath)) {
                 var path = Directory.GetCurrentDirectory();
-                file = Path.Combine(path, "data/payload.json");
+                file = Path.Combine(path, "data/payload2.json");
             }
             else {
-
+                file = Path.Combine(overridenPath, @"bin\data\payload2.json");
             }
             return JsonConvert.DeserializeObject<DealerMessage>(File.ReadAllText(file));
         }
@@ -24,8 +24,9 @@ namespace Prototype.Domain.Repository {
             var message = GetTestPayload(path);
             var product = message.Product;
             var vm = new InventoryItemViewModel {
-                ProductDetailsModel = MapProduct(product)
+                ProductDetailsModel = MapProduct(product)               
             };
+            vm.CurrentProductDetailsModel = vm.ProductDetailsModel;
             return vm;
         }
 
@@ -45,7 +46,7 @@ namespace Prototype.Domain.Repository {
                 StockNumber = GetStockNumber(product)
             };           
 
-            foreach (var activity in product.Activities) {
+            foreach (var activity in product.Activities.OrderBy(a=>a.Name)) {
                 pdm.Activities.Add(new ActivityModel {
                     Category = activity.CategoryName,
                     Name = activity.Name,
@@ -53,7 +54,7 @@ namespace Prototype.Domain.Repository {
                 });
             }
 
-            foreach (var color in product.Colors) {
+            foreach (var color in product.Colors.OrderBy(c=>c.Name)) {
                 pdm.Colors.Add(new ColorModel {
                     Category = color.Category,
                     Name = color.Name,
@@ -61,7 +62,7 @@ namespace Prototype.Domain.Repository {
                 });
             }
 
-            foreach (var c in product.MarketingDescriptions) {
+            foreach (var c in product.MarketingDescriptions.OrderBy(md=>md.Name)) {
                 pdm.MarketingDetails.Add(new MarketingDetailModel {
                     Category = c.CategoryName,
                     Name = c.Name,
@@ -69,7 +70,7 @@ namespace Prototype.Domain.Repository {
                 });
             }
 
-            foreach (var c in product.Prices) {
+            foreach (var c in product.Prices.OrderBy(p=>p.Value)) {
                 pdm.Prices.Add(new PriceModel {
                     Amount = c.Value,
                     Category = c.Category,
@@ -77,7 +78,7 @@ namespace Prototype.Domain.Repository {
                 });
             }
 
-            foreach (var c in product.Specifications) {
+            foreach (var c in product.Specifications.OrderBy(s=>s.CategoryName).ThenBy(s=>s.Name)) {
                 pdm.Specifications.Add(new SpecificationModel {
                     Amount = c.NumericValue,
                     Category = c.CategoryName,
@@ -87,7 +88,7 @@ namespace Prototype.Domain.Repository {
                 });
             }
 
-            foreach(var feature in product.Features) {
+            foreach(var feature in product.Features.OrderBy(f=>f.ProductType)) {
                 pdm.Features.Add(MapFeature(feature));
             }
 
@@ -100,7 +101,7 @@ namespace Prototype.Domain.Repository {
                 Condition = product.Condition,
                 Designation = product.Designation,
                 Status = product.Status,
-                DisplayName = "",
+                DisplayName = product.Description,
                 ManufacturerCode = product.Manufacturer.Code,
                 ManufacturerMake = product.Manufacturer.Make,
                 ModelCode = product.Model.Code,

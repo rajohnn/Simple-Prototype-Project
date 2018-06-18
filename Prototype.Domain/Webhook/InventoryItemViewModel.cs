@@ -4,14 +4,18 @@ namespace Prototype.Domain.Webhook {
 
     public class InventoryItemViewModel {
         public ProductDetailsModel ProductDetailsModel { get; set; } = new ProductDetailsModel();
+        
         public SpecificationModel NewSpecification { get; set; } = new SpecificationModel();
         public PriceModel NewPrice { get; set; } = new PriceModel();
         public ColorModel NewColor { get; set; } = new ColorModel();
-        public MarketingDetailModel NewMarketingDetail { get; set; } = new MarketingDetailModel();       
+        public ActivityModel NewActivity { get; set; } = new ActivityModel();
+        public MarketingDetailModel NewMarketingDetail { get; set; } = new MarketingDetailModel();
+        public ProductDetailsModel CurrentProductDetailsModel { get; set; } = new ProductDetailsModel();
 
         public bool IsFeatureExpanded { get; set; } = false;
         public bool IsSpecificationExpanded { get; set; } = false;
         public bool IsPricesExpanded { get; set; } = false;
+        public bool IsActivitiesExpaneded { get; set; } = false;
         public bool IsColorsExpanded { get; set; } = false;
         public bool IsMarketingDetailsExpanded { get; set; } = false;
     }

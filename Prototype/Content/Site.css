@@ -41,3 +41,16 @@ h4 {
     font-weight:normal;
     color:#0094ff !important;
 }
+
+.color-badge {
+    height:25px;
+    width:25px;
+    background-color: white;
+    border: 1px solid #337ab7;
+}
+
+.color-badge-label {
+    line-height:25px;
+    margin-left:10px;
+    color: #0094ff;
+}

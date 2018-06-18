@@ -195,8 +195,8 @@
       <Path>
         <Point X="8.5" Y="7.603" />
         <Point X="8.5" Y="8.133" />
-        <Point X="9.635" Y="8.133" Type="JumpStart" />
-        <Point X="9.802" Y="8.133" Type="JumpEnd" />
+        <Point X="9.854" Y="8.133" Type="JumpStart" />
+        <Point X="10.021" Y="8.133" Type="JumpEnd" />
         <Point X="10.95" Y="8.133" />
         <Point X="10.95" Y="10.129" />
         <Point X="14" Y="10.129" />

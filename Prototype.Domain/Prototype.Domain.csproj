@@ -101,6 +101,9 @@
     <None Include="Data\payload.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Data\payload2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Locations.cd" />
     <None Include="Dealer.cd" />
     <None Include="InventoryEntities.cd" />
