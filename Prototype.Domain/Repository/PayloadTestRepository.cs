@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Prototype.Domain.Webhook;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -26,12 +27,21 @@ namespace Prototype.Domain.Repository {
             var vm = new InventoryItemViewModel {
                 ProductDetailsModel = MapProduct(product)               
             };
-            vm.CurrentProductDetailsModel = vm.ProductDetailsModel;
+            vm.CurrentProductDetailsModel = new ProductDetailsModel();
+            var displayName = GetIdentifierValue(product, "Display Name");
+
+            vm.NavigationItems = new List<NavigationItem> {
+                new NavigationItem {
+                    Id = vm.ProductDetailsModel.Id,
+                    DisplayName = vm.ProductDetailsModel.DisplayName
+                }
+            };
             return vm;
         }
 
         public ProductDetailsModel MapProduct(Product product) {
             var pdm = new ProductDetailsModel {
+                Id = Guid.NewGuid().ToString(),
                 ProductType = product.ProductType,
                 Condition = product.Condition,
                 Designation = product.Designation,
@@ -44,14 +54,21 @@ namespace Prototype.Domain.Repository {
                 ModelName = product.Model.Name,
                 ModelYear = GetYear(product),
                 StockNumber = GetIdentifierValue(product, "Stock Number")
-            };       
+            };
+
+            pdm.NavigationItems = new List<NavigationItem> {
+                new NavigationItem {
+                    Id = pdm.Id,
+                    DisplayName = pdm.DisplayName
+                }
+            };
             
             if (product.Description.Length > 0) {
                 pdm.MarketingDetails.Add(new MarketingDetailModel {
                     Category = "Product Description",
                     Name ="",
                     Value = product.Description
-                });
+                });               
             }
 
             foreach (var activity in product.Activities.OrderBy(a=>a.Name)) {
@@ -97,19 +114,20 @@ namespace Prototype.Domain.Repository {
                 });
             }
 
-            foreach(var feature in product.Features.OrderBy(f=>f.ProductType)) {
-                pdm.Features.Add(MapFeature(feature));
+            foreach(var feature in product.Features.OrderBy(f=>f.Description)) {
+                pdm.Features.Add(MapFeature(feature, pdm.NavigationItems));
             }
 
             return pdm;
         }
 
-        public FeatureModel MapFeature(Feature product) {
+        public FeatureModel MapFeature(Feature product, List<NavigationItem> navigationItems) {
             var displayName = GetIdentifierValue(product, "Display Name");
             if (String.IsNullOrWhiteSpace(displayName)) {
                 displayName = product.Description;
             }
             var fm = new FeatureModel {
+                Id = Guid.NewGuid().ToString(),
                 ProductType = product.ProductType,
                 Condition = product.Condition,
                 Designation = product.Designation,
@@ -123,6 +141,15 @@ namespace Prototype.Domain.Repository {
                 ModelYear = GetYear(product),
                 StockNumber = GetIdentifierValue(product, "Stock Number")
             };
+
+            foreach(var ni in navigationItems) {
+                fm.NavigationItems.Add(ni);
+            }
+
+            fm.NavigationItems.Add(new NavigationItem {
+                Id = fm.Id,
+                DisplayName = fm.DisplayName
+            });
 
             foreach (var activity in product.Activities) {
                 fm.Activities.Add(new ActivityModel {
@@ -166,8 +193,8 @@ namespace Prototype.Domain.Repository {
                     Value = c.Value
                 });
             }
-            foreach (var feature in product.Features) {
-                fm.Features.Add(MapFeature(feature));
+            foreach (var feature in product.Features.OrderBy(f=>f.Description)) {
+                fm.Features.Add(MapFeature(feature, fm.NavigationItems));
             }
             return fm;
         }

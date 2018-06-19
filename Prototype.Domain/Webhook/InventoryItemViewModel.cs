@@ -18,9 +18,12 @@ namespace Prototype.Domain.Webhook {
         public bool IsActivitiesExpaneded { get; set; } = false;
         public bool IsColorsExpanded { get; set; } = false;
         public bool IsMarketingDetailsExpanded { get; set; } = false;
+
+        public List<NavigationItem> NavigationItems { get; set; } = new List<NavigationItem>();
     }
 
     public class ProductDetailsModel {
+        public string Id { get; set; }
         public string DisplayName { get; set; }
         public string StockNumber { get; set; }
         public string ProductType { get; set; }
@@ -40,6 +43,7 @@ namespace Prototype.Domain.Webhook {
         public List<MarketingDetailModel> MarketingDetails { get; set; } = new List<MarketingDetailModel>();
         public List<ActivityModel> Activities { get; set; } = new List<ActivityModel>();
         public List<FeatureModel> Features { get; set; } = new List<FeatureModel>();
+        public List<NavigationItem> NavigationItems { get; set; } = new List<NavigationItem>();
     }
 
     public class FeatureModel : ProductDetailsModel {
@@ -80,5 +84,10 @@ namespace Prototype.Domain.Webhook {
         public string Category { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
+    }
+
+    public class NavigationItem {
+        public string Id { get; set; }
+        public string DisplayName { get; set; }
     }
 }

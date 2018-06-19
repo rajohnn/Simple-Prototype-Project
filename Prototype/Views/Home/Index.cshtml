@@ -5,16 +5,25 @@
 }
 <div class="row">
     <div class="col-lg-10">
-            <h3 class="text-primary">Product</h3>
-        </div>
-        <div class="col-lg-2">
-        </div>
+        @*<h3 class="text-primary">
+            <span data-bind="text: CurrentProductDetailsModel().DisplayName"></span>
+        </h3>*@
+        <ul class="breadcrumb" data-bind="foreach: NavigationItems">
+            <li>
+                <a style="cursor:pointer" data-bind="click: inventory.onNavigationClicked">
+                    <span data-bind="text: DisplayName"></span>
+                </a> 
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-2">
+    </div>
 </div>
-<hr style="border-color:midnightblue;margin:5px" />
 <div class="row">
     <div class="col-lg-10">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Product Details Panel -->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <div class="panel-title">Product Details</div>
@@ -23,39 +32,39 @@
                         <form>
                             <div class="form-group">
                                 <label for="stock-number">Display Name</label>
-                                <input type="text" data-bind="value: CurrentProductDetailsModel.DisplayName" class="form-control" id="display-name" placeholder="Custom Display Name" />
+                                <input type="text" data-bind="value: CurrentProductDetailsModel().DisplayName" class="form-control" id="display-name" placeholder="Custom Display Name" />
                             </div>
                             <div class="form-group">
                                 <label for="stock-number">Stock Number</label>
-                                <input data-bind="value: CurrentProductDetailsModel.StockNumber" type="text" class="form-control" id="stock-number" placeholder="Stock #" />
+                                <input data-bind="value: CurrentProductDetailsModel().StockNumber" type="text" class="form-control" id="stock-number" placeholder="Stock #" />
                             </div>
                             <div class="form-group">
                                 <label for="category">Product Type</label>
-                                <input data-bind="value: CurrentProductDetailsModel.ProductType" type="text" class="form-control" id="category" placeholder="Product Category Goes Here" />
+                                <input data-bind="value: CurrentProductDetailsModel().ProductType" type="text" class="form-control" id="category" placeholder="Product Category Goes Here" />
                             </div>
                             <div class="form-group">
                                 <label for="manufacturer-code">Manufacturer Code</label>
-                                <input data-bind="value: CurrentProductDetailsModel.ManufacturerCode" type="text" class="form-control" id="manufacturer-code" value="" />
+                                <input data-bind="value: CurrentProductDetailsModel().ManufacturerCode" type="text" class="form-control" id="manufacturer-code" value="" />
                             </div>
                             <div class="form-group">
                                 <label for="manufacturer-make">Manufacturer Make</label>
-                                <input data-bind="value: CurrentProductDetailsModel.ManufacturerMake" type="text" class="form-control" id="manufacturer-make" value="" />
+                                <input data-bind="value: CurrentProductDetailsModel().ManufacturerMake" type="text" class="form-control" id="manufacturer-make" value="" />
                             </div>
                             <div class="form-group">
                                 <label for="model-code">Model Code</label>
-                                <input data-bind="value: CurrentProductDetailsModel.ModelCode" type="text" class="form-control" id="manufacturer-code" value="" />
+                                <input data-bind="value: CurrentProductDetailsModel().ModelCode" type="text" class="form-control" id="manufacturer-code" value="" />
                             </div>
                             <div class="form-group">
                                 <label for="model-make">Model Name</label>
-                                <input data-bind="value: CurrentProductDetailsModel.ModelName" type="text" class="form-control" id="manufacturer-make" value="" />
+                                <input data-bind="value: CurrentProductDetailsModel().ModelName" type="text" class="form-control" id="manufacturer-make" value="" />
                             </div>
                             <div class="form-group">
                                 <label for="sub-model-name">Sub-Model Name</label>
-                                <input data-bind="value: CurrentProductDetailsModel.SubModelName" type="text" class="form-control" id="sub-model-name" value="" />
+                                <input data-bind="value: CurrentProductDetailsModel().SubModelName" type="text" class="form-control" id="sub-model-name" value="" />
                             </div>
                             <div class="form-group">
                                 <label for="model-make">Model Year</label>
-                                <input data-bind="value:CurrentProductDetailsModel.ModelYear " type="text" class="form-control" id="manufacturer-year" value="" />
+                                <input data-bind="value:CurrentProductDetailsModel().ModelYear " type="text" class="form-control" id="manufacturer-year" value="" />
                             </div>
                             <div class="form-group">
                                 <label for="designation">Designation</label>
@@ -68,18 +77,19 @@
 
                             <div class="form-group">
                                 <label for="condition">Condition</label>
-                                <input data-bind="value:CurrentProductDetailsModel.Condition " type="text" class="form-control" id="condition" value="*Brand New!" />
+                                <input data-bind="value:CurrentProductDetailsModel().Condition " type="text" class="form-control" id="condition" value="*Brand New!" />
                             </div>
 
                             <div class="form-group">
                                 <label for="status">Status</label>
-                                <input data-bind="value: CurrentProductDetailsModel.Status" type="text" class="form-control" id="status" placeholder="Test" value="At Location" />
+                                <input data-bind="value: CurrentProductDetailsModel().Status" type="text" class="form-control" id="status" placeholder="Test" value="At Location" />
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Features Panel -->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Features</h3>
@@ -92,22 +102,13 @@
                         <form></form>
                     </div>
                     <div class="panel-footer">
-                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel.Features">
-                            <button type="button" class="list-group-item">
-                                <h4 class="list-group-item-heading">
-                                    <span data-bind="text: Count" class="pull-right"></span>
-                                    <span data-bind="text: DisplayName"></span>
-                                </h4>
-                                <div class="list-group-item-text">
-                                    <span data-bind="text: ModelCode"></span> <span data-bind="text: ModelName"></span>
-                                </div>
-                            </button>
-                        </div>
+                        <div data-bind="template: { name:'feature-template', foreach: CurrentProductDetailsModel().Features }"></div>                       
                         <button data-bind="click: inventory.onAddFeatureClicked" class="btn btn-sm btn-primary">Add Feature</button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Specifications Panel -->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Specifications</h3>
@@ -151,7 +152,7 @@
                         </form>
                     </div>
                     <div class="panel-footer">
-                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel.Specifications">
+                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel().Specifications">
                             <button type="button" class="list-group-item">
                                 <h4 class="list-group-item-heading">
                                     <span data-bind="text: Category" class="pull-right"></span>
@@ -166,8 +167,9 @@
                     </div>
                 </div>
             </div>
-
+          
             <div class="col-lg-3 col-md-6 col-sm-12">
+                <!-- Prices Panel -->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
 
@@ -195,7 +197,7 @@
                         </form>
                     </div>
                     <div class="panel-footer">
-                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel.Prices">
+                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel().Prices">
                             <button type="button" class="list-group-item">
                                 <h4 class="list-group-item-heading">
                                     <span data-bind="text: Category" class="pull-right"></span>
@@ -209,6 +211,8 @@
                         <button data-bind="click: inventory.onAddPriceClicked" class="btn btn-sm btn-primary">Add Price</button>
                     </div>
                 </div>
+
+                <!-- Colors Panel -->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Colors</h3>
@@ -240,7 +244,7 @@
                         </form>
                     </div>
                     <div class="panel-footer">
-                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel.Colors">
+                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel().Colors">
                             <button type="button" class="list-group-item">
                                 <span data-bind="if: Value">
                                     <span data-bind="style: { 'background-color': Value() }" class="badge pull-left color-badge">   </span>
@@ -248,7 +252,7 @@
                                 <span data-bind="ifnot: Value">
                                     <span class="badge pull-left color-badge">   </span>
                                 </span>
-                                
+
                                 <span class="color-badge-label" data-bind="text:Category"></span> - <span data-bind="text: Name"></span>
                                 <span data-bind="if: Value" class="text-muted">
                                     (<span data-bind="text: Value"></span>)
@@ -258,6 +262,8 @@
                         <button data-bind="click: inventory.onAddColorClicked" class="btn btn-sm btn-primary">Add Color</button>
                     </div>
                 </div>
+
+                <!-- Marketing Details Panel -->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Marketing Details</h3>
@@ -284,7 +290,7 @@
                         </form>
                     </div>
                     <div class="panel-footer">
-                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel.MarketingDetails">
+                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel().MarketingDetails">
                             <button type="button" class="list-group-item">
                                 <h4 class="list-group-item-heading">
                                     <span data-bind="text: Name" class="pull-right"></span>
@@ -298,6 +304,8 @@
                         <button data-bind="click: inventory.onAddMarketingDetailClicked" class="btn btn-sm btn-primary">Add Marketing Detail</button>
                     </div>
                 </div>
+
+                <!-- Activities Panel -->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Activities</h3>
@@ -324,7 +332,7 @@
                         </form>
                     </div>
                     <div class="panel-footer">
-                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel.Activities">
+                        <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel().Activities">
                             <button type="button" class="list-group-item">
                                 <h4 class="list-group-item-heading">
                                     <span data-bind="text: Category" class="pull-right"></span>
@@ -353,5 +361,17 @@
             inventory.serverModel = @Html.Raw(JsonConvert.SerializeObject(Model));
             inventory.init();
         });
+    </script>
+
+    <script id="feature-template" type="text/html">
+        <ul class="list-group list-group-hover" style="font-size:small;cursor: pointer">
+            <a class="list-group-item list-group-item-action collapse" data-bind="attr:{ id: Id() }">                
+                <div class="list-group-item-text" data-bind="click: inventory.onFeatureClicked">
+                    <span data-bind="text: DisplayName"></span> <span data-bind="text: ModelName"></span>
+                </div>
+                <!-- ko template: {name: 'feature-template', foreach: $data.Features } -->
+                <!-- /ko -->
+            </a>
+        </ul>
     </script>
 }

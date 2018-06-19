@@ -7,6 +7,7 @@
             inventory.model = ko.observable(
                 ko.mapping.fromJS(inventory.serverModel));
         };        
+        inventory.model().CurrentProductDetailsModel = new ko.observable(inventory.model().ProductDetailsModel);
         ko.applyBindings(inventory.model);
     },
     toggleFeature: function () {
@@ -62,18 +63,50 @@
         inventory.model().IsMarketingDetailsExpanded(true);
         $("#marketing-category").focus();
     },
-
+    onNavigationClicked: function (navigationItem) {        
+        console.log(navigationItem.Id() + " : " + navigationItem.DisplayName());
+        var model = inventory.model();
+        if (model.ProductDetailsModel.Id() == navigationItem.Id()) {
+            model.CurrentProductDetailsModel(model.ProductDetailsModel);
+            inventory.updateNavigation(model.ProductDetailsModel);
+        }            
+        else {
+            // find the feature we clicked on
+            var features = inventory.model().ProductDetailsModel.Features();
+            var feature = inventory.findFeature(features, navigationItem);
+            model.CurrentProductDetailsModel(feature);
+            inventory.updateNavigation(feature);
+        }        
+    },
+    onFeatureClicked: function (feature) {  
+        var model = inventory.model(); 
+        inventory.updateNavigation(feature);
+        model.CurrentProductDetailsModel(feature);
+    },
+    findFeature: function (features, navigationItem) { 
+        var list = [];
+        getFeatures(features);
+        var result = _.find(list, function (item) {
+            if (item.Id() == navigationItem.Id()) {
+                console.log("found!");
+                return item;
+            }                
+        });
+        function getFeatures(features) {
+            _.forEach(features, function (item) {
+                list.push(item);
+                if (item.Features().length > 0) {
+                    getFeatures(item.Features());
+                }
+            });    
+        }        
+        return result;
+    },
+    updateNavigation: function (feature) {
+        var model = inventory.model();
+        model.NavigationItems.removeAll();
+        _.forEach(feature.NavigationItems(), function (item) {
+            model.NavigationItems.push(item);
+        });
+    }
 });
-
-//$(document).on('click', '.panel-heading span.clickable', function (e) {
-//    var $this = $(this);
-//    if (!$this.hasClass('panel-collapsed')) {
-//        $this.parents('.panel').find('.panel-body').slideUp();
-//        $this.addClass('panel-collapsed');
-//        $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
-//    } else {
-//        $this.parents('.panel').find('.panel-body').slideDown();
-//        $this.removeClass('panel-collapsed');
-//        $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
-//    }
-//})
