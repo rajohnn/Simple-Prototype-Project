@@ -26,7 +26,7 @@ $(document.body).on("blue", ".decimal", function (e) {
 function handleDecimal(e) {
     // Allow: backspace, delete, tab, escape, enter and .
     if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
-        (e.keyCode == 65 && e.ctrlKey === true) ||
+        (e.keyCode === 65 && e.ctrlKey === true) ||
         (e.keyCode >= 35 && e.keyCode <= 39)) {
         return;
     }
@@ -91,6 +91,35 @@ ko.bindingHandlers.slideVisible = {
         // Whenever the value subsequently changes, slide the element in or out
         var value = valueAccessor();
         ko.unwrap(value) ? $(element).slideDown() : $(element).slideUp();
+    }
+};
+
+ko.bindingHandlers.objectSelect = {
+    after: ['options', 'foreach'],
+
+    init: function (element, valueAccessor, allBindings) {
+        var interceptor = ko.computed({
+            read: function () {
+                var value = ko.utils.unwrapObservable(valueAccessor());
+                var optionsValue = ko.utils.unwrapObservable(allBindings.get('optionsValue'));
+                return value && value[optionsValue];
+            },
+
+            write: function (value) {
+                var optionsValue = ko.utils.unwrapObservable(allBindings.get('optionsValue'));
+                var options = ko.utils.unwrapObservable(allBindings.get('options'));
+
+                var obj = ko.utils.arrayFirst(options, function (item) {
+                    return item[optionsValue] === value;
+                });
+
+                valueAccessor()(obj);
+            }
+        });
+
+        ko.applyBindingsToNode(element, {
+            value: interceptor
+        });
     }
 };
 

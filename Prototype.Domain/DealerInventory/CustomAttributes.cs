@@ -26,9 +26,5 @@ namespace Prototype.Domain.Dealership {
         [Column(TypeName = "NVARCHAR")]
         [StringLength(100)]
         public string DisplayValue { get; set; }
-
-        public bool IsLocked { get; set; }
     }
-
-
 }

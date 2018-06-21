@@ -25,7 +25,13 @@ namespace Prototype.Domain.Repository {
             var message = GetTestPayload(path);
             var product = message.Product;
             var vm = new InventoryItemViewModel {
-                ProductDetailsModel = MapProduct(product)               
+                ProductDetailsModel = MapProduct(product),
+                BaseClasses = GetBaseClasses(),
+                SpecificationTypes = GetSpecificationTypes().OrderBy(c=>c.Name).ToList(),
+                UnitTypes = GetUnitTypes().OrderBy(c=>c.Name).ToList(),
+                PriceTypes = GetPriceTypes().OrderBy(c=>c.Name).ToList(),
+                ColorTypes = GetColorTypes().OrderBy(c=>c.Name).ToList(),
+                ActivityTypes = GetActivityTypes().OrderBy(c=>c.Name).ToList()
             };
             vm.CurrentProductDetailsModel = new ProductDetailsModel();
             var displayName = GetIdentifierValue(product, "Display Name");
@@ -80,8 +86,12 @@ namespace Prototype.Domain.Repository {
             }
 
             foreach (var color in product.Colors.OrderBy(c=>c.Name)) {
+                string colorCategory = "Exterior";
+                if (!String.IsNullOrWhiteSpace(color.Category)) {
+                    colorCategory = color.Category;
+                }
                 pdm.Colors.Add(new ColorModel {
-                    Category = color.Category,
+                    Category = GetSelectItem(GetColorTypes(), colorCategory),
                     Name = color.Name,
                     Value = color.Value
                 });
@@ -98,7 +108,7 @@ namespace Prototype.Domain.Repository {
             foreach (var c in product.Prices.OrderBy(p=>p.Value)) {
                 pdm.Prices.Add(new PriceModel {
                     Amount = c.Value,
-                    Category = c.Category,
+                    Category = GetSelectItem(GetPriceTypes(), c.Category),
                     FormattedAmount = String.Format("{0:C}", c.Value.Value),
                     DisplayValue = c.DisplayValue
                 });
@@ -107,9 +117,9 @@ namespace Prototype.Domain.Repository {
             foreach (var c in product.Specifications.OrderBy(s=>s.CategoryName).ThenBy(s=>s.Name)) {
                 pdm.Specifications.Add(new SpecificationModel {
                     Amount = c.NumericValue,
-                    Category = c.CategoryName,
+                    Category = GetSelectItem(GetSpecificationTypes(), c.CategoryName),
                     Name = c.Name,
-                    UnitType = c.UnitType,
+                    UnitType = GetSelectItem(GetUnitTypes(), c.UnitType),
                     Value = c.Value
                 });
             }
@@ -160,8 +170,12 @@ namespace Prototype.Domain.Repository {
             }
 
             foreach (var color in product.Colors) {
+                string colorCategory = "Exterior";
+                if (!String.IsNullOrWhiteSpace(color.Category)) {
+                    colorCategory = color.Category;
+                }
                 fm.Colors.Add(new ColorModel {
-                    Category = color.Category,
+                    Category = GetSelectItem(GetColorTypes(), colorCategory),
                     Name = color.Name,
                     Value = color.Value
                 });
@@ -178,7 +192,7 @@ namespace Prototype.Domain.Repository {
             foreach (var c in product.Prices) {
                 fm.Prices.Add(new PriceModel {
                     Amount = c.Value,
-                    Category = c.Category,
+                    Category = GetSelectItem(GetPriceTypes(), c.Category),
                     FormattedAmount = String.Format("{0:C}", c.Value.Value),
                     DisplayValue = c.DisplayValue
                 });
@@ -187,9 +201,9 @@ namespace Prototype.Domain.Repository {
             foreach (var c in product.Specifications) {
                 fm.Specifications.Add(new SpecificationModel {
                     Amount = c.NumericValue,
-                    Category = c.CategoryName,
+                    Category = GetSelectItem(GetSpecificationTypes(), c.CategoryName),
                     Name = c.Name,
-                    UnitType = c.UnitType,
+                    UnitType = GetSelectItem(GetUnitTypes(), c.UnitType),
                     Value = c.Value
                 });
             }
@@ -197,6 +211,156 @@ namespace Prototype.Domain.Repository {
                 fm.Features.Add(MapFeature(feature, fm.NavigationItems));
             }
             return fm;
+        }
+
+        private SelectItem GetSelectItem(List<SelectItem> items, string value) {
+            var item = items.SingleOrDefault(c => c.Name.ToLower() == value.ToLower());
+            if (item != null)
+                return item;
+            else
+                return new SelectItem { Id=999, Name=value };
+        }
+
+        public List<SelectItem> GetBaseClasses() {
+            var list = new List<SelectItem> {
+                new SelectItem {
+                    Id = 1,
+                    Name = "Fishing"
+                },
+                new SelectItem {
+                    Id =2,
+                    Name = "Bowrider"
+                },
+                new SelectItem {
+                    Id = 3,
+                    Name = "Deck Boat"
+                },
+                new SelectItem {
+                    Id = 4,
+                    Name = "Walkaround"
+                },
+                new SelectItem {
+                    Id = 5,
+                    Name = "Tow Boats"
+                },
+                new SelectItem {
+                    Id = 6,
+                    Name = "Cruiser"
+                },
+                new SelectItem {
+                    Id = 7,
+                    Name = "Cuddy Cabin"
+                },
+                new SelectItem {
+                    Id = 8,
+                    Name = "Dinghies"
+                },
+                new SelectItem {
+                    Id = 9,
+                    Name = "High Performance"
+                },
+                new SelectItem {
+                    Id = 10,
+                    Name = "Jet Boat"
+                },
+                new SelectItem {
+                    Id = 11,
+                    Name = "Multi-Hull Power Boats"
+                },
+                new SelectItem {
+                    Id = 12,
+                    Name = "Personal Watercraft (PWC)"
+                },
+                new SelectItem {
+                    Id = 13,
+                    Name = "Pontoon"
+                },
+                new SelectItem {
+                    Id = 14,
+                    Name = "Sailboats"
+                },
+                new SelectItem {
+                    Id = 15,
+                    Name = "Trawlers"
+                },
+                new SelectItem {
+                    Id = 16,
+                    Name = "Yachts"
+                },
+            };
+            return list;
+        }
+        public List<SelectItem> GetSpecificationTypes() {
+            var list = new List<SelectItem> {
+                new SelectItem { Id = 1, Name="Dimension" },
+                new SelectItem { Id = 2, Name="Performance" },
+                new SelectItem { Id = 3, Name="Electrical" },
+                new SelectItem { Id = 4, Name="Usage" },
+                new SelectItem { Id = 5, Name="Capacity" },
+                new SelectItem { Id = 6, Name="Weight" }               
+            };
+            return list;
+        }
+        public List<SelectItem> GetUnitTypes() {
+            var list = new List<SelectItem> {
+                new SelectItem { Id = 1, Name = "Feet" },
+                new SelectItem { Id = 2, Name = "Inches" },
+                new SelectItem { Id = 3, Name = "Meters" },
+                new SelectItem { Id = 4, Name = "Hours" },
+                new SelectItem { Id = 5, Name = "Volts" },
+                new SelectItem { Id = 6, Name = "Watts" },
+                new SelectItem { Id = 7, Name = "Horsepower" },
+                new SelectItem { Id = 8, Name = "Kilowatts" },
+                new SelectItem { Id = 9, Name = "Amps" },
+                new SelectItem { Id = 10, Name = "Pounds" },
+                new SelectItem { Id = 11, Name = "Kilograms" },
+                new SelectItem { Id = 12, Name = "Gallons" },
+                new SelectItem { Id = 13, Name = "Liters" },
+                new SelectItem { Id = 14, Name = "Count"}                
+            };
+            return list;
+        }
+        public List<SelectItem> GetPriceTypes() {
+            var list = new List<SelectItem> {
+                new SelectItem { Id = 1, Name = "MSRP" },
+                new SelectItem { Id = 2, Name = "Selling" },
+                new SelectItem { Id = 3, Name = "Internet" },
+                new SelectItem { Id = 4, Name = "Promotional" },
+            };
+            return list;
+        }
+        public List<SelectItem> GetColorTypes() {
+            var list = new List<SelectItem> {
+                new SelectItem { Id=1, Name = "Exterior" },
+                new SelectItem { Id=2, Name = "Interior" },
+                new SelectItem { Id=3, Name = "Hull" },
+            };
+            return list;
+        }
+        public List<SelectItem> GetActivityTypes() {
+            var list = new List<SelectItem> {
+                new SelectItem { Id=1, Name = "Offshore Boating" },
+                new SelectItem { Id=2, Name = "Freshwater Fishing" },
+                new SelectItem { Id=3, Name = "Overnight Cruising" },
+                new SelectItem { Id=4, Name = "Saltwater Fishing" },
+                new SelectItem { Id=5, Name = "Watersports" },
+                new SelectItem { Id=6, Name = "Competition" },
+                new SelectItem { Id=7, Name = "Racing" },
+                new SelectItem { Id=8, Name = "Green Boating" },
+                new SelectItem { Id=9, Name = "Personal Watercraft" },
+                new SelectItem { Id=10, Name = "Scuba Diving" },
+                new SelectItem { Id=11, Name = "Day Cruising" },
+                new SelectItem { Id=12, Name = "Just for Fun" },
+                new SelectItem { Id=13, Name = "Safety" },
+                new SelectItem { Id=14, Name = "Education" },
+                new SelectItem { Id=15, Name = "Sleeping Onboard" },
+                new SelectItem { Id=16, Name = "Entertainment" },
+                new SelectItem { Id=17, Name = "Sailing" },
+                new SelectItem { Id=18, Name = "Family Time" },
+                new SelectItem { Id=19, Name = "Floatilla" },
+                new SelectItem { Id=20, Name = "Redneck Yacht Clubbing" },
+            };
+            return list;
         }
 
         private int GetYear(Product product) {

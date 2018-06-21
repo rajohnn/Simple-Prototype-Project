@@ -1,16 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Prototype.Domain.Webhook {
 
     public class InventoryItemViewModel {
         public ProductDetailsModel ProductDetailsModel { get; set; } = new ProductDetailsModel();
-        
+
         public SpecificationModel NewSpecification { get; set; } = new SpecificationModel();
         public PriceModel NewPrice { get; set; } = new PriceModel();
         public ColorModel NewColor { get; set; } = new ColorModel();
         public ActivityModel NewActivity { get; set; } = new ActivityModel();
         public MarketingDetailModel NewMarketingDetail { get; set; } = new MarketingDetailModel();
         public ProductDetailsModel CurrentProductDetailsModel { get; set; } = new ProductDetailsModel();
+
+        public int SelectedSpecificationType { get; set; }
+        public int SelectedUnitType { get; set; }
+        public int SelectedPriceType { get; set; }
+        public int SelectedColorType { get; set; }
+        public int SelectedActivityType { get; set; }
 
         public bool IsFeatureExpanded { get; set; } = false;
         public bool IsSpecificationExpanded { get; set; } = false;
@@ -20,6 +27,12 @@ namespace Prototype.Domain.Webhook {
         public bool IsMarketingDetailsExpanded { get; set; } = false;
 
         public List<NavigationItem> NavigationItems { get; set; } = new List<NavigationItem>();
+        public List<SelectItem> BaseClasses { get; set; } = new List<SelectItem>();
+        public List<SelectItem> SpecificationTypes { get; set; } = new List<SelectItem>();
+        public List<SelectItem> UnitTypes { get; set; } = new List<SelectItem>();
+        public List<SelectItem> PriceTypes { get; set; } = new List<SelectItem>();
+        public List<SelectItem> ColorTypes { get; set; } = new List<SelectItem>();
+        public List<SelectItem> ActivityTypes { get; set; } = new List<SelectItem>();
     }
 
     public class ProductDetailsModel {
@@ -53,41 +66,57 @@ namespace Prototype.Domain.Webhook {
         public int Count { get; set; } = 1;
     }
 
-    public class SpecificationModel {
-        public string Category { get; set; }
-        public string UnitType { get; set; }
+    public abstract class BaseSelectionModel {
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+    }
+
+    public class SpecificationModel : BaseSelectionModel {
+        public SelectItem Category { get; set; }
+        public SelectItem UnitType { get; set; }
         public string Name { get; set; }
         public decimal? Amount { get; set; }
         public string Value { get; set; }
     }
 
-    public class PriceModel {
-        public string Category { get; set; }
+    public class PriceModel : BaseSelectionModel {
+        public SelectItem Category { get; set; }
         public decimal? Amount { get; set; }
         public string FormattedAmount { get; set; }
         public string DisplayValue { get; set; }
     }
 
-    public class ColorModel {
+    public class ColorModel : BaseSelectionModel {
+        public SelectItem Category { get; set; }
+        public string Name { get; set; }
+        public string Value { get; set; }
+    }
+
+    public class MarketingDetailModel : BaseSelectionModel {
         public string Category { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
     }
 
-    public class MarketingDetailModel {
+    public class ActivityModel : BaseSelectionModel {
         public string Category { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
     }
 
-    public class ActivityModel {
-        public string Category { get; set; }
+    public class ClassModel : BaseSelectionModel {
+        public SelectItem Category { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
+        public List<ClassModel> SubClasses { get; set; } = new List<ClassModel>();
     }
 
     public class NavigationItem {
         public string Id { get; set; }
         public string DisplayName { get; set; }
+    }
+
+    public class SelectItem {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
