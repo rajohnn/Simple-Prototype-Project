@@ -79,7 +79,7 @@ namespace Prototype.Domain.Repository {
 
             foreach (var activity in product.Activities.OrderBy(a=>a.Name)) {
                 pdm.Activities.Add(new ActivityModel {
-                    Category = activity.CategoryName,
+                    Category = GetSelectItem(GetActivityTypes(), activity.CategoryName),
                     Name = activity.Name,
                     Value = activity.Value
                 });
@@ -163,7 +163,7 @@ namespace Prototype.Domain.Repository {
 
             foreach (var activity in product.Activities) {
                 fm.Activities.Add(new ActivityModel {
-                    Category = activity.CategoryName,
+                    Category = GetSelectItem(GetActivityTypes(), activity.CategoryName),
                     Name = activity.Name,
                     Value = activity.Value
                 });

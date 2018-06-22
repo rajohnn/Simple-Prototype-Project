@@ -40,6 +40,7 @@
         console.log(isExpanded);
         inventory.model().IsActivitiesExpaneded(!isExpanded);
     },
+
     onAddFeatureClicked: function () {
         inventory.model().IsFeatureExpanded(true);
     },
@@ -63,6 +64,7 @@
         inventory.model().IsMarketingDetailsExpanded(true);
         $("#marketing-category").focus();
     },
+
     onNavigationClicked: function (navigationItem) {
         console.log(navigationItem.Id() + " : " + navigationItem.DisplayName());
         var model = inventory.model();
@@ -82,7 +84,9 @@
         var model = inventory.model();
         inventory.updateNavigation(feature);
         model.CurrentProductDetailsModel(feature);
+        location.href = "#nav-items";
     },
+
     onSpecificationClicked: function (selectedSpec) {
         inventory.model().IsSpecificationExpanded(true);
 
@@ -146,8 +150,7 @@
                 Value: new ko.observable(value)
             };
 
-            if (functionText === "Save Specification") {
-                // model.ProductDetailsModel.Specifications.unshift(newItem);
+            if (functionText === "Save Specification") {                
                 newItem.Id = new ko.observable(inventory.createId());
                 model.CurrentProductDetailsModel().Specifications.unshift(newItem);
             }
@@ -295,12 +298,120 @@
         inventory.clearColor();
     },
 
+    onMarketingDetailClicked: function (selectedDetail) {
+        inventory.model().IsMarketingDetailsExpanded(true);
+        $("#save-detail").text("Update Detail");
+        var model = inventory.model();
+        var detail = model.NewMarketingDetail;  
+        detail.Id(selectedDetail.Id());
+        detail.Name(selectedDetail.Name());
+        detail.Value(selectedDetail.Value());
+        detail.Category(selectedDetail.Category());
+        $("#marketing-category").focus();
+    },
+    clearMarketingDetail: function () {
+        var model = inventory.model();
+        model.NewMarketingDetail.Name("");
+        model.NewMarketingDetail.Value("");
+        model.NewMarketingDetail.Category("");        
+        $("#save-detail").text("Save Detail");
+        inventory.model().IsMarketingDetailsExpanded(false);
+    },
+    onClearMarketingDetailClicked: function () {
+        inventory.clearMarketingDetail();
+    },
+    onSaveMarketingDetailClicked: function () {
+        var model = inventory.model();
+        var functionText = $("#save-detail").text();       
+        var name = model.NewMarketingDetail.Name;        
+        var value = model.NewMarketingDetail.Value;
+        var category = model.NewMarketingDetail.Category;
+
+        var newItem = {
+            Category: new ko.observable(category()),
+            Name: new ko.observable(name()),
+            Value: new ko.observable(value())
+        };
+
+        if (functionText === "Save Detail") {
+            newItem.Id = new ko.observable(inventory.createId());
+            model.CurrentProductDetailsModel().MarketingDetails.unshift(newItem);
+        }
+        else {
+            var existingItem = _.find(model.CurrentProductDetailsModel().MarketingDetails(), function (item) {
+                return item.Id() === model.NewMarketingDetail.Id();
+            });
+            existingItem.Name(newItem.Name());
+            existingItem.Category(newItem.Category());
+            existingItem.Value(newItem.Value());
+        }
+        inventory.clearMarketingDetail();
+    },
+
+    onActivityDetailClicked: function (selectedDetail) {
+        inventory.model().IsActivitiesExpaneded(true);
+        $("#save-activity").text("Update Detail");
+        var model = inventory.model();
+        var detail = model.NewActivity;
+        detail.Id(selectedDetail.Id());
+        detail.Name(selectedDetail.Name());
+        detail.Value(selectedDetail.Value());
+
+        model.SelectedActivityType(selectedDetail.Category.Id());
+
+
+        $("#activity-category").focus();
+    },
+    clearActivityDetail: function () {
+        var model = inventory.model();
+        model.NewActivity.Name("");
+        model.NewActivity.Value("");
+        model.NewActivity.Category("");
+        $("#save-activity").text("Save Detail");
+        inventory.model().IsActivitiesExpaneded(false);
+    },
+    onClearActivityDetailClicked: function () {
+        inventory.clearActivityDetail();
+    },
+    onSaveActivityDetailClicked: function () {
+        var model = inventory.model();
+        var functionText = $("#save-activity").text();
+        var typeId = model.SelectedActivityType();
+        var name = model.NewActivity;
+        var type = _.find(model.ActivityTypes(), function (item) {
+            return item.Id() === typeId;
+        });
+        var value = model.NewActivity.Value;
+
+        var newItem = {
+            Category: {
+                Id: type.Id,
+                Name: type.Name
+            },
+            Name: new ko.observable(model.NewActivity.Name()),
+            Value: new ko.observable(model.NewActivity.Value())
+        };
+
+        if (functionText === "Save Detail") {
+            newItem.Id = new ko.observable(inventory.createId());
+            model.CurrentProductDetailsModel().Activities.unshift(newItem);
+        }
+        else {
+            var existingItem = _.find(model.CurrentProductDetailsModel().Activities(), function (item) {
+                return item.Id() === model.NewActivity.Id();
+            });
+            existingItem.Name(newItem.Name());
+            existingItem.Category = newItem.Category;
+            existingItem.Value(newItem.Value());
+        }
+        inventory.clearActivityDetail();
+    },
+
     findFeature: function (features, navigationItem) {
         var list = [];
         getFeatures(features);
         var result = _.find(list, function (item) {
-            if (item.Id() === navigationItem.Id()) {
-                console.log("found!");
+            if (item.Id() === navigationItem.Id()) {                
                 return item;
             }
         });

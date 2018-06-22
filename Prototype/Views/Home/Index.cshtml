@@ -4,10 +4,10 @@
     ViewBag.Title = "Inventory Items Details";
 }
 <div data-bind="visible: false">
-    <h3>Loading Proximity Tools...</h3>
+    <h3 class="text-primary"><span class="fa fa-spin fa-spinner"></span> Loading Proximity Tools...</h3>
 </div>
 <div style="display:none" data-bind="visible: true">
-    <div class="row">
+    <div class="row" id="nav-items">
         <div class="col-lg-10">           
             <ul class="breadcrumb" data-bind="foreach: NavigationItems">
                 <li>
@@ -292,22 +292,23 @@
                             <form>
                                 <div class="form-group">
                                     <label for="marketing-category">Category</label>
-                                    <input type="text" class="form-control" id="marketing-category" placeholder="Category for detail" />
+                                    <input type="text" class="form-control" data-bind="value: NewMarketingDetail.Category" id="marketing-category" placeholder="Category for detail" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="marketing-name">Marketing Name</label>
-                                    <input type="text" class="form-control" id="marketing-name" placeholder="" value="" />
+                                    <label for="marketing-name">Name</label>
+                                    <input type="text" class="form-control" id="marketing-name" data-bind="value: NewMarketingDetail.Name" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="color-value">Value</label>
-                                    <input type="text" class="form-control" id="marketing-value" placeholder="" value="" />
+                                    <label for="color-value">Text</label>
+                                    <textarea class="form-control" style="font-size:small" id="marketing-value" rows="8" data-bind="value: NewMarketingDetail.Value"></textarea>
                                 </div>
-                                <button class="btn btn-sm btn-info">Save Detail</button>
+                                <button id="save-detail" class="btn btn-sm btn-info" data-bind="click: inventory.onSaveMarketingDetailClicked">Save Detail</button>
+                                <button id="clear-detail" class="btn btn-sm btn-warning" data-bind="click: inventory.onClearMarketingDetailClicked">Clear</button>
                             </form>
                         </div>
                         <div class="panel-footer">
                             <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel().MarketingDetails">
-                                <button type="button" class="list-group-item">
+                                <button type="button" class="list-group-item" data-bind="click: inventory.onMarketingDetailClicked">
                                     <h4 class="list-group-item-heading">
                                         <span data-bind="text: Name" class="pull-right"></span>
                                         <span data-bind="text: Category"></span>
@@ -333,25 +334,32 @@
                         <div class="panel-body" data-bind="slideVisible: IsActivitiesExpaneded">
                             <form>
                                 <div class="form-group">
-                                    <label for="marketing-category">Category</label>
-                                    <input type="text" class="form-control" id="activity-category" placeholder="Category for activity" />
+                                    <label for="activity-category">Category</label>
+                                    <select type="text" class="form-control" id="activity-category"
+                                        data-bind="options: ActivityTypes,
+                                            optionsText: 'Name',
+                                            optionsValue: 'Id',
+                                            value: SelectedActivityType,
+                                            optionsCaption: 'Select One..'"> 
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="marketing-name">Name</label>
-                                    <input type="text" class="form-control" id="activity-name" placeholder="" value="" />
+                                    <label for="activity-name">Name</label>
+                                    <input type="text" class="form-control" id="activity-name" data-bind="value: NewActivity.Name" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="color-value">Value</label>
-                                    <input type="text" class="form-control" id="activity-value" placeholder="" value="" />
+                                    <label for="activity-value">Value</label>
+                                    <input type="text" class="form-control" id="activity-value" data-bind="value: NewActivity.Value" />
                                 </div>
-                                <button class="btn btn-sm btn-info">Save Activity</button>
+                                <button id="save-activity" class="btn btn-sm btn-info" data-bind="click: inventory.onSaveActivityDetailClicked">Save Activity</button>
+                                <button id="clear-activity" class="btn btn-sm btn-warning" data-bind="click: inventory.onClearActivityDetailClicked">Clear</button>
                             </form>
                         </div>
                         <div class="panel-footer">
                             <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel().Activities">
-                                <button type="button" class="list-group-item">
+                                <button type="button" class="list-group-item" data-bind="click: inventory.onActivityDetailClicked">
                                     <h4 class="list-group-item-heading">
-                                        <span data-bind="text: Category" class="pull-right"></span>
+                                        <span data-bind="text: Category.Name" class="pull-right"></span>
                                         <span data-bind="text: Name"></span>
                                     </h4>
                                     <div class="list-group-item-text">

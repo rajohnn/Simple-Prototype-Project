@@ -98,7 +98,7 @@ namespace Prototype.Domain.Webhook {
     }
 
     public class ActivityModel : BaseSelectionModel {
-        public string Category { get; set; }
+        public SelectItem Category { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
     }
