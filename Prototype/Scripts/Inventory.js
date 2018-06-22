@@ -42,26 +42,32 @@
     },
 
     onAddFeatureClicked: function () {
-        inventory.model().IsFeatureExpanded(true);
+        //inventory.model().IsFeatureExpanded(true);
+        inventory.requestNewFeature();
     },
     onAddSpecificationClicked: function () {
         inventory.model().IsSpecificationExpanded(true);
+        location.href = "#spec-panel";
         $("#spec-category").focus();
     },
     onAddActivityClicked: function () {
         inventory.model().IsActivitiesExpaneded(true);
+        location.href = "#activities-panel";
         $("#activity-category").focus();
     },
     onAddPriceClicked: function () {
         inventory.model().IsPricesExpanded(true);
+        location.href = "#prices-panel";
         $("#price-category").focus();
     },
     onAddColorClicked: function () {
         inventory.model().IsColorsExpanded(true);
+        location.href = "#colors-panel";
         $("#color-category").focus();
     },
     onAddMarketingDetailClicked: function () {
         inventory.model().IsMarketingDetailsExpanded(true);
+        location.href = "#marketing-panel";
         $("#marketing-category").focus();
     },
 
@@ -99,6 +105,7 @@
         spec.Name(selectedSpec.Name());
         spec.Amount(selectedSpec.Amount());
         spec.Value(selectedSpec.Value());
+        location.href = "#spec-panel";
         $("#spec-category").focus();
     },
     clearSpecification: function () {
@@ -166,6 +173,19 @@
             }
             inventory.clearSpecification();
         }
+    },
+    onRemoveSpecificationClicked: function () {
+        var vm = inventory.model();
+        var specId = vm.NewSpecification.Id();
+        var item = _.find(vm.CurrentProductDetailsModel().Specifications(), function (item) {
+            return item.Id() === specId;
+        });
+
+        if (item) {
+            vm.CurrentProductDetailsModel().Specifications.remove(item);
+            inventory.clearSpecification();
+        }
+        console.log("remove clicked: " + specId);
     },
 
     onPriceClicked: function (selectedPrice) {
@@ -239,6 +259,19 @@
             inventory.clearPrice();
         }
     },
+    onRemovePriceClicked: function () {
+        var vm = inventory.model();
+        var specId = vm.NewPrice.Id();
+        var item = _.find(vm.CurrentProductDetailsModel().Prices(), function (item) {
+            return item.Id() === specId;
+        });
+
+        if (item) {
+            vm.CurrentProductDetailsModel().Prices.remove(item);
+            inventory.clearPrice();
+        }
+        console.log("remove clicked: " + specId);
+    },
 
     onColorClicked: function (selectedColor) {
         inventory.model().IsColorsExpanded(true);
@@ -297,6 +330,19 @@
         }
         inventory.clearColor();
     },
+    onRemoveColorClicked: function () {
+        var vm = inventory.model();
+        var specId = vm.NewColor.Id();
+        var item = _.find(vm.CurrentProductDetailsModel().Colors(), function (item) {
+            return item.Id() === specId;
+        });
+
+        if (item) {
+            vm.CurrentProductDetailsModel().Colors.remove(item);
+            inventory.clearColor();
+        }
+        console.log("remove clicked: " + specId);
+    },
 
     onMarketingDetailClicked: function (selectedDetail) {
         inventory.model().IsMarketingDetailsExpanded(true);
@@ -346,6 +392,19 @@
             existingItem.Value(newItem.Value());
         }
         inventory.clearMarketingDetail();
+    },
+    onRemoveMarketingClicked: function () {
+        var vm = inventory.model();
+        var specId = vm.NewMarketingDetail.Id();
+        var item = _.find(vm.CurrentProductDetailsModel().MarketingDetails(), function (item) {
+            return item.Id() === specId;
+        });
+
+        if (item) {
+            vm.CurrentProductDetailsModel().MarketingDetails.remove(item);
+            inventory.clearMarketingDetail();
+        }
+        console.log("remove clicked: " + specId);
     },
 
     onActivityDetailClicked: function (selectedDetail) {
@@ -405,6 +464,44 @@
             existingItem.Value(newItem.Value());
         }
         inventory.clearActivityDetail();
+    },
+    onRemoveActivityClicked: function () {
+        var vm = inventory.model();
+        var specId = vm.NewActivity.Id();
+        var item = _.find(vm.CurrentProductDetailsModel().Activities(), function (item) {
+            return item.Id() === specId;
+        });
+
+        if (item) {
+            vm.CurrentProductDetailsModel().Activities.remove(item);
+            inventory.clearActivityDetail();
+        }
+        console.log("remove clicked: " + specId);
+    },
+
+    requestNewFeature: function () {
+        var url = "/home/GetNewFeature";  
+        var data = ko.mapping.toJSON(inventory.model().CurrentProductDetailsModel());
+        $.blockUI();
+        $.ajax({
+            url: url,
+            data: data,
+            dataType: "json",
+            type: "POST",
+            contentType: "application/json; charset=utf-8"
+        })
+        .done(function (response, status, xhr) {
+            var feature = ko.mapping.fromJS(response.feature);            
+            inventory.model().CurrentProductDetailsModel(feature);
+            inventory.model().NavigationItems(feature.NavigationItems());
+            location.href = "#nav-items";
+        })
+        .fail(function (errorMessage) {
+            console.log("call failed!");
+        })
+        .always(function () {
+            $.unblockUI();            
+        });
     },
 
     findFeature: function (features, navigationItem) {

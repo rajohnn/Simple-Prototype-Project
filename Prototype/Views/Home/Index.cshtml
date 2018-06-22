@@ -7,7 +7,7 @@
     <h3 class="text-primary"><span class="fa fa-spin fa-spinner"></span> Loading Proximity Tools...</h3>
 </div>
 <div style="display:none" data-bind="visible: true">
-    <div class="row" id="nav-items">
+    <div class="row" id="nav-items" style="margin-top:-15px">
         <div class="col-lg-10">           
             <ul class="breadcrumb" data-bind="foreach: NavigationItems">
                 <li>
@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <!-- Product Details Panel -->
-                    <div class="panel panel-primary">
+                    <div id="product-panel" class="panel panel-primary">
                         <div class="panel-heading">
                             <div class="panel-title">Product Details</div>
                         </div>
@@ -91,26 +91,26 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <!-- Features Panel -->
-                    <div class="panel panel-primary">
+                    <div id="features-panel" class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Features</h3>
-                            <span data-bind="click: inventory.toggleFeature" class="pull-right clickable">
+                            @*<span data-bind="click: inventory.toggleFeature" class="pull-right clickable">
                                 <i data-bind="visible: IsFeatureExpanded" class="glyphicon glyphicon-chevron-up"></i>
                                 <i data-bind="visible: !IsFeatureExpanded()" class="glyphicon glyphicon-chevron-down"></i>
-                            </span>
+                            </span>*@
                         </div>
                         <div class="panel-body" data-bind="slideVisible: IsFeatureExpanded">
                             <form></form>
                         </div>
                         <div class="panel-footer">
                             <div data-bind="template: { name:'feature-template', foreach: CurrentProductDetailsModel().Features }"></div>
-                            <button data-bind="click: inventory.onAddFeatureClicked" class="btn btn-sm btn-primary">Add Feature</button>
+                            <button data-bind="click: inventory.onAddFeatureClicked" class="btn btn-sm btn-primary">Add Feature</button>                           
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <!-- Specifications Panel -->
-                    <div class="panel panel-primary">
+                    <div id="spec-panel" class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Specifications</h3>
                             <span data-bind="click: inventory.toggleSpecifications" class="pull-right">
@@ -155,6 +155,12 @@
                                 </div>
                                 <button id="save-spec" data-bind="click: inventory.onSaveSpecificationClicked" class="btn btn-sm btn-info">Save Specification</button>
                                 <button id="clear-spec" data-bind="click: inventory.onClearSpecificationClicked" class="btn btn-sm btn-warning">Clear</button>
+                                <span class="pull-right">
+                                    <button style="margin-right:20px" id="remove-spec" data-bind="click: inventory.onRemoveSpecificationClicked" class="btn btn-sm btn-danger">
+                                        <span class="fa fa-trash"></span>
+                                    </button>
+                                </span>
+                                
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -176,7 +182,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <!-- Prices Panel -->
-                    <div class="panel panel-primary">
+                    <div id="prices-panel" class="panel panel-primary">
                         <div class="panel-heading">
 
                             <h3 class="panel-title">Prices</h3>
@@ -190,13 +196,12 @@
                                 <div class="form-group">
                                     <label for="price-category">Category</label>
                                     <select class="form-control" id="price-category"
-                                        data-bind="
+                                            data-bind="
                                             options: PriceTypes,
                                             optionsText: 'Name',
                                             optionsValue: 'Id',
                                             value: SelectedPriceType,
-                                            optionsCaption: 'Select One..'">
-                                    </select>
+                                            optionsCaption: 'Select One..'"></select>
                                 </div>
                                 <div class="form-group">
                                     <label for="price-amount">Value</label>
@@ -208,6 +213,12 @@
                                 </div>
                                 <button id="save-price" data-bind="click: inventory.onSavePriceClicked" class="btn btn-sm btn-info">Save Price</button>
                                 <button id="clear-price" data-bind="click: inventory.onClearPriceClicked" class="btn btn-sm btn-warning">Clear</button>
+                                <span class="pull-right">
+                                    <button style="margin-right:20px" id="remove-price" data-bind="click: inventory.onRemovePriceClicked" class="btn btn-sm btn-danger">
+                                        <span class="fa fa-trash"></span>
+                                    </button>
+                                </span>
+                               
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -227,7 +238,7 @@
                     </div>
 
                     <!-- Colors Panel -->
-                    <div class="panel panel-primary">
+                    <div id="colors-panel"  class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Colors</h3>
                             <span data-bind="click: inventory.toggleColors" class="pull-right clickable">
@@ -240,12 +251,11 @@
                                 <div class="form-group">
                                     <label for="color-category">Category</label>
                                     <select class="form-control" id="color-category"
-                                        data-bind="options: ColorTypes,
+                                            data-bind="options: ColorTypes,
                                             optionsText: 'Name',
                                             optionsValue: 'Id',
                                             value: SelectedColorType,
-                                            optionsCaption: 'Select One..'">                                        
-                                    </select>
+                                            optionsCaption: 'Select One..'"></select>
                                 </div>
                                 <div class="form-group">
                                     <label for="color-name">Color Name</label>
@@ -253,10 +263,16 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="color-value">Color Value</label>
-                                    <input type="text" class="form-control" id="color-value" placeholder="#000" data-bind="value: NewColor.Value"/>
+                                    <input type="text" class="form-control" id="color-value" placeholder="#000" data-bind="value: NewColor.Value" />
                                 </div>
                                 <button id="save-color" class="btn btn-sm btn-info" data-bind="click: inventory.onSaveColorClicked">Save Color</button>
                                 <button id="clear-color" class="btn btn-sm btn-warning" data-bind="click: inventory.onClearColorClicked">Clear</button>
+                                <span class="pull-right">
+                                    <button style="margin-right:20px" id="remove-color" data-bind="click: inventory.onRemoveColorClicked" class="btn btn-sm btn-danger">
+                                        <span class="fa fa-trash"></span>
+                                    </button>
+                                </span>
+                               
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -280,7 +296,7 @@
                     </div>
 
                     <!-- Marketing Details Panel -->
-                    <div class="panel panel-primary">
+                    <div id="marketing-panel" class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Marketing Details</h3>
                             <span data-bind="click: inventory.toggleMarketingDetails" class="pull-right clickable">
@@ -288,7 +304,7 @@
                                 <i data-bind="visible: !IsMarketingDetailsExpanded()" class="glyphicon glyphicon-chevron-down"></i>
                             </span>
                         </div>
-                        <div class="panel-body" data-bind="slideVisible: IsMarketingDetailsExpanded">
+                        <div id="marketing-form" class="panel-body" data-bind="slideVisible: IsMarketingDetailsExpanded">
                             <form>
                                 <div class="form-group">
                                     <label for="marketing-category">Category</label>
@@ -304,6 +320,12 @@
                                 </div>
                                 <button id="save-detail" class="btn btn-sm btn-info" data-bind="click: inventory.onSaveMarketingDetailClicked">Save Detail</button>
                                 <button id="clear-detail" class="btn btn-sm btn-warning" data-bind="click: inventory.onClearMarketingDetailClicked">Clear</button>
+                                <span class="pull-right">
+                                    <button style="margin-right:20px" id="remove-detail" data-bind="click: inventory.onRemoveMarketingClicked" class="btn btn-sm btn-danger">
+                                        <span class="fa fa-trash"></span>
+                                    </button>
+                                </span>
+                               
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -323,7 +345,7 @@
                     </div>
 
                     <!-- Activities Panel -->
-                    <div class="panel panel-primary">
+                    <div id="activities-panel" class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Activities</h3>
                             <span data-bind="click: inventory.toggleActivities" class="pull-right clickable">
@@ -331,17 +353,16 @@
                                 <i data-bind="visible: !IsActivitiesExpaneded()" class="glyphicon glyphicon-chevron-down"></i>
                             </span>
                         </div>
-                        <div class="panel-body" data-bind="slideVisible: IsActivitiesExpaneded">
+                        <div id="activity-form" class="panel-body" data-bind="slideVisible: IsActivitiesExpaneded">
                             <form>
                                 <div class="form-group">
                                     <label for="activity-category">Category</label>
                                     <select type="text" class="form-control" id="activity-category"
-                                        data-bind="options: ActivityTypes,
+                                            data-bind="options: ActivityTypes,
                                             optionsText: 'Name',
                                             optionsValue: 'Id',
                                             value: SelectedActivityType,
-                                            optionsCaption: 'Select One..'"> 
-                                    </select>
+                                            optionsCaption: 'Select One..'"></select>
                                 </div>
                                 <div class="form-group">
                                     <label for="activity-name">Name</label>
@@ -351,6 +372,11 @@
                                     <label for="activity-value">Value</label>
                                     <input type="text" class="form-control" id="activity-value" data-bind="value: NewActivity.Value" />
                                 </div>
+                                <span class="pull-right">
+                                    <button style="margin-right:20px" id="remove-activity" data-bind="click: inventory.onRemoveActivityClicked" class="btn btn-sm btn-danger">
+                                        <span class="fa fa-trash"></span>
+                                    </button>
+                                </span>
                                 <button id="save-activity" class="btn btn-sm btn-info" data-bind="click: inventory.onSaveActivityDetailClicked">Save Activity</button>
                                 <button id="clear-activity" class="btn btn-sm btn-warning" data-bind="click: inventory.onClearActivityDetailClicked">Clear</button>
                             </form>

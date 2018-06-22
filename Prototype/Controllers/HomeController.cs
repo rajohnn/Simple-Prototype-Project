@@ -1,4 +1,6 @@
 ﻿using Prototype.Domain.Repository;
+using Prototype.Domain.Webhook;
+using System;
 using System.Web.Mvc;
 
 namespace Prototype.Controllers {
@@ -10,6 +12,22 @@ namespace Prototype.Controllers {
             var path = Server.MapPath("/");
             var vm = repo.GetProductViewModel(path, "foobar");
             return View(vm);
+        }
+
+        [HttpPost]
+        public ActionResult GetNewFeature(ProductDetailsModel model) {
+            var feature = new FeatureModel {
+                Id = Guid.NewGuid().ToString(),
+                DisplayName = "* New Feature",
+                NavigationItems = model.NavigationItems
+            };
+            feature.NavigationItems.Add(
+                new NavigationItem {
+                    Id = feature.Id,
+                    DisplayName = feature.DisplayName
+                }
+            );
+            return Json(new { feature }, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult About() {

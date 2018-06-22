@@ -92,7 +92,7 @@ ul.breadcrumb {
     /* Display list items side by side */
     ul.breadcrumb li {
         display: inline;
-        font-size: 18px;
+        font-size: 16px;
     }
 
         /* Add a slash symbol (/) before/behind each list item */
