@@ -110,6 +110,7 @@
     <None Include="packages.config" />
     <None Include="SB\SB.cd" />
     <None Include="User.cd" />
+    <None Include="Webhook\InventoryEditor_ViewModel.cd" />
     <None Include="Webhook\WebHookModel.cd" />
   </ItemGroup>
   <ItemGroup>

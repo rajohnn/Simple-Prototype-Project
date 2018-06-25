@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Prototype.Domain.Webhook.InventoryItemViewModel">
+    <Position X="8" Y="6" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AgAoAAAAAKMAQAAAAEARAFgACAAQDAGAABCAgAAAIAI=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.ProductDetailsModel">
+    <Position X="4.25" Y="6" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAiEAAUAQCEAAAAAAABgAgAIEAAAjAAAAAAgIgAAAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.FeatureModel">
+    <Position X="1" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAgAAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.BaseSelectionModel">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.SpecificationModel">
+    <Position X="1" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAASAAAAABAAAAAAgAAAACAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.PriceModel">
+    <Position X="5.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.ColorModel">
+    <Position X="10.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAACAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.MarketingDetailModel">
+    <Position X="12.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAACAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.ActivityModel">
+    <Position X="3.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAACAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.ClassModel">
+    <Position X="7.75" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAACAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.NavigationItem">
+    <Position X="1.25" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prototype.Domain.Webhook.SelectItem">
+    <Position X="12.75" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Webhook\InventoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

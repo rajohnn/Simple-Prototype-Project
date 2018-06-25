@@ -12,35 +12,32 @@
     },
     toggleFeature: function () {
         var isExpanded = inventory.model().IsFeatureExpanded();
-        console.log(isExpanded);
         inventory.model().IsFeatureExpanded(!isExpanded);
     },
     toggleSpecifications: function () {
         var isExpanded = inventory.model().IsSpecificationExpanded();
-        console.log(isExpanded);
         inventory.model().IsSpecificationExpanded(!isExpanded);
     },
     togglePrices: function () {
         var isExpanded = inventory.model().IsPricesExpanded();
-        console.log(isExpanded);
         inventory.model().IsPricesExpanded(!isExpanded);
     },
     toggleColors: function () {
         var isExpanded = inventory.model().IsColorsExpanded();
-        console.log(isExpanded);
         inventory.model().IsColorsExpanded(!isExpanded);
     },
     toggleMarketingDetails: function () {
         var isExpanded = inventory.model().IsMarketingDetailsExpanded();
-        console.log(isExpanded);
         inventory.model().IsMarketingDetailsExpanded(!isExpanded);
     },
     toggleActivities: function () {
         var isExpanded = inventory.model().IsActivitiesExpaneded();
-        console.log(isExpanded);
         inventory.model().IsActivitiesExpaneded(!isExpanded);
     },
-
+    toggleClasses: function () {
+        var isExpanded = inventory.model().IsClassesExpanded();
+        inventory.model().IsClassesExpanded(!isExpanded);
+    },
     onAddFeatureClicked: function () {
         //inventory.model().IsFeatureExpanded(true);
         inventory.requestNewFeature();
@@ -72,7 +69,6 @@
     },
 
     onNavigationClicked: function (navigationItem) {
-        console.log(navigationItem.Id() + " : " + navigationItem.DisplayName());
         var model = inventory.model();
         if (model.ProductDetailsModel.Id() === navigationItem.Id()) {
             model.CurrentProductDetailsModel(model.ProductDetailsModel);
@@ -92,7 +88,43 @@
         model.CurrentProductDetailsModel(feature);
         location.href = "#nav-items";
     },
+    onSaveSubclassClicked: function () {
+        var model = inventory.model();
+        var value = model.CurrentSubclass();
+        var exists = _.find(model.CurrentProductDetailsModel().SubClasses(), function (item) {
+            return item.toLowerCase() == value.toLowerCase();
+        });
 
+        if (exists)
+            return;
+
+        if (value.length > 0) {
+            model.CurrentProductDetailsModel().SubClasses.push(value);
+            inventory.clearSubClass();
+        }
+    },
+    onClearSubclassClicked: function () {
+        inventory.clearSubClass();
+    },
+    clearSubClass: function () {
+        inventory.model().CurrentSubclass("");
+    },
+    onRemoveSubclassClicked: function (value) {
+        console.log(value);       
+        if (value) {
+            inventory.model().CurrentProductDetailsModel().SubClasses.remove(function (item) {
+                return item.toLowerCase() == value.toLowerCase();
+            });
+        }
+    },
+    onSubclassClicked: function () {
+        console.log("clicked");
+    },
+    onAddSubclassClicked: function () {
+        inventory.model().IsClassesExpanded(true);
+        location.href = "#classes-panel";
+        $("#subclass-value").focus();
+    },
     onSpecificationClicked: function (selectedSpec) {
         inventory.model().IsSpecificationExpanded(true);
 
@@ -157,7 +189,7 @@
                 Value: new ko.observable(value)
             };
 
-            if (functionText === "Save Specification") {                
+            if (functionText === "Save Specification") {
                 newItem.Id = new ko.observable(inventory.createId());
                 model.CurrentProductDetailsModel().Specifications.unshift(newItem);
             }
@@ -185,7 +217,6 @@
             vm.CurrentProductDetailsModel().Specifications.remove(item);
             inventory.clearSpecification();
         }
-        console.log("remove clicked: " + specId);
     },
 
     onPriceClicked: function (selectedPrice) {
@@ -270,7 +301,6 @@
             vm.CurrentProductDetailsModel().Prices.remove(item);
             inventory.clearPrice();
         }
-        console.log("remove clicked: " + specId);
     },
 
     onColorClicked: function (selectedColor) {
@@ -305,7 +335,7 @@
             return item.Id() === typeId;
         });
 
-        var value = model.NewPrice.Value;       
+        var value = model.NewPrice.Value;
 
         var newItem = {
             Category: {
@@ -323,7 +353,7 @@
         else {
             var existingItem = _.find(model.CurrentProductDetailsModel().Colors(), function (item) {
                 return item.Id() === model.NewColor.Id();
-            });            
+            });
             existingItem.Name(newItem.Name());
             existingItem.Category = newItem.Category;
             existingItem.Value(newItem.Value());
@@ -341,14 +371,13 @@
             vm.CurrentProductDetailsModel().Colors.remove(item);
             inventory.clearColor();
         }
-        console.log("remove clicked: " + specId);
     },
 
     onMarketingDetailClicked: function (selectedDetail) {
         inventory.model().IsMarketingDetailsExpanded(true);
         $("#save-detail").text("Update Detail");
         var model = inventory.model();
-        var detail = model.NewMarketingDetail;  
+        var detail = model.NewMarketingDetail;
         detail.Id(selectedDetail.Id());
         detail.Name(selectedDetail.Name());
         detail.Value(selectedDetail.Value());
@@ -359,7 +388,7 @@
         var model = inventory.model();
         model.NewMarketingDetail.Name("");
         model.NewMarketingDetail.Value("");
-        model.NewMarketingDetail.Category("");        
+        model.NewMarketingDetail.Category("");
         $("#save-detail").text("Save Detail");
         inventory.model().IsMarketingDetailsExpanded(false);
     },
@@ -368,8 +397,8 @@
     },
     onSaveMarketingDetailClicked: function () {
         var model = inventory.model();
-        var functionText = $("#save-detail").text();       
-        var name = model.NewMarketingDetail.Name;        
+        var functionText = $("#save-detail").text();
+        var name = model.NewMarketingDetail.Name;
         var value = model.NewMarketingDetail.Value;
         var category = model.NewMarketingDetail.Category;
 
@@ -404,7 +433,6 @@
             vm.CurrentProductDetailsModel().MarketingDetails.remove(item);
             inventory.clearMarketingDetail();
         }
-        console.log("remove clicked: " + specId);
     },
 
     onActivityDetailClicked: function (selectedDetail) {
@@ -417,7 +445,6 @@
         detail.Value(selectedDetail.Value());
 
         model.SelectedActivityType(selectedDetail.Category.Id());
-
 
         $("#activity-category").focus();
     },
@@ -476,11 +503,10 @@
             vm.CurrentProductDetailsModel().Activities.remove(item);
             inventory.clearActivityDetail();
         }
-        console.log("remove clicked: " + specId);
     },
 
     requestNewFeature: function () {
-        var url = "/home/GetNewFeature";  
+        var url = "/home/GetNewFeature";
         var data = ko.mapping.toJSON(inventory.model().CurrentProductDetailsModel());
         $.blockUI();
         $.ajax({
@@ -490,25 +516,25 @@
             type: "POST",
             contentType: "application/json; charset=utf-8"
         })
-        .done(function (response, status, xhr) {
-            var feature = ko.mapping.fromJS(response.feature);            
-            inventory.model().CurrentProductDetailsModel(feature);
-            inventory.model().NavigationItems(feature.NavigationItems());
-            location.href = "#nav-items";
-        })
-        .fail(function (errorMessage) {
-            console.log("call failed!");
-        })
-        .always(function () {
-            $.unblockUI();            
-        });
+            .done(function (response, status, xhr) {
+                var feature = ko.mapping.fromJS(response.feature);
+                inventory.model().CurrentProductDetailsModel(feature);
+                inventory.model().NavigationItems(feature.NavigationItems());
+                location.href = "#nav-items";
+            })
+            .fail(function (errorMessage) {
+                console.log("call failed!");
+            })
+            .always(function () {
+                $.unblockUI();
+            });
     },
 
     findFeature: function (features, navigationItem) {
         var list = [];
         getFeatures(features);
         var result = _.find(list, function (item) {
-            if (item.Id() === navigationItem.Id()) {                
+            if (item.Id() === navigationItem.Id()) {
                 return item;
             }
         });
@@ -532,6 +558,6 @@
     createId: function () {
         return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
             (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
-        )
-    },
+        );
+    }
 });

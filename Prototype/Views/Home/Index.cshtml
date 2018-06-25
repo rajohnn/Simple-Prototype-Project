@@ -181,6 +181,50 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <!-- Classes Panel -->
+                    <div id="classes-panel" class="panel panel-primary" data-bind="visible: NavigationItems().length == 1">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Classes</h3>
+                            <span data-bind="click: inventory.toggleClasses" class="pull-right clickable">
+                                <i data-bind="visible: IsClassesExpanded()" class="glyphicon glyphicon-chevron-up"></i>
+                                <i data-bind="visible: !IsClassesExpanded()" class="glyphicon glyphicon-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="panel-body" data-bind="slideVisible: IsClassesExpanded">
+                            <form>
+                                <div class="form-group">
+                                    <label for="color-category">Class</label>
+                                    <select class="form-control" id="subclasses"
+                                            data-bind="options: BaseClasses,
+                                            optionsText: 'Name',
+                                            optionsValue: 'Id',
+                                            value: SelectedClass,
+                                            optionsCaption: 'Select One..'"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subclass-value">Sub-Class</label>
+                                    <input type="text" class="form-control" id="subclass-value" placeholder="Add a subclass to the list" data-bind="value: CurrentSubclass" />
+                                </div>
+                                <button id="save-subclass" class="btn btn-sm btn-info" data-bind="click: inventory.onSaveSubclassClicked">Save Sub-Class</button>
+                                <button id="clear-subclass" class="btn btn-sm btn-warning" data-bind="click: inventory.onClearSubclassClicked">Clear</button>                               
+                            </form>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="list-group small" data-bind="foreach: CurrentProductDetailsModel().SubClasses">
+                                <div style="cursor:pointer" class="list-group-item list-group-item-action" data-bind="click: inventory.onSubclassClicked">
+                                    <span class="pull-right">
+                                        <button data-bind="click: function(data) { inventory.onRemoveSubclassClicked($data)} " style="margin-top:-5px" class="btn btn-sm btn-danger">
+                                            <span class="fa fa-trash"></span>
+                                        </button>
+                                    </span>
+                                    <span data-bind="text: $data"></span>
+                                </div>
+                            </div>
+                            <button data-bind="click: inventory.onAddSubclassClicked" class="btn btn-sm btn-primary">Add Subclass</button>
+                        </div>
+                    </div>
+
                     <!-- Prices Panel -->
                     <div id="prices-panel" class="panel panel-primary">
                         <div class="panel-heading">
@@ -218,7 +262,7 @@
                                         <span class="fa fa-trash"></span>
                                     </button>
                                 </span>
-                               
+
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -238,7 +282,7 @@
                     </div>
 
                     <!-- Colors Panel -->
-                    <div id="colors-panel"  class="panel panel-primary">
+                    <div id="colors-panel" class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">Colors</h3>
                             <span data-bind="click: inventory.toggleColors" class="pull-right clickable">
@@ -272,7 +316,7 @@
                                         <span class="fa fa-trash"></span>
                                     </button>
                                 </span>
-                               
+
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -291,9 +335,11 @@
                                     </span>
                                 </button>
                             </div>
-                            <button data-bind="click: inventory.onAddColorClicked" class="btn btn-sm btn-primary">Add Color</button>                           
+                            <button data-bind="click: inventory.onAddColorClicked" class="btn btn-sm btn-primary">Add Color</button>
                         </div>
                     </div>
+
+
 
                     <!-- Marketing Details Panel -->
                     <div id="marketing-panel" class="panel panel-primary">
@@ -325,7 +371,7 @@
                                         <span class="fa fa-trash"></span>
                                     </button>
                                 </span>
-                               
+
                             </form>
                         </div>
                         <div class="panel-footer">

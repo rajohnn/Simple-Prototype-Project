@@ -27,12 +27,13 @@ namespace Prototype.Domain.Repository {
             var vm = new InventoryItemViewModel {
                 ProductDetailsModel = MapProduct(product),
                 BaseClasses = GetBaseClasses(),
-                SpecificationTypes = GetSpecificationTypes().OrderBy(c=>c.Name).ToList(),
-                UnitTypes = GetUnitTypes().OrderBy(c=>c.Name).ToList(),
-                PriceTypes = GetPriceTypes().OrderBy(c=>c.Name).ToList(),
-                ColorTypes = GetColorTypes().OrderBy(c=>c.Name).ToList(),
-                ActivityTypes = GetActivityTypes().OrderBy(c=>c.Name).ToList()
+                SpecificationTypes = GetSpecificationTypes().OrderBy(c => c.Name).ToList(),
+                UnitTypes = GetUnitTypes().OrderBy(c => c.Name).ToList(),
+                PriceTypes = GetPriceTypes().OrderBy(c => c.Name).ToList(),
+                ColorTypes = GetColorTypes().OrderBy(c => c.Name).ToList(),
+                ActivityTypes = GetActivityTypes().OrderBy(c => c.Name).ToList()
             };
+            vm.SelectedClass = GetSelectedClass(vm.BaseClasses, product.Class.Value);
             vm.CurrentProductDetailsModel = new ProductDetailsModel();
             var displayName = GetIdentifierValue(product, "Display Name");
 
@@ -213,6 +214,13 @@ namespace Prototype.Domain.Repository {
             return fm;
         }
 
+        private int GetSelectedClass(List<SelectItem> classes, string value) {
+            var selectedClass = classes.SingleOrDefault(c => c.Name.ToLower() == value.ToLower());
+            if (selectedClass != null)
+                return selectedClass.Id;
+            return 0;
+        }
+
         private SelectItem GetSelectItem(List<SelectItem> items, string value) {
             var item = items.SingleOrDefault(c => c.Name.ToLower() == value.ToLower());
             if (item != null)
@@ -288,7 +296,7 @@ namespace Prototype.Domain.Repository {
                     Name = "Yachts"
                 },
             };
-            return list;
+            return list.OrderBy(s=>s.Name).ToList();
         }
         public List<SelectItem> GetSpecificationTypes() {
             var list = new List<SelectItem> {
@@ -297,7 +305,8 @@ namespace Prototype.Domain.Repository {
                 new SelectItem { Id = 3, Name="Electrical" },
                 new SelectItem { Id = 4, Name="Usage" },
                 new SelectItem { Id = 5, Name="Capacity" },
-                new SelectItem { Id = 6, Name="Weight" }               
+                new SelectItem { Id = 6, Name="Weight" },
+                new SelectItem { Id = 7, Name="Warranty" } 
             };
             return list;
         }
@@ -316,7 +325,8 @@ namespace Prototype.Domain.Repository {
                 new SelectItem { Id = 11, Name = "Kilograms" },
                 new SelectItem { Id = 12, Name = "Gallons" },
                 new SelectItem { Id = 13, Name = "Liters" },
-                new SelectItem { Id = 14, Name = "Count"}                
+                new SelectItem { Id = 14, Name = "Count"},
+                new SelectItem { Id = 15, Name = "Years" }
             };
             return list;
         }

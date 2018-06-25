@@ -12,12 +12,15 @@ namespace Prototype.Domain.Webhook {
         public ActivityModel NewActivity { get; set; } = new ActivityModel();
         public MarketingDetailModel NewMarketingDetail { get; set; } = new MarketingDetailModel();
         public ProductDetailsModel CurrentProductDetailsModel { get; set; } = new ProductDetailsModel();
+        public string CurrentSubclass { get; set; }
+        public int CurrentSubclassIndex { get; set; }
 
         public int SelectedSpecificationType { get; set; }
         public int SelectedUnitType { get; set; }
         public int SelectedPriceType { get; set; }
         public int SelectedColorType { get; set; }
         public int SelectedActivityType { get; set; }
+        public int SelectedClass { get; set; }
 
         public bool IsFeatureExpanded { get; set; } = false;
         public bool IsSpecificationExpanded { get; set; } = false;
@@ -25,6 +28,7 @@ namespace Prototype.Domain.Webhook {
         public bool IsActivitiesExpaneded { get; set; } = false;
         public bool IsColorsExpanded { get; set; } = false;
         public bool IsMarketingDetailsExpanded { get; set; } = false;
+        public bool IsClassesExpanded { get; set; } = false;
 
         public List<NavigationItem> NavigationItems { get; set; } = new List<NavigationItem>();
         public List<SelectItem> BaseClasses { get; set; } = new List<SelectItem>();
@@ -57,6 +61,7 @@ namespace Prototype.Domain.Webhook {
         public List<ActivityModel> Activities { get; set; } = new List<ActivityModel>();
         public List<FeatureModel> Features { get; set; } = new List<FeatureModel>();
         public List<NavigationItem> NavigationItems { get; set; } = new List<NavigationItem>();
+        public List<string> SubClasses { get; set; } = new List<string>();
     }
 
     public class FeatureModel : ProductDetailsModel {
