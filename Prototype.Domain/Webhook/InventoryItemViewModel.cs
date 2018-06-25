@@ -28,7 +28,7 @@ namespace Prototype.Domain.Webhook {
         public bool IsActivitiesExpaneded { get; set; } = false;
         public bool IsColorsExpanded { get; set; } = false;
         public bool IsMarketingDetailsExpanded { get; set; } = false;
-        public bool IsClassesExpanded { get; set; } = false;
+        public bool IsClassesExpanded { get; set; } = true;
 
         public List<NavigationItem> NavigationItems { get; set; } = new List<NavigationItem>();
         public List<SelectItem> BaseClasses { get; set; } = new List<SelectItem>();
