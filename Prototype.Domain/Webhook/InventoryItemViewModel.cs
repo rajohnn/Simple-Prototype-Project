@@ -15,6 +15,8 @@ namespace Prototype.Domain.Webhook {
         public string CurrentSubclass { get; set; }
         public int CurrentSubclassIndex { get; set; }
 
+        public int Count { get; set; } = 1;
+
         public int SelectedSpecificationType { get; set; }
         public int SelectedUnitType { get; set; }
         public int SelectedPriceType { get; set; }

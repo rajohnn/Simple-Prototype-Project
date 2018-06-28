@@ -8,7 +8,7 @@
 </div>
 <div style="display:none" data-bind="visible: true">
     <div class="row" id="nav-items" style="margin-top:-15px">
-        <div class="col-lg-10">           
+        <div class="col-lg-10">
             <ul class="breadcrumb" data-bind="foreach: NavigationItems">
                 <li>
                     <a style="cursor:pointer" data-bind="click: inventory.onNavigationClicked">
@@ -27,25 +27,39 @@
                     <!-- Product Details Panel -->
                     <div id="product-panel" class="panel panel-primary">
                         <div class="panel-heading">
-                            <div class="panel-title">Product Details</div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="panel-title" style="margin-top:5px">Product Details</div>
+                                </div>
+                                <div class="col-sm-6" data-bind="visible: NavigationItems().length == 1">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon" style="background-color:#337ab7;color:white">Quantity</span>
+                                        <input type="number" data-bind="value: Count" maxlength="2" min="0" max="99" class="form-control" placeholder="1" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="panel-body">
                             <form>
-                                <div class="form-group">
-                                    <label for="stock-number">Display Name</label>
-                                    <input type="text" data-bind="value: CurrentProductDetailsModel().DisplayName" class="form-control" id="display-name" placeholder="Custom Display Name" />
+                                <div class="form-group" data-bind="visible: NavigationItems().length > 1">
+                                    <label for="category">Product Type</label>
+                                    <input data-bind="value: CurrentProductDetailsModel().ProductType" type="text" class="form-control" id="category" placeholder="Product Category Goes Here" />
                                 </div>
                                 <div class="form-group">
                                     <label for="stock-number">Stock Number</label>
                                     <input data-bind="value: CurrentProductDetailsModel().StockNumber" type="text" class="form-control" id="stock-number" placeholder="Stock #" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="category">Product Type</label>
-                                    <input data-bind="value: CurrentProductDetailsModel().ProductType" type="text" class="form-control" id="category" placeholder="Product Category Goes Here" />
+                                    <label for="designation">Designation</label>
+                                    <select class="form-control" id="designation" placeholder="Test">
+                                        <option>New</option>
+                                        <option>Used</option>
+                                        <option>Broker</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="manufacturer-code">Manufacturer Code</label>
-                                    <input data-bind="value: CurrentProductDetailsModel().ManufacturerCode" type="text" class="form-control" id="manufacturer-code" value="" />
+                                    <label for="model-make">Model Year</label>
+                                    <input data-bind="value:CurrentProductDetailsModel().ModelYear " type="text" class="form-control" id="manufacturer-year" value="" />
                                 </div>
                                 <div class="form-group">
                                     <label for="manufacturer-make">Manufacturer Make</label>
@@ -64,27 +78,28 @@
                                     <input data-bind="value: CurrentProductDetailsModel().SubModelName" type="text" class="form-control" id="sub-model-name" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="model-make">Model Year</label>
-                                    <input data-bind="value:CurrentProductDetailsModel().ModelYear " type="text" class="form-control" id="manufacturer-year" value="" />
+                                    <label for="stock-number">Display Name</label>
+                                    <input type="text" data-bind="value: CurrentProductDetailsModel().DisplayName" class="form-control" id="display-name" placeholder="Custom Display Name" />
                                 </div>
-                                <div class="form-group">
-                                    <label for="designation">Designation</label>
-                                    <select class="form-control" id="designation" placeholder="Test">
-                                        <option>New</option>
-                                        <option>Used</option>
-                                        <option>Broker</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="condition">Condition</label>
-                                    <input data-bind="value:CurrentProductDetailsModel().Condition " type="text" class="form-control" id="condition" value="*Brand New!" />
-                                </div>
-
                                 <div class="form-group">
                                     <label for="status">Status</label>
                                     <input data-bind="value: CurrentProductDetailsModel().Status" type="text" class="form-control" id="status" placeholder="Test" value="At Location" />
                                 </div>
+                                <div class="form-group">
+                                    <label for="condition">Condition</label>
+                                    <input data-bind="value:CurrentProductDetailsModel().Condition " type="text" class="form-control" id="condition" value="*Brand New!" />
+                                </div>
+                                @*<div class="form-group">
+            <label for="manufacturer-code">Manufacturer Code</label>
+            <input data-bind="value: CurrentProductDetailsModel().ManufacturerCode" type="text" class="form-control" id="manufacturer-code" value="" />
+        </div>*@
+
+
+
+
+
+
+
                             </form>
                         </div>
                     </div>
@@ -95,16 +110,16 @@
                         <div class="panel-heading">
                             <h3 class="panel-title">Features</h3>
                             @*<span data-bind="click: inventory.toggleFeature" class="pull-right clickable">
-                                <i data-bind="visible: IsFeatureExpanded" class="glyphicon glyphicon-chevron-up"></i>
-                                <i data-bind="visible: !IsFeatureExpanded()" class="glyphicon glyphicon-chevron-down"></i>
-                            </span>*@
+                                    <i data-bind="visible: IsFeatureExpanded" class="glyphicon glyphicon-chevron-up"></i>
+                                    <i data-bind="visible: !IsFeatureExpanded()" class="glyphicon glyphicon-chevron-down"></i>
+                                </span>*@
                         </div>
                         <div class="panel-body" data-bind="slideVisible: IsFeatureExpanded">
                             <form></form>
                         </div>
                         <div class="panel-footer">
                             <div data-bind="template: { name:'feature-template', foreach: CurrentProductDetailsModel().Features }"></div>
-                            <button data-bind="click: inventory.onAddFeatureClicked" class="btn btn-sm btn-primary">Add Feature</button>                           
+                            <button data-bind="click: inventory.onAddFeatureClicked" class="btn btn-sm btn-primary">Add Feature</button>
                         </div>
                     </div>
                 </div>
@@ -126,7 +141,7 @@
                                             data-bind="
                                             options: SpecificationTypes,
                                             optionsText: 'Name',
-                                            optionsValue: 'Id',   
+                                            optionsValue: 'Id',
                                             value: SelectedSpecificationType,
                                             optionsCaption: 'Select One...'"></select>
                                 </div>
@@ -160,7 +175,6 @@
                                         <span class="fa fa-trash"></span>
                                     </button>
                                 </span>
-                                
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -181,7 +195,6 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
-
                     <!-- Classes Panel -->
                     <div id="classes-panel" class="panel panel-primary" data-bind="visible: NavigationItems().length == 1">
                         <div class="panel-heading">
@@ -207,7 +220,7 @@
                                     <input type="text" class="form-control" id="subclass-value" placeholder="Add a subclass to the list" data-bind="value: CurrentSubclass" />
                                 </div>
                                 <button id="save-subclass" class="btn btn-sm btn-info" data-bind="click: inventory.onSaveSubclassClicked">Save Sub-Class</button>
-                                <button id="clear-subclass" class="btn btn-sm btn-warning" data-bind="click: inventory.onClearSubclassClicked">Clear</button>                               
+                                <button id="clear-subclass" class="btn btn-sm btn-warning" data-bind="click: inventory.onClearSubclassClicked">Clear</button>
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -262,7 +275,6 @@
                                         <span class="fa fa-trash"></span>
                                     </button>
                                 </span>
-
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -316,7 +328,6 @@
                                         <span class="fa fa-trash"></span>
                                     </button>
                                 </span>
-
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -338,8 +349,6 @@
                             <button data-bind="click: inventory.onAddColorClicked" class="btn btn-sm btn-primary">Add Color</button>
                         </div>
                     </div>
-
-
 
                     <!-- Marketing Details Panel -->
                     <div id="marketing-panel" class="panel panel-primary">
@@ -371,7 +380,6 @@
                                         <span class="fa fa-trash"></span>
                                     </button>
                                 </span>
-
                             </form>
                         </div>
                         <div class="panel-footer">
@@ -450,7 +458,6 @@
     </div>
 </div>
 
-
 @section scripts {
     <script src="~/Scripts/Inventory.js"></script>
     <script>
@@ -463,7 +470,7 @@
 
     <script id="feature-template" type="text/html">
         <ul class="list-group list-group-hover" style="font-size:small;cursor: pointer">
-            <a class="list-group-item list-group-item-action collapse" data-bind="attr:{ id: Id() }">                
+            <a class="list-group-item list-group-item-action collapse" data-bind="attr:{ id: Id() }">
                 <div class="list-group-item-text" data-bind="click: inventory.onFeatureClicked">
                     <span data-bind="text: DisplayName"></span> <span data-bind="text: ModelName"></span>
                 </div>
