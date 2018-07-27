@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="Prototype.Domain.Webhook.Product">
-    <Position X="8.75" Y="3.25" Width="2.75" />
+    <Position X="8.75" Y="2.75" Width="2.75" />
     <AssociationLine Name="DataType" Type="Prototype.Domain.Webhook.DataType">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-0.985" Y="0.061" />
@@ -9,8 +9,8 @@
     </AssociationLine>
     <AssociationLine Name="Model" Type="Prototype.Domain.Webhook.Model" FixedFromPoint="true">
       <Path>
-        <Point X="11.5" Y="3.938" />
-        <Point X="13.5" Y="3.938" />
+        <Point X="11.5" Y="3.592" />
+        <Point X="13.5" Y="3.592" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.225" Y="0.06" />
@@ -18,13 +18,13 @@
     </AssociationLine>
     <AssociationLine Name="Manufacturer" Type="Prototype.Domain.Webhook.Manufacturer" FixedFromPoint="true">
       <Path>
-        <Point X="8.75" Y="4.062" />
-        <Point X="7.5" Y="4.062" />
+        <Point X="8.75" Y="3.744" />
+        <Point X="7.5" Y="3.744" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="Location" Type="Prototype.Domain.Webhook.Location" ManuallyRouted="true" FixedToPoint="true">
       <Path>
-        <Point X="8.75" Y="4.767" />
+        <Point X="8.75" Y="4.606" />
         <Point X="4.25" Y="5.812" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
@@ -33,8 +33,8 @@
     </AssociationLine>
     <AssociationLine Name="Identifiers" Type="Prototype.Domain.Webhook.Identifier" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="8.875" Y="3.25" />
-        <Point X="8.875" Y="1.994" />
+        <Point X="9.25" Y="2.75" />
+        <Point X="9.25" Y="1.994" />
         <Point X="7.5" Y="1.994" />
       </Path>
     </AssociationLine>
@@ -55,29 +55,34 @@
     </AssociationLine>
     <AssociationLine Name="Colors" Type="Prototype.Domain.Webhook.Color" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="11.5" Y="3.375" />
-        <Point X="12.875" Y="3.375" />
+        <Point X="11.5" Y="2.903" />
+        <Point X="12.875" Y="2.903" />
         <Point X="12.875" Y="1.988" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
         <Position X="-1.777" Y="0.15" Height="0.182" Width="1.634" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="Prices" Type="Prototype.Domain.Webhook.Price">
+    <AssociationLine Name="Prices" Type="Prototype.Domain.Webhook.Price" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="5.579" />
+        <Point X="6.375" Y="5.579" />
+        <Point X="6.375" Y="7" />
+      </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.089" Y="0.112" />
+        <Position X="0.112" Y="0.089" />
       </MemberNameLabel>
     </AssociationLine>
     <AssociationLine Name="MediaContent" Type="Prototype.Domain.Webhook.Media" FixedFromPoint="true">
       <Path>
-        <Point X="11.5" Y="5.375" />
-        <Point X="13.167" Y="5.375" Type="JumpStart" />
-        <Point X="13.333" Y="5.375" Type="JumpEnd" />
-        <Point X="13.75" Y="5.375" />
+        <Point X="11.5" Y="5.35" />
+        <Point X="13.167" Y="5.35" Type="JumpStart" />
+        <Point X="13.333" Y="5.35" Type="JumpEnd" />
+        <Point X="13.75" Y="5.35" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAgCAAAUARKgAAEAAAIBgAAAAAAAAgAAgAgAgIIAAAg=</HashCode>
+      <HashCode>gAgCAAAUARKgAAEAAAIBgAQAAAAAAgAggAgAgIIAAAg=</HashCode>
       <FileName>Webhook\Product.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -159,20 +164,6 @@
   </Class>
   <Class Name="Prototype.Domain.Webhook.Attribute">
     <Position X="8.5" Y="10.5" Width="11" />
-    <InheritanceLine Type="Prototype.Domain.Webhook.BaseModel" ManuallyRouted="true">
-      <Path>
-        <Point X="8.5" Y="7.795" />
-        <Point X="8.5" Y="8.133" />
-        <Point X="9.573" Y="8.133" Type="JumpStart" />
-        <Point X="9.74" Y="8.133" Type="JumpEnd" />
-        <Point X="10.417" Y="8.133" Type="JumpStart" />
-        <Point X="10.583" Y="8.133" Type="JumpEnd" />
-        <Point X="10.95" Y="8.133" />
-        <Point X="10.95" Y="10.129" />
-        <Point X="14" Y="10.129" />
-        <Point X="14" Y="10.5" />
-      </Path>
-    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAQAACAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Webhook\Product.cs</FileName>
@@ -274,24 +265,24 @@
     <Position X="10" Y="0.5" Width="2" />
     <InheritanceLine Type="Prototype.Domain.Webhook.Product" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="10.375" Y="3.25" />
-        <Point X="10.375" Y="2.31" />
+        <Point X="10.375" Y="2.75" />
+        <Point X="10.375" Y="2.118" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAAgAAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAgAAAAgAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>Webhook\Product.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Prototype.Domain.Webhook.BaseModel">
     <Position X="7.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Webhook\Product.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="Prototype.Domain.Webhook.DataType">
-    <Position X="11" Y="6" Width="2" />
+    <Position X="11" Y="6.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>Webhook\Product.cs</FileName>

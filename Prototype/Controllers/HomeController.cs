@@ -1,6 +1,8 @@
 ﻿using Prototype.Domain.Repository;
 using Prototype.Domain.Webhook;
+using Prototype.Models;
 using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace Prototype.Controllers {
@@ -29,5 +31,105 @@ namespace Prototype.Controllers {
             );
             return Json(new { feature }, JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult DealerCreation() {
+            var vm = new DealerCreationViewModel();
+            return View(vm);
+        }
+
+        //public JsonResult Get(string query) {Okay            
+        //    List<Models.Location> records = new List<Models.Location>();
+            
+
+        //    return this.Json(records, JsonRequestBehavior.AllowGet);
+        //}
+
+        //public JsonResult LazyGet(int? parentId) {
+        //    List<Location> locations;
+        //    List<Models.Location> records;
+        //    using (ApplicationDbContext context = new ApplicationDbContext()) {
+        //        locations = context.Locations.ToList();
+
+        //        records = locations.Where(l => l.ParentID == parentId).OrderBy(l => l.OrderNumber)
+        //            .Select(l => new Models.DTO.Location {
+        //                id = l.ID,
+        //                text = l.Name,
+        //                @checked = l.Checked,
+        //                population = l.Population,
+        //                flagUrl = l.FlagUrl,
+        //                hasChildren = locations.Any(l2 => l2.ParentID == l.ID)
+        //            }).ToList();
+        //    }
+
+        //    return this.Json(records, JsonRequestBehavior.AllowGet);
+        //}
+
+        //private List<Models.Location> GetChildren(List<Location> locations, int parentId) {
+        //    return locations.Where(l => l.ParentID == parentId).OrderBy(l => l.OrderNumber)
+        //        .Select(l => new Models.DTO.Location {
+        //            id = l.ID,
+        //            text = l.Name,
+        //            population = l.Population,
+        //            flagUrl = l.FlagUrl,
+        //            @checked = l.Checked,
+        //            children = GetChildren(locations, l.ID)
+        //        }).ToList();
+        //}
+
+        //[HttpPost]
+        //public JsonResult SaveCheckedNodes(List<int> checkedIds) {
+        //    if (checkedIds == null) {
+        //        checkedIds = new List<int>();
+        //    }
+        //    using (ApplicationDbContext context = new ApplicationDbContext()) {
+        //        var locations = context.Locations.ToList();
+        //        foreach (var location in locations) {
+        //            location.Checked = checkedIds.Contains(location.ID);
+        //        }
+        //        context.SaveChanges();
+        //    }
+
+        //    return this.Json(true);
+        //}
+
+        //[HttpPost]
+        //public JsonResult ChangeNodePosition(int id, int parentId, int orderNumber) {
+        //    using (ApplicationDbContext context = new ApplicationDbContext()) {
+        //        var location = context.Locations.First(l => l.ID == id);
+
+        //        var newSiblingsBelow = context.Locations.Where(l => l.ParentID == parentId && l.OrderNumber >= orderNumber);
+        //        foreach (var sibling in newSiblingsBelow) {
+        //            sibling.OrderNumber = sibling.OrderNumber + 1;
+        //        }
+
+        //        var oldSiblingsBelow = context.Locations.Where(l => l.ParentID == location.ParentID && l.OrderNumber > location.OrderNumber);
+        //        foreach (var sibling in oldSiblingsBelow) {
+        //            sibling.OrderNumber = sibling.OrderNumber - 1;
+        //        }
+
+        //        location.ParentID = parentId;
+        //        location.OrderNumber = orderNumber;
+
+        //        context.SaveChanges();
+        //    }
+
+        //    return this.Json(true);
+        //}
+
+        //public JsonResult GetCountries(string query) {
+        //    List<Models.DTO.Location> records;
+        //    using (ApplicationDbContext context = new ApplicationDbContext()) {
+        //        records = context.Locations.Where(l => l.Parent != null && l.Parent.ParentID == null)
+        //            .Select(l => new Models.DTO.Location {
+        //                id = l.ID,
+        //                text = l.Name,
+        //                @checked = l.Checked,
+        //                population = l.Population,
+        //                flagUrl = l.FlagUrl
+        //            }).ToList();
+        //    }
+
+        //    return this.Json(records, JsonRequestBehavior.AllowGet);
+        //}
     }
 }

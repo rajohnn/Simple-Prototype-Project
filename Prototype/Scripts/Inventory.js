@@ -10,6 +10,7 @@
         inventory.model().CurrentProductDetailsModel = new ko.observable(inventory.model().ProductDetailsModel);
         ko.applyBindings(inventory.model);
     },
+
     toggleFeature: function () {
         var isExpanded = inventory.model().IsFeatureExpanded();
         inventory.model().IsFeatureExpanded(!isExpanded);
@@ -38,6 +39,7 @@
         var isExpanded = inventory.model().IsClassesExpanded();
         inventory.model().IsClassesExpanded(!isExpanded);
     },
+
     onAddFeatureClicked: function () {
         //inventory.model().IsFeatureExpanded(true);
         inventory.requestNewFeature();

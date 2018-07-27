@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Prototype.Domain.Webhook {
 
@@ -32,6 +33,7 @@ namespace Prototype.Domain.Webhook {
         /// If there is no external ID supplied by client use stock number.
         /// </summary>
         public string Id { get; set; }
+        public int Count { get; set; }
 
         // TODO: Stock Number moves to identifier.  If stock number is null, or it is a general product catalog in here
         // SET LOCATION to Proxmity
@@ -82,12 +84,13 @@ namespace Prototype.Domain.Webhook {
         public List<Price> Prices { get; set; } = new List<Price>();
 
         public List<Media> MediaContent = new List<Media>();
+        public Guid PayloadId { get; set; }
+        public bool Active { get; set; }
     }
 
     public class Feature : Product {
         public bool IsInstalled { get; set; } = true;
-        public bool IsOptional { get; set; } = false;
-        public int Count { get; set; } = 1;
+        public bool IsOptional { get; set; } = false;       
         public bool IsEquipment { get; set; } = false;
     }
 

@@ -1,0 +1,94 @@
+﻿@using Newtonsoft.Json
+@model Prototype.Models.DealerCreationViewModel
+@{
+    ViewBag.Title = "Dealer Creation";
+}
+<style>
+    label {
+        margin-top: 12px;
+    }
+</style>
+<h2 class="text-primary"> Dealer Creation Prototoype</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Dealer Creation Wizard</h2>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="partition" style="margin-top:-12px">Data Partition:</label>
+                        <input type="text" class="form-control" id="partition" placeholder="Enter a unique partition name here.">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="plocation">Parent Location:</label>
+
+                        <input type="text" class="form-control" id="plocation" placeholder="No parent places the location in the root." readonly>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="location">New Location Name:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="location" placeholder="Name of the location or a location code.">
+                            <span class="input-group-btn pull-left">
+                                <button class="btn btn-success" type="button">Add Location</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button type="submit" class="btn btn-default">
+                    Create New Partition
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Dealer Location Tree</h2>
+            </div>
+            <div class="panel-body">
+                <div id="tree"></div>
+            </div>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/DealerCreation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <script>
+        $(function () {
+            dealer.serverModel = @Html.Raw(JsonConvert.SerializeObject(Model));
+            dealer.init();
+
+            $('#tree').on("changed.jstree", function (e, data) {
+                console.log(data.selected);
+                $("#plocation").val(data.node.text);
+            });
+
+            $('button').on('click', function () {
+                $('#jstree').jstree(true).select_node('child_node_1');
+                $('#jstree').jstree('select_node', 'child_node_1');
+                $.jstree.reference('#jstree').select_node('child_node_1');
+
+            });
+
+            $('#tree').jstree({
+                'core': {
+                    'data': [
+                        { "id": "ajson1", "parent": "#", "text": "Dealership Group A" },
+                        { "id": "ajson2", "parent": "#", "text": "Dealership Group B" },
+                        { "id": "ajson3", "parent": "ajson2", "text": "Tampa Location" },
+                        { "id": "ajson4", "parent": "ajson2", "text": "Clearwater Location" },
+                    ]
+                }
+            });
+
+        });
+    </script>
+}
