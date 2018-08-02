@@ -1,8 +1,10 @@
 ﻿using Prototype.Domain.Repository;
 using Prototype.Domain.Webhook;
 using Prototype.Models;
+using Prototype.Service;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Web.Mvc;
 
 namespace Prototype.Controllers {
@@ -34,6 +36,13 @@ namespace Prototype.Controllers {
 
         public ActionResult DealerCreation() {
             var vm = new DealerCreationViewModel();
+            return View(vm);
+        }
+
+        public ActionResult Import() {
+            var path = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "bin");
+            var service = new ImportService();
+            var vm = service.GetImportViewModel(path);
             return View(vm);
         }
 

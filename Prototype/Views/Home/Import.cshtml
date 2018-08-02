@@ -1,0 +1,150 @@
+﻿@using Newtonsoft.Json
+@model Prototype.Models.ImportViewModel
+@{
+    ViewBag.Title = "Import Prototype";
+}
+<div data-bind="visible: false">
+    <h3 class="text-primary">
+        <span class="fa fa-spin fa-spinner"></span> Loading Proximity Mapping Prototype...
+    </h3>
+</div>
+<div style="display:none" data-bind="visible:true">
+    <h3 style="margin-top:-5px;margin-bottom:-5px" class="text-primary">Import Prototype - Dixie RV Feed</h3>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        CSV Headers
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="text-primary">Header</th>
+                                        <th class="text-primary">Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind="foreach: RowDetails">
+                                    <tr>
+                                        <td class="text-primary" data-bind="text: Header"></td>
+                                        <td class="text-muted" data-bind="text: Value"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="text-primary" for="selectList">Column Map</label>
+                            <select id="selectList" size="30" class="form-control"
+                                    data-bind="options: Headers, value: SelectedColumn"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    Total Records: <span data-bind="text: Products().length"></span>
+                    <span class="pull-right">
+                        <span class="badge">TODO: Would have paging</span> 
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Mapping Options - <span data-bind="text:SelectedColumn"></span>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <label class="text-primary" for="map-to">Map To</label>
+                    <select id="map-to" class="form-control"
+                            data-bind="options: MappingOptions,
+                            optionsCaption: '- Select A Map Option -',
+                            optionsText: 'Name',
+                            optionsValue: 'Id',
+                            value: SelectedMappingOption"></select>
+                    <hr />
+                    <div id="feature" data-bind="visible: ShowFeature">
+                        Features
+                    </div>
+                    <div id="identifiers" data-bind="visible: ShowIdentifiers">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">Identifier Mapping</div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label for="name">Identifier Name:</label>
+                                    <input type="text" class="form-control" id="name" data-bind="value: CurrentName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="val">Identifier Value:</label>
+                                    <input type="text" class="form-control" id="val" data-bind="value: CurrentValue">
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button type="button" class="btn btn-primary">Map</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="feature" data-bind="visible: ShowSpecification">
+                        Specifications
+                    </div>
+                    <div id="feature" data-bind="visible: ShowClass">
+                        Class
+                    </div>
+                    <div id="feature" data-bind="visible: ShowPrice">
+                        Price
+                    </div>
+                    <div id="feature" data-bind="visible: ShowColor">
+                        Color
+                    </div>
+                    <div id="feature" data-bind="visible: ShowMarketingDetail">
+                        Marketing Detail
+                    </div>
+                    <div id="feature" data-bind="visible: ShowActivity">
+                        Activity
+                    </div>
+                    <div id="feature" data-bind="visible: ShowDesignation">
+                        Designation
+                    </div>
+                    <div id="feature" data-bind="visible: ShowModel">
+                        Model
+                    </div>
+                    <div id="feature" data-bind="visible: ShowSubModel">
+                        Sub Model
+                    </div>
+                    <div id="feature" data-bind="visible: ShowMake">
+                        Manufacturer Make
+                    </div>
+                    <div id="feature" data-bind="visible: ShowCondition">
+                        Condition
+                    </div>
+                    <div id="feature" data-bind="visible: ShowQuantity">
+                        Quanitity
+                    </div>
+                    <div id="feature" data-bind="visible: ShowMedia">
+                        Media
+                    </div>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/Import.js"></script>
+    <script>
+        $(function () {
+            testImport.serverModel = @Html.Raw(JsonConvert.SerializeObject(Model));
+            testImport.init();
+
+        });
+    </script>
+}

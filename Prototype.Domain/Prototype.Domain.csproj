@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=7.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.7.1.1\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -37,10 +40,10 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.2\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -63,6 +66,7 @@
     <Compile Include="DealerInventory\CustomPackages.cs" />
     <Compile Include="DealerInventory\CustomParts.cs" />
     <Compile Include="DealerInventory\StandardFeatureConfiguration.cs" />
+    <Compile Include="Dixie.cs" />
     <Compile Include="Ext\StringExtensions.cs" />
     <Compile Include="Inventory\Feature.cs" />
     <Compile Include="Inventory\Product.cs" />
@@ -79,6 +83,7 @@
     <Compile Include="ProductCatalog\ReferenceCode.cs" />
     <Compile Include="ProductCatalog\StandardFeature.cs" />
     <Compile Include="Repository\BaseRepository.cs" />
+    <Compile Include="Repository\ImportRepository.cs" />
     <Compile Include="Repository\InventoryRepository.cs" />
     <Compile Include="Repository\PayloadTestRepository.cs" />
     <Compile Include="SB\SBBSI.cs" />
@@ -98,6 +103,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="BaseEntities.cd" />
+    <None Include="Data\dixierv-tv2514-072618.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Data\payload.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -115,7 +115,7 @@ namespace Prototype.Tests {
                             Manufacturer = new Manufacturer(),
                             MarketingDescriptions = new List<MarketingDescription>(),
                             MediaContent = new List<Media>(),
-                            Model = new Model(),
+                            Model = new Domain.Webhook.Model(),
                             Prices = new List<Price>(),
                             ProductType = "Product Type",
                             Source = "Source",
@@ -129,7 +129,7 @@ namespace Prototype.Tests {
                     Manufacturer = new Manufacturer(),
                     MarketingDescriptions = new List<MarketingDescription>(),
                     MediaContent = new List<Media>(),
-                    Model = new Model(),
+                    Model = new Domain.Webhook.Model(),
                     Prices = new List<Price>(),
                     ProductType = "Product Type",
                     Source = "Source",
@@ -144,11 +144,11 @@ namespace Prototype.Tests {
         [TestMethod]
         public void MappingSample () {
             var product = new Product {
-                Model = new Model {
+                Model = new Domain.Webhook.Model {
                     Code = "12312",
                     Name = "AMG C",
-                    Models = new List<Model> {
-                        new Model {
+                    Models = new List<Domain.Webhook.Model> {
+                        new Domain.Webhook.Model {
                             Name = "43 4Matic"
                         }
                     }
@@ -189,7 +189,7 @@ namespace Prototype.Tests {
                     Code = "12312"
                 },
                 Manufacturer = new Manufacturer { Make = "Coachmen" },
-                Model = new Model {
+                Model = new Domain.Webhook.Model {
                     Name = "Freedom Express 260BL - SW2152",
                     // Year = 2011
                 },
@@ -442,7 +442,7 @@ namespace Prototype.Tests {
                         Url = ""
                     },
                 },
-                Model = new Model {
+                Model = new Domain.Webhook.Model {
                     Name = "Heyday "
                 },                
             };
