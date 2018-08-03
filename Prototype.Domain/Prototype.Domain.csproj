@@ -70,6 +70,7 @@
     <Compile Include="Ext\StringExtensions.cs" />
     <Compile Include="Inventory\Feature.cs" />
     <Compile Include="Inventory\Product.cs" />
+    <Compile Include="Mapping\ImportEntities.cs" />
     <Compile Include="Migrations\201805242010588_Initial.cs" />
     <Compile Include="Migrations\201805242010588_Initial.Designer.cs">
       <DependentUpon>201805242010588_Initial.cs</DependentUpon>
@@ -86,6 +87,7 @@
     <Compile Include="Repository\ImportRepository.cs" />
     <Compile Include="Repository\InventoryRepository.cs" />
     <Compile Include="Repository\PayloadTestRepository.cs" />
+    <Compile Include="Repository\ProximityMappingRepository.cs" />
     <Compile Include="SB\SBBSI.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Location.cs" />

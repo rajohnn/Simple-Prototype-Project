@@ -1,4 +1,5 @@
 ﻿using Prototype.Domain;
+using Prototype.Domain.Mapping;
 using System.Collections.Generic;
 
 namespace Prototype.Models {
@@ -8,8 +9,25 @@ namespace Prototype.Models {
         public List<DixieProduct> Products { get; set; }
         public List<RowDetail> RowDetails { get; set; }
         public List<MappingOption> MappingOptions { get; set; }
+        public List<Industry> Industries { get; set; }
+        public List<ReferenceCodeModel> ReferenceCodes { get; set; }
+        public List<ReferenceCodeModel> SpecificationTypes { get; set; }
+        public List<ReferenceCodeModel> UnitTypes { get; set; }
+        public List<ReferenceCodeModel> ClassTypes { get; set; }
+        public List<ReferenceCodeModel> PriceTypes { get; set; }
+        public List<ReferenceCodeModel> ActivityTypes { get; set; }
+        public List<ReferenceCodeModel> Designations { get; set; }
+        public List<ReferenceCodeModel> ColorTypes { get; set; }
+        public List<ReferenceCodeModel> StatusTypes { get; set; }
+        public List<string> CurrentMappingOptions { get; set; } = new List<string>();
+        public List<ClassMap> ClassMaps { get; set; } = new List<ClassMap>();
 
         public int? SelectedMappingOption { get; set; }
+        public int? SelectedIndustry { get; set; }
+        public int? SelectedActivity { get; set; }
+        public int? SelectedClass { get; set; }
+        public string SelectedCsvOption { get; set; }
+
         public string SelectedColumn { get; set; }
         public string CurrentName { get; set; }
         public string CurrentValue { get; set; }
@@ -30,6 +48,13 @@ namespace Prototype.Models {
         public bool ShowQuantity { get; set; } = false;
         public bool ShowMedia { get; set; } = false;
         public bool ShowStatus { get; set; } = false;
+    }
+
+    public class ClassMap {
+        public int Id { get; set; }
+        public string CsvColumn { get; set; }
+        public int ReferenceCodeId { get; set; }
+        public string Value { get; set; }
     }
 
     public class RowDetail {

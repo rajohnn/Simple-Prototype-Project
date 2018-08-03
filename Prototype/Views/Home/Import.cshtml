@@ -11,33 +11,49 @@
 <div style="display:none" data-bind="visible:true">
     <h3 style="margin-top:-5px;margin-bottom:-5px" class="text-primary">Import Prototype - Dixie RV Feed</h3>
     <hr />
+    
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <div class="panel-title">
-                        CSV Headers
+                        <div class="row">
+                            <div class="col-md-8">
+                                CSV Headers
+                            </div>
+                            <div class="col-md-4">
+                                <select id="industry" class="form-control"
+                                        data-bind="options: Industries,
+                                        optionsText: 'Name',
+                                        optionsValue: 'Id',
+                                        value: SelectedIndustry"></select>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
                                     <tr>
+                                        <th class="text-primary">
+                                            <span class="fa fa-check-circle"></span>
+                                        </th>
                                         <th class="text-primary">Header</th>
                                         <th class="text-primary">Value</th>
                                     </tr>
                                 </thead>
                                 <tbody data-bind="foreach: RowDetails">
                                     <tr>
+                                        <td></td>
                                         <td class="text-primary" data-bind="text: Header"></td>
                                         <td class="text-muted" data-bind="text: Value"></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="text-primary" for="selectList">Column Map</label>
                             <select id="selectList" size="30" class="form-control"
                                     data-bind="options: Headers, value: SelectedColumn"></select>
@@ -91,43 +107,107 @@
                             </div>
                         </div>
                     </div>
-                    <div id="feature" data-bind="visible: ShowSpecification">
+                    <div id="specification-panel" data-bind="visible: ShowSpecification">
                         Specifications
                     </div>
-                    <div id="feature" data-bind="visible: ShowClass">
-                        Class
+                    <div id="class=panel" data-bind="visible: ShowClass">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">Class</div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label for="import-options">Incoming Distinct Values</label>
+                                    <select class="form-control"
+                                            data-bind="options: CurrentMappingOptions, value: SelectedCsvOption"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="classes">Map to Class</label>
+                                    <select id="class-options" class="form-control"
+                                            data-bind="options: ClassTypes,
+                                                optionsText: 'Value',
+                                                optionsValue: 'Id',
+                                                value: SelectedClass"></select>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button type="button" class="btn btn-primary" data-bind="click: testImport.mapClass">Map</button>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">Value Maps</div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group" data-bind="foreach: ClassMaps">
+                                    <div class="list-group-item">
+                                        <div class="list-group-item-heading text-primary" data-bind="text: Value"></div>
+                                        <div class="list-group-item-text text-muted">
+                                            <span data-bind="text: CsvColumn"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
-                    <div id="feature" data-bind="visible: ShowPrice">
+                    <div id="price-panel" data-bind="visible: ShowPrice">
                         Price
                     </div>
-                    <div id="feature" data-bind="visible: ShowColor">
+                    <div id="color-panel" data-bind="visible: ShowColor">
                         Color
                     </div>
-                    <div id="feature" data-bind="visible: ShowMarketingDetail">
+                    <div id="marketing-detail-panel" data-bind="visible: ShowMarketingDetail">
                         Marketing Detail
                     </div>
-                    <div id="feature" data-bind="visible: ShowActivity">
-                        Activity
+                    <!-- activity panel -->
+                    <div id="activity-panel" data-bind="visible: ShowActivity">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title">Activites</div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label for="activities">Category</label>
+                                    <select class="form-control" 
+                                            data-bind="options: ActivityTypes,                                                
+                                                optionsText: 'Value',
+                                                optionsValue: 'Id',
+                                                value: SelectedActivity"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="activity-name">Activity Name:</label>
+                                    <input type="text" class="form-control" id="activity-name" data-bind="value: CurrentName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="activity-val">Activity Value:</label>
+                                    <input type="text" class="form-control" id="activity-val" data-bind="value: CurrentValue">
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button type="button" class="btn btn-primary">Map</button>
+                            </div>
+                        </div>
                     </div>
-                    <div id="feature" data-bind="visible: ShowDesignation">
+
+                    <div id="designation-panel" data-bind="visible: ShowDesignation">
                         Designation
                     </div>
-                    <div id="feature" data-bind="visible: ShowModel">
+                    <div id="model-panel" data-bind="visible: ShowModel">
                         Model
                     </div>
-                    <div id="feature" data-bind="visible: ShowSubModel">
+                    <div id="sub-model-panel" data-bind="visible: ShowSubModel">
                         Sub Model
                     </div>
-                    <div id="feature" data-bind="visible: ShowMake">
+                    <div id="make-panel" data-bind="visible: ShowMake">
                         Manufacturer Make
                     </div>
-                    <div id="feature" data-bind="visible: ShowCondition">
+                    <div id="condition-panel" data-bind="visible: ShowCondition">
                         Condition
                     </div>
-                    <div id="feature" data-bind="visible: ShowQuantity">
+                    <div id="quantity-panel" data-bind="visible: ShowQuantity">
                         Quanitity
                     </div>
-                    <div id="feature" data-bind="visible: ShowMedia">
+                    <div id="media-panel" data-bind="visible: ShowMedia">
                         Media
                     </div>
                 </div>

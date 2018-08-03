@@ -8,10 +8,10 @@
                 ko.mapping.fromJS(testImport.serverModel));
         };
         testImport.model().SelectedMappingOption.subscribe(function (item) {
-            testImport.hideViews();
-            console.log(item);
+            testImport.hideViews(); 
             var model = testImport.model();
             if (item) {
+                $.blockUI();
                 switch (item) {
                     case 1:
                         model.ShowFeature(true);
@@ -24,6 +24,7 @@
                         break;
                     case 4:
                         model.ShowClass(true);
+                        testImport.createCurrentMapOptions(model.SelectedColumn());
                         break;
                     case 5:
                         model.ShowPrice(true);
@@ -65,23 +66,40 @@
                         break;
                 }
             }
+            $.unblockUI();
         });
 
         testImport.model().SelectedColumn.subscribe(function (item) {
+            
             var model = testImport.model();
             var record = _.find(model.RowDetails(), function(item) {
                 return item.Header() == model.SelectedColumn();
             });
             if (record) {
                 model.CurrentName(record.Header());
-                model.CurrentValue(record.Value());
+                model.CurrentValue(record.Value());                
             }
             else {
                 model.CurrentName("");
                 model.CurrentValue("");
             }
+            model.SelectedMappingOption(null);
+           
         });
         ko.applyBindings(testImport.model);
+    },
+    mapClass() {
+        var model = testImport.model();
+        var selectedClassId = model.SelectedClass();
+        var csvColumn = model.SelectedCsvOption();
+        var valueName = $("#class-options option:selected").text();
+        var classMap = {
+            Id: selectedClassId,
+            CsvColumn: csvColumn,
+            ReferenceCodeId: selectedClassId,
+            Value: valueName
+        };
+        model.ClassMaps.push(classMap);
     },
     hideViews() {
         var model = testImport.model();
@@ -100,5 +118,22 @@
         model.ShowCondition(false);
         model.ShowQuantity(false);
         model.ShowMedia(false);                        
+    },
+    createCurrentMapOptions(columnName) {
+        var model = testImport.model();
+        model.CurrentMappingOptions.removeAll();
+
+        // Get unique values for the given column
+        var uniques = _.unique(model.Products(), function (item) {
+            return item[columnName]();
+        });
+
+        // now map those values to a selection list
+        _.forEach(uniques, function (item) {
+            model.CurrentMappingOptions.push(item[columnName]());
+        });
+
+        model.CurrentMappingOptions(model.CurrentMappingOptions().sort());
+        console.log(model.CurrentMappingOptions());
     }
 });

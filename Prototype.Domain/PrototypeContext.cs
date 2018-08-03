@@ -2,6 +2,7 @@ using L5.DomainModel.Inventory;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Prototype.Domain;
 using Prototype.Domain.Dealership;
+using Prototype.Domain.Mapping;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
@@ -39,6 +40,9 @@ namespace L5.DomainModel {
         public virtual DbSet<CustomPart> CustomParts { get; set; }
         public virtual DbSet<StandardFeatureConfiguration> StandardFeatureConfigurations { get; set; }
         public virtual DbSet<CustomFeatureConfiguration> CustomFeatureConfigurations { get; set; }
+
+        public virtual DbSet<Industry> Industries { get; set; }
+        public virtual DbSet<ReferenceCodeModel> ReferenceCodeModels { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder) {
             base.OnModelCreating(modelBuilder);
